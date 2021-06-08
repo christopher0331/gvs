@@ -1,0 +1,16 @@
+.Header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 80px;
+    margin-bottom: 0px;
+    font-size: 30px;
+    font-family: fantasy;
+    margin-top: 40px;
+    background-color: whitesmoke;
+}
+
+.paragraph {
+    padding: 20px 10%;
+    background-color: whitesmoke;
+}

@@ -1,0 +1,103 @@
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    background-color: rgba(194, 232, 200, .5);
+    width: 300px;
+    margin-top: 15px;
+    padding: 10px 10px;
+    border-radius: 15px;
+    border: 2px solid darkgreen;
+}
+
+.calculatorInputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.calculatorOutterSection{
+    display: flex;
+    justify-items: center;
+}
+
+.calculatorSection {
+    display: flex;
+    border-radius: 15px;
+    justify-self: center;
+    border: 2px solid black;
+    padding: 10px;
+    margin-top: 20px;
+    width: 700px;
+    background-color: rgba(136, 136, 136, 0.432);
+}
+
+.calculatorInfo {
+    margin-top: 5%;
+    width: 400px;
+    padding: 5px 10px;
+}
+
+.calculatorOutterDiv {
+    display: flex;
+    align-self: center;
+}
+
+.calculatorInfoTitle {
+    display: flex; 
+    justify-content: center;
+    font-size: 45px;
+    font-weight: 400;
+}
+.calculatorLengthField {
+    display: flex;
+    width: 90px;
+}
+
+.calculatorLengthField:focus {
+    outline: none !important;
+    border-color: #67aa7a;
+    box-shadow: 0 0 10px #67aa7a;
+}
+
+.calculatorCheckBoxField {
+    display: flex;
+    padding: 5px 5px;
+    margin-left: 5px;
+}
+
+.calculatorCheckBoxField:focus {
+    outline: none !important;
+    margin-left: 5px;
+    border-color: #67aa7a;
+    box-shadow: 0 0 10px #67aa7a;
+}
+
+.calculatorCheckbox {
+    margin-left: 5px;
+    color: red;
+}
+
+.calculatorSelectorField {
+    display: flex;
+    width: 190px;
+}
+
+.calculatorSelectorField:focus {
+    outline: none !important;
+    border-color: #67aa7a;
+    box-shadow: 0 0 10px #67aa7a;
+}
+
+.calculatorTitle {
+    justify-self: center;
+    align-self: center;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.inputTitles {
+    font-size: 17px;
+    font-weight: 300;
+    font-weight: 700;
+    color: darkgreen;
+}

@@ -1,0 +1,35 @@
+.carouselImage {
+    height: 200px;
+    width: 500px;
+    padding-bottom: 50px;
+}
+
+ .reviewsCarousel {
+     height: 200px;
+     width: 500px;
+ }
+
+ span.carousel-control-next-icon {
+    content: '<';
+    font-size: 25px;
+    background-color: blue;
+    color: black;
+    padding-left: 40px;
+
+}
+
+span.carousel-control-prev-icon {
+  content: '>';
+  font-size: 25px;
+  background-color: blue;
+  color: black;
+  padding-right: 40px;
+}
+
+.carousel-indicators li.active {
+    background-color: blue;
+}
+
+ol.carousel-indicators {
+    background-color: red;
+}

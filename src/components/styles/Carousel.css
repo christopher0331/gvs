@@ -1,0 +1,8 @@
+.carouselImage {
+    position: relative;
+    height: 700px;
+}
+
+.carousel-caption {
+    background-color: rgb(0, 0, 0, .5);
+}

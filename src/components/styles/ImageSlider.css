@@ -1,0 +1,48 @@
+/* 
+.XStyle2 {
+    background: whitesmoke;
+    justify-content: right;
+    cursor: pointer;
+}
+
+.HoverButtonsBS {
+    z-index: 3;
+}
+
+.HoverButtonsBS:hover{
+    z-index: 6
+}
+.HoverButtonsBS:active{
+    z-index: 6
+}
+
+.SliderCSSBS {
+    position: relative;
+    top: 0%;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 1200px;
+    height: 900px;
+    z-index: 5;
+}
+
+.SliderCSSBS:hover {
+    z-index: 0;
+}
+
+.ViewerBS {
+    position: relative;
+    width: 1200px;
+    height: 900px;
+    z-index: 1;
+    background: black;
+}
+
+.SliderContent {
+    transform: translateX(-${props => props.translate}px);
+    transition: transform ease-out ${props => props.transition}s;
+    height: 580px;
+    display: flex;
+    background: whitesmoke;
+}
+ */

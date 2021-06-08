@@ -1,0 +1,143 @@
+/* Menu CSS */
+
+#Menu {
+    display: flex;
+    justify-content: center;
+    background-color: #194b1e;
+    
+}
+
+#navbar-color {
+    background-color: #194b1e;
+}
+
+#basic-nav-dropdown {
+    color: white;
+    font-size: 2.2vw;
+    margin-top: -2px;
+    transition: all .2s ease-in-out;
+    padding-left: 45px;
+    
+}
+
+#basic-nav-dropdown:hover {
+    transform: scale(1.1); 
+    color: lightgreen;
+}
+
+#nav-link {
+    color: white;
+    transition: all .2s ease-in-out;
+    font-size: 2.2vw;
+    padding-left: 45px;
+    text-decoration: none;
+}
+
+#nav-link:hover {
+    transform: scale(1.1); 
+    color: lightgreen;
+}
+
+.ddItem {
+    font-size: 24px;
+}
+
+.ddItem:active {
+    font-size: 24px;
+    background-color:#194b1e;
+    color: white;
+}
+
+#button-color {
+    background-color: white;
+}
+
+#button-color:hover {
+    background-color: #194b1e;
+    color: white;
+}
+
+.MenuInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    color: white;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.MenuItem {
+    display: flex;
+    justify-content: right;
+    padding: 5px;
+    font: 200;
+    font-size: 18px;
+    font-family: Cochin;
+}
+
+.InfoAndMenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.FirstHomepageBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    background-color: rgb(237, 236, 236);
+}
+
+#BoxText {
+    font-size: 35px;
+    color: white;
+    text-shadow: black 2px 2px 8px;
+}
+
+
+.socialIconBar {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;    
+}
+
+.socialIcons {
+    margin: 15px;
+    transition: all .2s ease-in-out;
+}
+
+.socialIcons:hover{
+    transform: scale(2.1);
+    color: lightblue;
+}
+
+
+#email {
+    color: white;
+}
+
+#email:hover {
+    color: lightblue;
+    text-decoration: none;
+}
+
+#phone {
+    color: white;
+}
+
+#phone:hover {
+    color: lightblue;
+    text-decoration: none;
+}
+
+.navLink:visited{
+    color: black;
+}
+
+#navbar-color{
+    z-index: 10;
+    border-radius: 20px;;
+}
