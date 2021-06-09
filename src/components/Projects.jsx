@@ -56,7 +56,7 @@ const Projects = () => {
                         </Button>
                             <Modal show={show} onHide={handleClose}>
                                 <FeaturedProject1 />
-                                <Button variant="secondary" onClick={handleClose}>
+                                <Button variant="secondary" onClick={handleClose} className="projectButton">
                                     Close
                                 </Button>
                             </Modal>
@@ -89,7 +89,7 @@ const Projects = () => {
                                 <Button variant="secondary" onClick={handleClose3} className="projectButton">
                                     Close
                                 </Button>
-                            </Modal>                    
+                        </Modal>                    
                     </Card.Body>
                 </div>
             </div>

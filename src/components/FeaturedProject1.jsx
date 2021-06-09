@@ -25,12 +25,12 @@ class Feature1 extends Component {
         this.setState({
             primaryImage: "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.13.21-IronFencing-Folder/FullSize/DecorativeIronFence_642+(1).webp",
             allImages: [
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.13.21-IronFencing-Folder/FullSize/DecorativeIronFence_642+(1).webp", 
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.13.21-IronFencing-Folder/FullSize/DecorativeIronFence_642_2+(1).webp", 
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.13.21-IronFencing-Folder/FullSize/DecorativeIronFence_642_3+(1).webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.13.21-IronFencing-Folder/FullSize/DecorativeIronFence_642_4+(1).webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.13.21-IronFencing-Folder/FullSize/DecorativeIronFence_642_5+(1).webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.13.21-IronFencing-Folder/FullSize/DecorativeIronFence_642_6+(1).webp"
+                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.13.21-IronFencing-Folder/Mobile/DecorativeIronFence_642+(1).webp", 
+                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.13.21-IronFencing-Folder/Mobile/DecorativeIronFence_642_2+(1).webp", 
+                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.13.21-IronFencing-Folder/Mobile/DecorativeIronFence_642_3+(1).webp",
+                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.13.21-IronFencing-Folder/Mobile/DecorativeIronFence_642_4+(1).webp",
+                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.13.21-IronFencing-Folder/Mobile/DecorativeIronFence_642_5+(1).webp",
+                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.13.21-IronFencing-Folder/Mobile/DecorativeIronFence_642_6+(1).webp"
             ]
         })
     }
@@ -90,7 +90,6 @@ class Feature1 extends Component {
                                 ))}
                             </div>
                         </div>
-                     
                     </div>
             </div>
         )
