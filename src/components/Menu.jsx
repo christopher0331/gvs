@@ -48,7 +48,7 @@ class Menu extends Component {
                                 Irrigation
                             </NavDropdown.Item>
                         </NavDropdown>
-                        <Link id="nav-link" to="/portfolio"> Portfolio! </Link>
+                        <Link id="nav-link" to="/portfolio"> Portfolio </Link>
                         </Nav>
                     </Navbar.Collapse>
                     </Navbar>

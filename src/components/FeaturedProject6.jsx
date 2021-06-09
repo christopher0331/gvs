@@ -1,20 +1,16 @@
 import React, {Component} from 'react';
-import Header from './Header.jsx';
-import Footer from './Footer.jsx';
-import ResidentialFence from './assets/ResidentialFence.jpeg';
-import residential2 from './assets/residential2.JPG';
 import MetaTags from 'react-meta-tags';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import  { faChevronCircleLeft, faChevronCircleRight } from '@fortawesome/free-solid-svg-icons';
 import './styles/FeaturedProjects.css';
 
-class Feature6 extends Component {
+class Feature5 extends Component {
     constructor(props){
         super(props)
 
         this.state = {
-            primaryImage: ResidentialFence,
-            allImages: [residential2, ResidentialFence],
+            primaryImage: "",
+            allImages: [],
             imageIndex: 0
         }
         this.changePrimary = this.changePrimary.bind(this);
@@ -23,6 +19,31 @@ class Feature6 extends Component {
 
     }
 
+    componentDidMount(){
+        this.setState({
+            primaryImage: "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_1.webp",
+            allImages: [
+                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_2.webp",
+                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_3.webp",
+                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_4.webp",
+                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_5.webp",
+                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_6.webp",
+                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_7.webp",
+                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_8.webp",
+                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_9.webp",
+                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_10.webp",
+                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_11.webp",
+                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_12.webp",
+                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_13.webp",
+                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_14.webp",
+                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_15.webp",
+                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_16.webp",
+                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_17.webp",
+                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_18.webp",
+            ]
+        })
+    }
+    
     changePrimary(target){
         this.setState({
             primaryImage: target
@@ -71,12 +92,12 @@ class Feature6 extends Component {
                             <FontAwesomeIcon onClick={() => this.changeImagesLeftArrow()} id='projectLeftArrow' icon={faChevronCircleLeft} color='black'/>
                             <FontAwesomeIcon onClick={() => this.changeImagesRightArrow()} id='projectRightArrow' icon={faChevronCircleRight} color='black'/>
                         </div>
-                        <div className="secondaryCarousel">
-                            <img onClick={() => this.changePrimary(residential2)} className="secondaryImages" src={residential2}/>
-                            <img onClick={() => this.changePrimary(ResidentialFence)}  className="secondaryImages" src={ResidentialFence}/>
-                            <img onClick={() => this.changePrimary(residential2)}  className="secondaryImages" src={ResidentialFence}/>
-                            <img onClick={() => this.changePrimary(residential2)}  className="secondaryImages" src={ResidentialFence}/>
-                            <img onClick={() => this.changePrimary(residential2)}  className="secondaryImages" src={ResidentialFence}/>
+                        <div>
+                            <div className="secondaryCarousel">
+                                {this.state.allImages.map(image => (
+                                    <img onClick={() => this.changePrimary(image)} className="secondaryImages" src={image}/>
+                                ))}
+                            </div>
                         </div>
                     </div>
             </div>
@@ -84,4 +105,4 @@ class Feature6 extends Component {
     }
 }
 
-export default Feature6;
+export default Feature5;

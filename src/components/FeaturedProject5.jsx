@@ -1,8 +1,4 @@
 import React, {Component} from 'react';
-import Header from './Header.jsx';
-import Footer from './Footer.jsx';
-import ResidentialFence from './assets/ResidentialFence.jpeg';
-import residential2 from './assets/residential2.JPG';
 import MetaTags from 'react-meta-tags';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import  { faChevronCircleLeft, faChevronCircleRight } from '@fortawesome/free-solid-svg-icons';
@@ -13,8 +9,8 @@ class Feature5 extends Component {
         super(props)
 
         this.state = {
-            primaryImage: ResidentialFence,
-            allImages: [residential2, ResidentialFence],
+            primaryImage: "",
+            allImages: [],
             imageIndex: 0
         }
         this.changePrimary = this.changePrimary.bind(this);
@@ -25,25 +21,26 @@ class Feature5 extends Component {
 
     componentDidMount(){
         this.setState({
-            primaryImage: "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_18.webp",
+            primaryImage: "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_6.webp",
             allImages: [
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_2.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_3.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_4.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_5.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_6.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_8.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_9.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_10.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_11.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_12.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_13.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_14.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_15.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_16.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_17.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_18.webp"
+                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett.webp",
+                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_1.webp",
+                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_2.webp",
+                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_3.webp",
+                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_4.webp",
+                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_5.webp",
+                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_6.webp",
+                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_7.webp",
+                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_8.webp",
+                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_9.webp",
+                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_10.webp",
+                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_11.webp",
+                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_12.webp",
+                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_13.webp",
+                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_14.webp",
+                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_15.webp",
+                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_16.webp",
+                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_17.webp"
             ]
         })
     }
