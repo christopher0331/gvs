@@ -1,10 +1,10 @@
 .footerDiv {
-  display: flex;
-  color: white;
-  background-color: #194b1e; 
-  height: 25vw; 
-  width: 100%; 
-  margin-top: 35px;
+    display: flex;
+    color: white;
+    background-color: #194b1e; 
+    height: 25vw; 
+    width: 100%; 
+    margin-top: 35px;
 }
 
 .Info {
@@ -84,6 +84,83 @@
 }
 
 .footerLogo {
-    height: 24vw;
-    width: 24vw;
+    height: 200px;
+    width: 200px;
+}
+
+@media screen and (max-width: 700px) {
+    .footerDiv {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        color: white;
+        background-color: #194b1e; 
+        height: 100%;
+      }
+
+    .Info {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        font-size: 2.9vw;
+        font-weight: 200;
+        text-align: center;
+    }
+
+    .Message {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        font-size: 4.6vw;
+        font-weight: 140;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .messageParagraph{
+        font-size: 2.6vw;
+    }
+
+    .SiteLinks {
+        display: flex;
+        color: white;
+        align-self: center;
+        font-size: 3.6vw;
+        font-weight: 200;
+    }
+
+    .footerHeads {
+        display: flex;
+        flex-direction: column;
+        font-size: 4.6vw;
+        text-decoration: underline;
+        margin-bottom: 5px;
+    }
+
+    .footerLogo {
+        display: flex;
+        align-self: center;
+        height: 300px;
+        width: 300px;
+    }
+
+    .links {
+        font-size: 2.6vw;
+        color: white;
+    }
+    .nav-link {
+        font-size: 2.9vw;
+        color: white;
+        transition: .5s;
+    }
+    
+    .nav-link:hover {
+        color: green;
+        transform: scale(1.5)
+    }
+    
+    .nav-link:visited {
+        color: white;
+        font-size: 2.9vw;
+    }
 }

@@ -1,4 +1,4 @@
-import { React, Component } from 'react'; 
+import { React } from 'react'; 
 import './styles/Footer.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from "react-router-dom";
@@ -8,7 +8,7 @@ const Footer = ()  => {
     const Logo = "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/FullSizedWebp/clearGVSLogo_300.webp";
 
         return(
-            <div>
+            <div className="getIt">
                 <div className='footerDiv'>
                     <img src={Logo} className="footerLogo"/>
                     <div className='Info'>
