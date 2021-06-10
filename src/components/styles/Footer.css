@@ -123,12 +123,11 @@
     }
 
     .SiteLinks {
-        display: flex;
+        display: none;
         color: white;
         align-self: center;
         font-size: 3.6vw;
-        width: 90%;
-
+        /* width: 90%; */
         font-weight: 200;
     }
 
