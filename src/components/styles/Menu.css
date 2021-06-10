@@ -71,7 +71,7 @@
     justify-content: right;
     padding: 5px;
     font: 200;
-    font-size: 18px;
+    font-size: 1.8vw;
     font-family: Cochin;
 }
 
@@ -140,4 +140,46 @@
 #navbar-color{
     z-index: 10;
     border-radius: 20px;;
+}
+
+@media screen and (max-width: 600px) {
+
+    .MenuInfo{
+        display: none;
+    }
+}
+
+.header {
+    background-color: #194b1e; 
+    height: 200px; 
+    width: 100%; 
+    display: flex; 
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 600px) {
+    .header {
+        background-color: #194b1e; 
+        height: 200px; 
+        width: 100%; 
+        display: flex; 
+        justify-content: space-between;
+    }
+}
+
+.headerLogo {
+    top: 5px; 
+    left: 1px; 
+    height: 220px; 
+    width: 220px;
+}
+
+@media screen and (max-width: 600px) {
+    .headerLogo {
+        top: 5px; 
+        left: 1px; 
+        height: 40.6vw; 
+        width: 40.6vw;
+    }
 }
