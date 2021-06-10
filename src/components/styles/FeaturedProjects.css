@@ -113,7 +113,7 @@
     .secondaryCarousel {
         display: flex; 
         flex-wrap: wrap;
-        width: 480px;
+        width: 470px;
         background-color: rgba(0, 0, 0, 0);
     }
     
@@ -130,7 +130,7 @@
         color: white;
         font-size: 45px;
         top: 50%;
-        left: -255px;
+        left: -265px;
         transition: all .2s ease-in-out; 
     }
     
@@ -138,7 +138,7 @@
         position: relative;
         color: white;
         top: 50%;
-        left: -255px;
+        left: -265px;
         transform:scale(1.5);
     }
     
