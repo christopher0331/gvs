@@ -181,10 +181,32 @@
         padding: 10px 30px;
     }
 
+    .contactInfoTitle {
+        font-size: 30px;
+        font-weight: 500;
+    }
+    
+    .contactNumber {
+        font-size: 36px;
+        font-weight: 300;
+        color: white;
+    }
+    .availability {
+        font-size: 18px;
+        color: rgba(227, 227, 227, 0.714);
+        font-weight: 100;
+    }
+    
+    .contactAddress {
+        font-size: 14px;
+        color: white;
+    }
+    
+    .contactEmail {
+        font-size: 20px;
+        color: white;
+        font-weight: 300;
+    }
+
 }
 
-.calculatorOutterDiv {
-    display: flex;
-    justify-self: center;
-    align-items: center;
-}
