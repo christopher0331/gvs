@@ -207,6 +207,19 @@
         color: white;
         font-weight: 300;
     }
+    .inputBox {
+        margin: 5px 5px;
+    }
+    
+    .inputField {
+        width: 17vw;
+        padding: 10px 10px;
+        border-bottom: 2px solid black;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-radius: 4px;
+    }
 
 }
 
