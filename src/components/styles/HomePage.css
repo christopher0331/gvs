@@ -5,6 +5,7 @@
     text-shadow: black 2px 2px 2px;
     padding: 8px 8px;
 }
+
 .inner {
     display: flex;
     justify-content: space-evenly;
@@ -41,6 +42,7 @@
       justify-content: center;
       align-content: center;
     }
+
     .mediaBreak900 {
         display: none;
         justify-content: space-evenly;
@@ -55,7 +57,33 @@
     }
 
   }
+
 .ImagesMappesBox {
     display: flex;
     width: 100%;
+}
+
+.FirstHomepageBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    background-color: rgb(237, 236, 236);
+}
+
+#BoxText {
+    font-size: 3.8vw;
+    color: white;
+    text-shadow: black 2px 2px 8px;
+    padding: 5px 5px;
+}
+
+@media screen and (max-width: 700px) {
+    #BoxText {
+        font-size: 3.8vw;
+        color: white;
+        text-shadow: black 2px 2px 8px;
+        padding: 10px 10px;
+    }
 }
