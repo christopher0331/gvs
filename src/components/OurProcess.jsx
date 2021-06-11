@@ -22,7 +22,7 @@ class OurProcess extends React.Component {
             return(
                 <div className="outterBoxProcess">
                     <div className="processTitle">Fencing Process</div>
-                    <div id="row">
+                    <div id="row1">
                         <div id="column">
                             <div id="row">
                                     <div className="steps" onClick={() => this.showModal('Visit')}>

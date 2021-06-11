@@ -49,3 +49,59 @@
     justify-self: center;
     align-self: center;
 }
+
+
+@media screen and (max-width: 800px) {
+    .title {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 200px;
+    }
+    
+    .aboutUs {
+        display: flex;
+        flex-direction: row;
+        font-size: 18px;
+    }
+    
+    .description{
+        font-size: 13px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        padding-left: 10px;
+    }
+    
+    .crewImage {
+        width: 350px;
+        height: 350px;
+        border: 5px solid black;
+    }
+    
+    .imageAndDescription {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .descTitle {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
+    .descText {
+        padding: 10px 10px;
+    }
+     
+    .tools {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #calculatorInTools {
+        display: flex;
+        justify-self: center;
+        align-self: center;
+    }
+}

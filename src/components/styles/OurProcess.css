@@ -69,7 +69,14 @@
     font-weight: 600;
     margin-bottom: 20px;
 }
+
 #row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#row1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -84,4 +91,54 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+    #row1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .modalBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        height: 26vw;
+        width: 80vw;
+        margin-left: 50px;
+        margin-top: 30px;
+        padding: 15px 30px;
+        border-radius: 15px;
+        background-color: whitesmoke;
+        box-shadow: black 2px 2px 8px;
+    }
+ 
+    .modalDescription {
+        display: flex;
+        text-align: center;
+        font-size: 2.3vw;
+    }
+
+    .steps {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: whitesmoke;
+        width: 19vw;
+        height: 19vw;
+        margin: 5px 5px;
+        border-radius: 50%;
+        font-size: 2.4vw;
+        text-align: center;
+        border: 4px solid darkgreen;
+    }
+    
+    .steps:hover {
+        background-color: darkgreen;
+        color: white;
+        border: 4px solid black;
+        
+    }
 }

@@ -9,7 +9,7 @@ const AboutUs = (props) => {
       }, [])
 
     return(
-        <div>
+        <div className="aboutUsDiv">
             <Overview />
             <OurProcess />
         </div>
