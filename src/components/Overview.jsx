@@ -1,8 +1,10 @@
-import React from 'react';
-import CrewWithTruck from './assets/CrewWithTruck.JPG'
+import { React, lazy } from 'react';
 import './styles/AboutUs.css';
 
+const CrewWithTruck = lazy(() => import("https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/AboutUs/AboutUsImage.webp"))
+
 const Overview = () => (
+    
     <div className="title">
 
     <div className="aboutUs">
@@ -10,7 +12,8 @@ const Overview = () => (
     </div>
     
     <div className="imageAndDescription">
-        <img class="crewImage" src={CrewWithTruck} /> 
+
+        <img class="crewImage" src={CrewWithTruck} alt='GreenView Solutions crew with truck' /> 
 
         <div className="description">
             <div className="aboutUsSection">
