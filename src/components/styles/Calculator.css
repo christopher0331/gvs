@@ -101,3 +101,28 @@
     font-weight: 700;
     color: darkgreen;
 }
+
+
+@media screen and (max-width: 800px){
+    .calculatorSection {
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        justify-self: center;
+        border: 2px solid black;
+        padding: 10px;
+        margin-top: 20px;
+        width: 75%;
+        background-color: rgba(136, 136, 136, 0.432);
+    }
+    .calculatorInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-self: center;
+        margin-top: 5%;
+        width: 85%;
+        padding: 5px 10px;
+    }
+}
