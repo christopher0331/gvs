@@ -1,9 +1,13 @@
-import React from 'react';
-import Residential from './assets/residential.JPG';
-import wireFence from './assets/wireFence.JPG'
+import { React, lazy } from 'react';
+// import Residential from './assets/residential.JPG';
+// import wireFence from './assets/wireFence.JPG'
 import './styles/FencingTypes.css';
 
 const FenceTypes = () => {
+
+    const residential = "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/SmallSizedWEBP/ResidentialHP.webp"
+    const wireFence = "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/SmallSizedWEBP/Security_642.webp";
+
     return(
     <div>
         <div className='title'>
@@ -12,9 +16,9 @@ const FenceTypes = () => {
         <div className='info'>(Hover Over Image for Details)</div>
             <div className="fences">
                 <div className="left">  
-                    <div class="project1">
+                    <div className="project1">
                         <div className="image">
-                        <img src={Residential}/>
+                            <img src={residential} id="residential1"/>
                         </div>
                         <div className="details">
                         <div className="center">
@@ -31,7 +35,7 @@ const FenceTypes = () => {
                     <div className='project2Text'>
                         <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</div>
                     </div> 
-                    <div class="project2">
+                    <div className="project2">
                         <div className="image">
                         <img src={wireFence}/>
                         </div>
@@ -44,7 +48,7 @@ const FenceTypes = () => {
                     </div>
                 </div>
                 <div className="left"> 
-                    <div class="project1">
+                    <div className="project1">
                         <div className="image">
                         <img src={wireFence}/>
                         </div>
@@ -63,7 +67,7 @@ const FenceTypes = () => {
                     <div className='project2Text'>
                         <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</div>
                     </div> 
-                    <div class="project2">
+                    <div className="project2">
                         <div className="image">
                         <img src={wireFence}/>
                         </div>
@@ -76,7 +80,7 @@ const FenceTypes = () => {
                     </div>
                 </div>
                 <div className="left"> 
-                    <div class="project1">
+                    <div className="project1">
                         <div className="image">
                         <img src={wireFence}/>
                         </div>
