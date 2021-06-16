@@ -2,7 +2,6 @@ import {React, useEffect } from 'react';
 import './styles/FreeEstimate.css';
 import ContactForm from './ContactForm.jsx';
 import ContactInformation from './ContactInformation.jsx';
-import Calculator from './Calculator.jsx';
 
 const ContactUs = (props) => {
 

@@ -8,9 +8,9 @@ const Overview = () => (
     
     <div className="title">
 
-    <div className="aboutUs">
-        About Us
-    </div>
+        <div className="aboutUs">
+            About Us
+        </div>
     
     <div className="imageAndDescription">
 

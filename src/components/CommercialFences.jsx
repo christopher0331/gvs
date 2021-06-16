@@ -14,8 +14,7 @@ const CommercialFences = (props) => {
             <Card.Body className='cardBody'>
                 <Card.Title>Commercial Fences</Card.Title>
                 <Card.Text>
-                Some quick example text to build on the card title and make up the bulk of
-                the card's content.
+                    Schools, businesses or storage units, we've got you covered. 
                 </Card.Text>
                     <Link to="/fencing" >
                         <button className='cardButton'>Learn More</button>{' '}

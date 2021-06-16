@@ -8,7 +8,7 @@ const Footer = ()  => {
     const Logo = "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/FullSizedWebp/clearGVSLogo_300.webp";
 
         return(
-            <div className="getIt">
+            <div className="footerOutterDivs">
                 <div className='footerDiv'>
                     <img src={Logo} className="footerLogo"/>
                     <div className='Info'>
@@ -28,6 +28,7 @@ const Footer = ()  => {
                                 Serving Greater Denver Area!
                             </div>
                         </div>
+                
                         <div className='SiteLinks'>
                             <div className='footerHeads'>
                                 Links

@@ -93,7 +93,9 @@ class Feature2 extends Component {
                         <div>
                             <div className="secondaryCarousel">
                                 {this.state.allImages.map(image => (
-                                    <img onClick={() => this.changePrimary(image)} className="secondaryImages" src={image}/>
+                                    <div className="smallImages">
+                                        <img onClick={() => this.changePrimary(image)} className="secondaryImages" src={image}/>
+                                    </div>
                                 ))}
                             </div>
                         </div>

@@ -137,3 +137,12 @@
 .from-left2:hover:after {
 	width: 100%;
 }
+
+@media screen and (max-width: 744px) {
+    .portfolioBlock {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+}

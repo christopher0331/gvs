@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import './styles/Menu.css';
 import { Link } from "react-router-dom";
-  import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 class Menu extends Component {
