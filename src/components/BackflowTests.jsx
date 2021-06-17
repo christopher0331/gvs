@@ -5,15 +5,14 @@ import { Link } from 'react-router-dom';
 
 const securityFence = "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/SmallSizedWEBP/Security_642.webp";
 
-const SecurityFences = (props) => {
+const BackflowTests = (props) => {
     return(
         <div className="divBox">  
             <Card.Img variant="custom" src={securityFence} className='cardImage' />
             <Card.Body className='cardBody'>
-                <Card.Title>Security Fences</Card.Title>
+                <Card.Title>Backflow Tests</Card.Title>
                 <Card.Text>
-                Some quick example text to build on the card title and make up the bulk of
-                the card's content.
+                    Commercial or residential, we cover all backflow testing needs. Certified from APPB. 
                 </Card.Text>
                 <Link to="/fencing" >
                     <button className='cardButton'>Learn More</button>{' '}
@@ -23,4 +22,4 @@ const SecurityFences = (props) => {
     )
 }
 
-export default SecurityFences;
+export default BackflowTests;

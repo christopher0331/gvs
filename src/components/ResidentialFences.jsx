@@ -10,12 +10,11 @@ const ResidentialFences = (props) => {
 
     return(
         <div className="divBox">  
-            <Card.Img variant="custom" src={ResidnetialFence_300} className='cardImage' />
+            <Card.Img variant="custom" src={ResidnetialFence_300} className='cardImage' alt='' />
             <Card.Body className='cardBody'>
                 <Card.Title className="cardTitle">Residential Fences</Card.Title>
                 <Card.Text className="cardText">
-                    Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
+                    Privacy, decorative, and security fences to meet any of your residential fencing needs.
                 </Card.Text>
                 <Link to="/fencing" >
                     <button className='cardButton'>Learn More</button>{' '}

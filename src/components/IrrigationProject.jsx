@@ -11,8 +11,7 @@ const Irrigation = (props) => {
             <Card.Body className='cardBody'>
                 <Card.Title>Irrigation</Card.Title>
                 <Card.Text>
-                Some quick example text to build on the card title and make up the bulk of
-                the card's content.
+                    Irrigation system installs, repairs or upgrades, our team can bring quality water control to your property.
                 </Card.Text>
                 <Link to="/irrigation" >
                     <button className='cardButton'>Learn More</button>{' '}

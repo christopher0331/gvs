@@ -7,7 +7,7 @@ import ImagesMappedSmall from './ImagesMappedSmall.jsx';
 
 const Irrigation = lazy(() => import('./IrrigationProject.jsx'));
 const CommercialFences = lazy(() => import('./CommercialFences.jsx'));
-const SecurityFences = lazy(() => import('./SecurityFences.jsx'));
+const BackflowTests = lazy(() => import('./BackflowTests.jsx'));
 const ResidentialFences = lazy(() => import('./ResidentialFences.jsx'));
 const Information = lazy(() => import('./Information.jsx'));
 const Project = lazy(() => import('./Projects.jsx'));
@@ -36,7 +36,7 @@ const HomePage = (props) => {
                 <div className="inner">
                         <ResidentialFences changePage={props.changePage}/>
                         <CommercialFences changePage={props.changePage}/>
-                        <SecurityFences changePage={props.changePage}/>
+                        <BackflowTests changePage={props.changePage}/>
                         <Irrigation changePage={props.changePage}/>
                 </div> 
                 <div className="mediaBreak900">
@@ -45,14 +45,14 @@ const HomePage = (props) => {
                         <CommercialFences changePage={props.changePage}/>
                     </div>
                     <div>
-                        <SecurityFences changePage={props.changePage}/>
+                        <BackflowTests changePage={props.changePage}/>
                         <Irrigation changePage={props.changePage}/>
                     </div>
                 </div>
                 <div className="mediaBreak500">
                         <ResidentialFences changePage={props.changePage}/>
                         <CommercialFences changePage={props.changePage}/>
-                        <SecurityFences changePage={props.changePage}/>
+                        <BackflowTests changePage={props.changePage}/>
                         <Irrigation changePage={props.changePage}/>
                 </div>       
                 <div>
@@ -80,7 +80,7 @@ const HomePage = (props) => {
                 <div className="inner">
                         <ResidentialFences changePage={props.changePage}/>
                         <CommercialFences changePage={props.changePage}/>
-                        <SecurityFences changePage={props.changePage}/>
+                        <BackflowTests changePage={props.changePage}/>
                         <Irrigation changePage={props.changePage}/>
                 </div> 
                 <div className="mediaBreak900">
@@ -89,14 +89,14 @@ const HomePage = (props) => {
                         <CommercialFences changePage={props.changePage}/>
                     </div>
                     <div>
-                        <SecurityFences changePage={props.changePage}/>
+                        <BackflowTests changePage={props.changePage}/>
                         <Irrigation changePage={props.changePage}/>
                     </div>
                 </div>
                 <div className="mediaBreak500">
                         <ResidentialFences changePage={props.changePage}/>
                         <CommercialFences changePage={props.changePage}/>
-                        <SecurityFences changePage={props.changePage}/>
+                        <BackflowTests changePage={props.changePage}/>
                         <Irrigation changePage={props.changePage}/>
                 </div>       
                 <div>

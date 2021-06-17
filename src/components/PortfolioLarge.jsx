@@ -5,44 +5,44 @@ import './styles/Project.css';
 
 const PortfolioLarge = () =>  {
 
-    const FeaturedProject1 = lazy(() => import('./FeaturedProject1.jsx'));
-    const FeaturedProject2 = lazy(() => import('./FeaturedProject2.jsx'));
-    const FeaturedProject3 = lazy(() => import('./FeaturedProject3.jsx'));
-    const FeaturedProject4 = lazy(() => import('./FeaturedProject4.jsx'));
-    const FeaturedProject5 = lazy(() => import('./FeaturedProject5.jsx'));
-    const FeaturedProject6 = lazy(() => import('./FeaturedProject6.jsx'));
+        const FeaturedProject1 = lazy(() => import('./FeaturedProject1.jsx'));
+        const FeaturedProject2 = lazy(() => import('./FeaturedProject2.jsx'));
+        const FeaturedProject3 = lazy(() => import('./FeaturedProject3.jsx'));
+        const FeaturedProject4 = lazy(() => import('./FeaturedProject4.jsx'));
+        const FeaturedProject5 = lazy(() => import('./FeaturedProject5.jsx'));
+        const FeaturedProject6 = lazy(() => import('./FeaturedProject6.jsx'));
 
-    const [show, setShow] = useState(false);
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+        const [show, setShow] = useState(false);
+        const handleClose = () => setShow(false);
+        const handleShow = () => setShow(true);
 
-    const [show2, setShow2] = useState(false);
-    const handleClose2 = () => setShow2(false);
-    const handleShow2 = () => setShow2(true);
+        const [show2, setShow2] = useState(false);
+        const handleClose2 = () => setShow2(false);
+        const handleShow2 = () => setShow2(true);
 
-    const [show3, setShow3] = useState(false);
-    const handleClose3 = () => setShow3(false);
-    const handleShow3 = () => setShow3(true);
+        const [show3, setShow3] = useState(false);
+        const handleClose3 = () => setShow3(false);
+        const handleShow3 = () => setShow3(true);
 
-    const [show4, setShow4] = useState(false);
-    const handleClose4 = () => setShow4(false);
-    const handleShow4 = () => setShow4(true);
+        const [show4, setShow4] = useState(false);
+        const handleClose4 = () => setShow4(false);
+        const handleShow4 = () => setShow4(true);
 
-    const [show5, setShow5] = useState(false);
-    const handleClose5 = () => setShow5(false);
-    const handleShow5 = () => setShow5(true);
+        const [show5, setShow5] = useState(false);
+        const handleClose5 = () => setShow5(false);
+        const handleShow5 = () => setShow5(true);
 
-    const [show6, setShow6] = useState(false);
-    const handleClose6 = () => setShow6(false);
-    const handleShow6 = () => setShow6(true);
+        const [show6, setShow6] = useState(false);
+        const handleClose6 = () => setShow6(false);
+        const handleShow6 = () => setShow6(true);
 
-    const DecorativeIronFence = "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/SmallSizedWEBP/DecorativeIronFence_642_6.webp";
-    const RanchRail ="https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/SmallSizedWEBP/RanchRail.webp";
-    const CustomPickett ="https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/SmallSizedWEBP/CustomPickett_642.webp";
-    const Commercial ="https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/SmallSizedWEBP/Commercial_642.webp";
-    const HOA6FtPicket ="https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/Mobile/4.23.21-HOA6FtPicket_6.webp";
-    const PicketFence ="https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/Mobile/4.14.21-6ftPickett_6.webp";
-        
+        const DecorativeIronFence = "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/SmallSizedWEBP/DecorativeIronFence_642_6.webp";
+        const RanchRail ="https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/SmallSizedWEBP/RanchRail.webp";
+        const CustomPickett ="https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/SmallSizedWEBP/CustomPickett_642.webp";
+        const Commercial ="https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/SmallSizedWEBP/Commercial_642.webp";
+        const HOA6FtPicket ="https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/Mobile/4.23.21-HOA6FtPicket_6.webp";
+        const PicketFence ="https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/Mobile/4.14.21-6ftPickett_6.webp";
+            
         return(
             <div id="primaryBox">
                     <div className="portfolioTitle">
@@ -53,7 +53,7 @@ const PortfolioLarge = () =>  {
                             <img src={DecorativeIronFence} className="portfolioImage" alt=''/>
                             <div className="portfolioBody">
                                 <h3>Greenwood Horizontal 2020</h3>
-                                    <p>Block1sa;dlfjk sdaklfjsa slakjfs d sdfkjfsdkfjasd</p>
+                                    Block1sa;dlfjk sdaklfjsa slakjfs d sdfkjfsdkfjasd
                                 <div onClick={handleShow}>
                                     <div class="btn2 from-left2">
                                         View Project
@@ -68,7 +68,7 @@ const PortfolioLarge = () =>  {
                             </div>
                         </div>
                         <div className="portfolioProjects">
-                            <img src={RanchRail} className="portfolioImage"/>
+                            <img src={RanchRail} className="portfolioImage" alt=''/>
                             <div className="portfolioBody">
                                 <h3>Greenwood Horizontal 2020</h3>
                                 Block1sa;dlfjk sdaklfjsa slakjfs d sdfkjfsdkfjasd
@@ -86,7 +86,7 @@ const PortfolioLarge = () =>  {
                             </div>
                         </div>
                         <div className="portfolioProjects">
-                            <img src={CustomPickett} className="portfolioImage"/>
+                            <img src={CustomPickett} className="portfolioImage" alt=''/>
                             <div className="portfolioBody">
                                 <h3>Greenwood Horizontal 2020</h3>
                                 Block1sa;dlfjk sdaklfjsa slakjfs d sdfkjfsdkfjasd
@@ -106,7 +106,7 @@ const PortfolioLarge = () =>  {
                     </div>
                     <div className="portfolioBlock">
                     <div className="portfolioProjects">
-                        <img src={Commercial} className="portfolioImage"/>
+                        <img src={Commercial} className="portfolioImage" alt=''/>
                         <div className="portfolioBody">
                                 <h3>Greenwood Horizontal 2020</h3>
                                 Block1sa;dlfjk sdaklfjsa slakjfs d sdfkjfsdkfjasd
@@ -124,7 +124,7 @@ const PortfolioLarge = () =>  {
                             </div>
                         </div>
                         <div className="portfolioProjects">
-                            <img src={HOA6FtPicket} className="portfolioImage"/>
+                            <img src={HOA6FtPicket} className="portfolioImage" alt=''/>
                             <div className="portfolioBody">
                                 <h3>Greenwood Horizontal 2020</h3>
                                 Block1sa;dlfjk sdaklfjsa slakjfs d sdfkjfsdkfjasd
@@ -142,7 +142,7 @@ const PortfolioLarge = () =>  {
                             </div>
                         </div>
                         <div className="portfolioProjects">
-                            <img src={PicketFence} className="portfolioImage"/>
+                            <img src={PicketFence} className="portfolioImage" alt=''/>
                             <div className="portfolioBody">
                                 <h3>Greenwood Horizontal 2020</h3>
                                 Block1sa;dlfjk sdaklfjsa slakjfs d sdfkjfsdkfjasd
