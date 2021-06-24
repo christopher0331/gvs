@@ -21,25 +21,25 @@ class Feature4 extends Component {
 
     componentDidMount(){
         this.setState({
-            primaryImage: "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_18.webp",
+            primaryImage: ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_18.webp",'Commercial Fencing, Chainlink Fencing'],
             allImages: [
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_2.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_3.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_4.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_5.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_6.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_8.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_9.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_10.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_11.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_12.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_13.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_14.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_15.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_16.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_17.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_18.webp"
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence.webp",'Chainlink Fencing'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_2.webp",'Chainlink Fencing'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_3.webp",'Chainlink Fencing'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_4.webp",'Chainlink Fencing'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_5.webp",'Chainlink Fencing'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_6.webp",'Chainlink Fencing'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_8.webp",'Chainlink Fencing'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_9.webp",'Chainlink Fencing'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_10.webp",'Chainlink Fencing'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_11.webp",'Chainlink Fencing'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_12.webp",'Chainlink Fencing'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_13.webp",'Chainlink Fencing'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_14.webp",'Chainlink Fencing'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_15.webp",'Chainlink Fencing'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_16.webp",'Chainlink Fencing'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_17.webp",'Chainlink Fencing'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_18.webp",'Chainlink Fencing']
             ]
         })
     }
@@ -86,16 +86,16 @@ class Feature4 extends Component {
                     <meta property="og:title" content="MyApp" />
                 </MetaTags>
                     <div className="imageSection">
-                            <h3 className="featuredTitle">Feature 4</h3>
+                            <h3 className="featuredTitle">Commercial Chainlink Fence</h3>
                         <div className="primaryImageBox">
-                            <img className="primaryImage" src={this.state.primaryImage}/>
+                            <img className="primaryImage" src={this.state.primaryImage[0]} alt={this.state.primaryImage[1]}/>
                             <FontAwesomeIcon onClick={() => this.changeImagesLeftArrow()} id='projectLeftArrow' icon={faChevronCircleLeft} color='black'/>
                             <FontAwesomeIcon onClick={() => this.changeImagesRightArrow()} id='projectRightArrow' icon={faChevronCircleRight} color='black'/>
                         </div>
                         <div>
                             <div className="secondaryCarousel">
                                 {this.state.allImages.map(image => (
-                                    <img onClick={() => this.changePrimary(image)} className="secondaryImages" src={image}/>
+                                    <img onClick={() => this.changePrimary(image)} className="secondaryImages" src={image[0]} alt={image[1]} />
                                 ))}
                             </div>
                         </div>

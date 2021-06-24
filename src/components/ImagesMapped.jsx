@@ -11,11 +11,11 @@ const ImageSlider = () => {
     const innerWidth = window.innerWidth;
 
     const data = [
-        "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/FullSizedWebp/HorizontalCedarStainedCarousel.webp", 
-        "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/FullSizedWebp/CommercialFence.webp", 
-        "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/FullSizedWebp/PicketWithDecorationCarousel.webp", 
-        "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/FullSizedWebp/CustomPicketCarousel.webp"
-      ];
+      ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/FullSizedWebp/HorizontalCedarStainedCarousel.webp","Cedar Pickets, Horizontal fencing, 182 linear feet"],
+      ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/FullSizedWebp/CommercialFence.webp","Commercial Fencing, Chain Link Fence, 16ft tall, 500 linear feet"],
+      ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/FullSizedWebp/PicketWithDecorationCarousel.webp","Privacy fence, 6ft tall picket fence, decorative gates"],
+      ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/FullSizedWebp/CustomPicketCarousel.webp","Cedar Picket, picket fencing, 4ft tall custom picket fence"]
+];
 
     const [state, setState] = useState({
         activeIndex: 0,
@@ -59,27 +59,26 @@ const ImageSlider = () => {
 
         return(
             <ViewerBS>
-            <SliderCSSBS>
-                <SliderContent translate={translate} transition={transition}>
-                    {data.map(slide => (
-                          <SlideStyle key={slide}>
-                                  <LazyLoadImage 
-                                  alt="" 
-                                  src={slide} 
-                                  height = "900px" 
-                                  width={innerWidth}
-                                  key={slide} 
-                                  >
-                                </LazyLoadImage>
-                          </SlideStyle>
-                        ))}
-                </SliderContent>
-            </SliderCSSBS>
+              <SliderCSSBS>
+                  <SliderContent translate={translate} transition={transition}>
+                      {data.map(slide => (
+                            <SlideStyle key={slide}>
+                                    <LazyLoadImage                                       
+                                      alt={slide[1]}
+                                      src={slide[0]} 
+                                      height = "900px" 
+                                      width={innerWidth}
+                                      key={slide} 
+                                    >
+                                  </LazyLoadImage>
+                            </SlideStyle>
+                          ))}
+                  </SliderContent>
+              </SliderCSSBS>
             <HoverButtonsBS>
                 <ArrowRightStyle>
                         <Arrows direction="right" handleClick={nextSlide}/>
                 </ArrowRightStyle>
-
                 <ArrowLeftStyle>
                         <Arrows direction="left" handleClick={prevSlide} />
                 </ArrowLeftStyle>

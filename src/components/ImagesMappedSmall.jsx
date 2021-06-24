@@ -11,10 +11,10 @@ const ImageSliderSmall = () => {
     const innerWidth = window.innerWidth;
 
     const dataSmall = [
-        "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/SmallSizedWEBP/HorizontalPineStained_642.webp", 
-        "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/SmallSizedWEBP/Commercial_642.webp", 
-        "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/SmallSizedWEBP/CustomPickett_642.webp", 
-        "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/SmallSizedWEBP/PremiumPicketWDecor_642.webp"
+      ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/FullSizedWebp/HorizontalCedarStainedCarousel.webp","Cedar Pickets, Horizontal fencing, 182 linear feet"],
+      ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/FullSizedWebp/CommercialFence.webp","Commercial Fencing, Chain Link Fence, 16ft tall, 500 linear feet"],
+      ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/FullSizedWebp/PicketWithDecorationCarousel.webp","Privacy fence, 6ft tall picket fence, decorative gates"],
+      ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/FullSizedWebp/CustomPicketCarousel.webp","Cedar Picket, picket fencing, 4ft tall custom picket fence"]
       ];
 
     const [state, setState] = useState({
@@ -62,10 +62,10 @@ const ImageSliderSmall = () => {
             <SliderCSSBS>
                 <SliderContent translate={translate} transition={transition}>
                     {dataSmall.map(slide => (
-                          <SlideStyle key={slide}>
+                          <SlideStyle key={slide[0]}>
                                   <LazyLoadImage 
-                                  alt="" 
-                                  src={slide} 
+                                  alt={slide[1]} 
+                                  src={slide[0]} 
                                   height = "400px" 
                                   width={innerWidth}
                                   key={slide} 

@@ -7,7 +7,7 @@ const IrrigationImage = "https://greenviewsolutionsimages.s3-us-west-1.amazonaws
 const Irrigation = (props) => {
     return(
         <div className="divBox">  
-            <Card.Img variant="custom" src={IrrigationImage} className='cardImage' />
+            <Card.Img variant="custom" src={IrrigationImage} className='cardImage' alt='Hunter MP Rotor with 6 inch pop up-head for Irrigation' />
             <Card.Body className='cardBody'>
                 <Card.Title>Irrigation</Card.Title>
                 <Card.Text>

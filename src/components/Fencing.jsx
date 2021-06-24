@@ -1,6 +1,7 @@
 import { useEffect, React } from 'react';
 import FenceTypes from './FenceTypes.jsx';
 import './styles/InfoPanel.css';
+import { MetaTags } from 'react-meta-tags';
 
 const Fencing = (props) => {
     
@@ -10,6 +11,11 @@ const Fencing = (props) => {
 
     return(
         <div>
+            <MetaTags>
+                <meta name="description" content="Some sdlakfl;ksdjaf lk sdf." />
+                <meta property="og:title" content="MyApp" />
+                <meta description="Wrought Iron Fencing, Ornamental Iron Fencing Project"/>
+            </MetaTags>
             <div>
                 <div className='fencingInfoPanel'>
                     <div className='fencingInfoPanelTitle'>

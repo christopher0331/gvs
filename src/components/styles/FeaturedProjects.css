@@ -77,7 +77,7 @@
 .smallImages {
     display: flex;
     flex-wrap: wrap;
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0);
     flex-direction: column;
     justify-content: center;
 }

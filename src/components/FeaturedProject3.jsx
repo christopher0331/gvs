@@ -21,13 +21,13 @@ class Feature3 extends Component {
 
     componentDidMount(){
         this.setState({
-            primaryImage: "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/3.12.21-Custom-Folder/FullSize/webp.webp",
+            primaryImage: ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/3.12.21-Custom-Folder/FullSize/webp.webp",''],
             allImages: [
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/3.12.21-Custom-Folder/Mobile/webp+(2).webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/3.12.21-Custom-Folder/Mobile/webp+(3).webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/3.12.21-Custom-Folder/Mobile/webp+(4).webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/3.12.21-Custom-Folder/Mobile/webp+(5).webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/3.12.21-Custom-Folder/Mobile/webp.webp",
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/3.12.21-Custom-Folder/Mobile/webp+(2).webp",''],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/3.12.21-Custom-Folder/Mobile/webp+(3).webp",''],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/3.12.21-Custom-Folder/Mobile/webp+(4).webp",''],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/3.12.21-Custom-Folder/Mobile/webp+(5).webp",''],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/3.12.21-Custom-Folder/Mobile/webp.webp",'']
             ]
         })
     }
@@ -76,14 +76,14 @@ class Feature3 extends Component {
                     <div className="imageSection">
                             <h3 className="featuredTitle">Feature 3</h3>
                         <div className="primaryImageBox">
-                            <img className="primaryImage" src={this.state.primaryImage}/>
+                            <img className="primaryImage" src={this.state.primaryImage[0]} alt={this.state.primaryImage[1]} />
                             <FontAwesomeIcon onClick={() => this.changeImagesLeftArrow()} id='projectLeftArrow' icon={faChevronCircleLeft} color='black'/>
                             <FontAwesomeIcon onClick={() => this.changeImagesRightArrow()} id='projectRightArrow' icon={faChevronCircleRight} color='black'/>
                         </div>
                         <div>
                             <div className="secondaryCarousel">
                                 {this.state.allImages.map(image => (
-                                    <img onClick={() => this.changePrimary(image)} className="secondaryImages" src={image}/>
+                                    <img onClick={() => this.changePrimary(image)} className="secondaryImages" src={image[0]} alt={image[1]}/>
                                 ))}
                             </div>
                         </div>

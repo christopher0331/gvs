@@ -50,7 +50,7 @@ const Projects = () => {
                 <div>  
                     <Card.Img variant="custom" src={ironFence} className='projectImage' />
                     <Card.Body className='projectBody'>
-                        <Card.Title>Decorative Iron Fence</Card.Title>
+                        <Card.Title>Wrought Iron Fence</Card.Title>
                         <Button variant="custom" className="successButton" onClick={handleShow}>
                             View Project
                         </Button>
@@ -65,7 +65,7 @@ const Projects = () => {
                 <div>  
                     <Card.Img variant="custom" src={splitRail2} className='projectImage' />
                     <Card.Body className='projectBody'>
-                        <Card.Title>Split Rail Fence</Card.Title>
+                        <Card.Title>Ranch Rail Fence</Card.Title>
                         <Button variant="custom" className="successButton" onClick={handleShow2}>
                             View Project
                         </Button>
@@ -97,7 +97,7 @@ const Projects = () => {
                 <div>  
                     <Card.Img variant="custom" src={schoolProject} className='projectImage' />
                     <Card.Body className='projectBody'>
-                        <Card.Title>16ft Sports Field Fence</Card.Title>
+                        <Card.Title>Commercial Chainlink Fence</Card.Title>
                         <Button variant="custom" className="successButton" onClick={handleShow4}>
                             View Project
                         </Button>
@@ -112,7 +112,7 @@ const Projects = () => {
                 <div>  
                     <Card.Img variant="custom" src={Residential} className='projectImage' />
                     <Card.Body className='projectBody'>
-                        <Card.Title>Horizontal Cedar</Card.Title>
+                        <Card.Title>6ft Cedar Privacy Fence</Card.Title>
                         <Button variant="custom" className="successButton" onClick={handleShow5}>
                             View Project
                         </Button>
@@ -127,7 +127,7 @@ const Projects = () => {
                 <div>  
                     <Card.Img variant="custom" src={Residential2} className='projectImage' />
                     <Card.Body className='projectBody'>
-                        <Card.Title>Horizontal Pine</Card.Title>
+                        <Card.Title>6ft Cedar Privacy Fence</Card.Title>
                         <Button variant="custom" className="successButton" onClick={handleShow6}>
                             View Project
                         </Button>

@@ -50,20 +50,20 @@
     position: relative;
     top: 0;
     left: 4%;
-    width: 1680px;
-    height: 240px;
+    width: 350px;
+    height: 100%;
     background: #000;
     border: 3px solid black;
 }
 
 .project1 .image {
-    width: 100%;
+    width: 350px;
     height: 100%;
     overflow: hidden;
 }
 
 .project1 .image img {
-    width: 100%;
+    width: 350px;
     height: 100%;
     transition: .5s;
 }
@@ -75,15 +75,15 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 70%;
+    width: 200px;
     height: 100%;
     background: forestgreen;
     transition: .5s;
     transform-origin: left;
-    transform: perspective(2000px) rotateY(-90deg);
+    transform: perspective(350px) rotateY(-90deg);
 }
 .project1:hover .details {
-    transform: perspective(2000px) rotateY(0deg);
+    transform: perspective(350px) rotateY(0deg);
 }
 .project1 .details .center {
     padding: 5px;
@@ -138,14 +138,15 @@
 .project2 {
     position: relative;
     top: 0;
-    left: -4%;
-    width: 1680px;
-    height: 240px;
+    left: 4%;
+    width: 350px;
+    margin-right: 5%;
+    height: 100%;
     background: #000;
     border: 3px solid black;
 }
 .project2 .image {
-    width: 100%;
+    width: 350px;
     height: 100%;
     overflow: hidden;
 }

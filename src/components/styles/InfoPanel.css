@@ -97,3 +97,14 @@
 .card1 .details .center ul li a:hover {
     background: #ff3636;
 }
+
+
+@media screen and (max-width: 600px){
+    .fencingInfoPanel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 40px;
+        text-align: center;
+      }
+}

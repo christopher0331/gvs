@@ -21,26 +21,26 @@ class Feature5 extends Component {
 
     componentDidMount(){
         this.setState({
-            primaryImage: "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_6.webp",
+            primaryImage: ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_6.webp", '6ft Cedar Picket Fence, Residential Fencing'],
             allImages: [
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_1.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_2.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_3.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_4.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_5.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_6.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_7.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_8.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_9.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_10.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_11.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_12.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_13.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_14.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_15.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_16.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_17.webp"
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett.webp",'6ft Cedar Picket Fence, Residential Fencing'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_1.webp",'6ft Cedar Picket Fence, Residential Fencing'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_2.webp",'6ft Cedar Picket Fence, Residential Fencing'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_3.webp",'6ft Cedar Picket Fence, Residential Fencing'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_4.webp",'6ft Cedar Picket Fence, Residential Fencing'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_5.webp",'6ft Cedar Picket Fence, Residential Fencing'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_6.webp",'6ft Cedar Picket Fence, Residential Fencing'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_7.webp",'6ft Cedar Picket Fence, Residential Fencing'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_8.webp",'6ft Cedar Picket Fence, Residential Fencing'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_9.webp",'6ft Cedar Picket Fence, Residential Fencing'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_10.webp",'6ft Cedar Picket Fence, Residential Fencing'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_11.webp",'6ft Cedar Picket Fence, Residential Fencing'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_12.webp",'6ft Cedar Picket Fence, Residential Fencing'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_13.webp",'6ft Cedar Picket Fence, Residential Fencing'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_14.webp",'6ft Cedar Picket Fence, Residential Fencing'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_15.webp",'6ft Cedar Picket Fence, Residential Fencing'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_16.webp",'6ft Cedar Picket Fence, Residential Fencing'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/FullSize/4.14.21-6ftPickett_17.webp",'6ft Cedar Picket Fence, Residential Fencing']
             ]
         })
     }
@@ -87,16 +87,16 @@ class Feature5 extends Component {
                     <meta property="og:title" content="MyApp" />
                 </MetaTags>
                     <div className="imageSection">
-                            <h3 className="featuredTitle">Feature 5</h3>
+                            <h3 className="featuredTitle">6ft Cedar Picket Fence</h3>
                         <div className="primaryImageBox">
-                            <img className="primaryImage" src={this.state.primaryImage}/>
+                            <img className="primaryImage" src={this.state.primaryImage[0]} alt={this.state.primaryImage[1] }/>
                             <FontAwesomeIcon onClick={() => this.changeImagesLeftArrow()} id='projectLeftArrow' icon={faChevronCircleLeft} color='black'/>
                             <FontAwesomeIcon onClick={() => this.changeImagesRightArrow()} id='projectRightArrow' icon={faChevronCircleRight} color='black'/>
                         </div>
                         <div>
                             <div className="secondaryCarousel">
                                 {this.state.allImages.map(image => (
-                                    <img onClick={() => this.changePrimary(image)} className="secondaryImages" src={image}/>
+                                    <img onClick={() => this.changePrimary(image)} className="secondaryImages" src={image[0]} alt={image[1]}/>
                                 ))}
                             </div>
                         </div>

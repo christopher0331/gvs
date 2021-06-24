@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import './styles/HomePage.css';
 import ImagesMapped from './ImagesMapped.jsx';
 import ImagesMappedSmall from './ImagesMappedSmall.jsx';
+import { MetaTags } from 'react-meta-tags';
 
 const Irrigation = lazy(() => import('./IrrigationProject.jsx'));
 const CommercialFences = lazy(() => import('./CommercialFences.jsx'));
@@ -23,6 +24,11 @@ const HomePage = (props) => {
       if(innerWidth < 684){
         return  (
             <div>
+                <MetaTags>
+                    <meta name="description" content="Some description1." />
+                    <meta property="og:title" content="MyApp" />
+                    <meta description="Wrought Iron Fencing, Ornamental Iron Fencing Project"/>
+                </MetaTags>
                 <div className="ImagesMappesBox">
                    <ImagesMappedSmall />
                 </div>

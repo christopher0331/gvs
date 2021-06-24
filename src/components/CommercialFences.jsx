@@ -10,7 +10,7 @@ const CommercialFenceImage = "https://greenviewsolutionsimages.s3-us-west-1.amaz
 const CommercialFences = (props) => {
     return(
         <div className="divBox">  
-            <Card.Img variant="custom" src={CommercialFenceImage} className='cardImage' />
+            <Card.Img variant="custom" src={CommercialFenceImage} className='cardImage' alt="Commercial Chainlink Fencing, 8ft Tall to 16ft tall, and 2600 linear feet"/>
             <Card.Body className='cardBody'>
                 <Card.Title>Commercial Fences</Card.Title>
                 <Card.Text>

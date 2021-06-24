@@ -8,7 +8,7 @@ const securityFence = "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.c
 const BackflowTests = (props) => {
     return(
         <div className="divBox">  
-            <Card.Img variant="custom" src={securityFence} className='cardImage' />
+            <Card.Img variant="custom" src={securityFence} className='cardImage' alt="Backflow testing equipment"/>
             <Card.Body className='cardBody'>
                 <Card.Title>Backflow Tests</Card.Title>
                 <Card.Text>

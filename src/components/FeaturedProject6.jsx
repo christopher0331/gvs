@@ -21,25 +21,25 @@ class Feature5 extends Component {
 
     componentDidMount(){
         this.setState({
-            primaryImage: "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_1.webp",
+            primaryImage: ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_1.webp", '6ft Cedar Privacy Fence'],
             allImages: [
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_2.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_3.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_4.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_5.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_6.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_7.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_8.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_9.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_10.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_11.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_12.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_13.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_14.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_15.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_16.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_17.webp",
-                "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_18.webp",
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_2.webp", '6ft Cedar Privacy Fence'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_3.webp", '6ft Cedar Privacy Fence'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_4.webp", '6ft Cedar Privacy Fence'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_5.webp", '6ft Cedar Privacy Fence'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_6.webp", '6ft Cedar Privacy Fence'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_7.webp", '6ft Cedar Privacy Fence'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_8.webp", '6ft Cedar Privacy Fence'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_9.webp", '6ft Cedar Privacy Fence'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_10.webp", '6ft Cedar Privacy Fence'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_11.webp", '6ft Cedar Privacy Fence'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_12.webp", '6ft Cedar Privacy Fence'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_13.webp", '6ft Cedar Privacy Fence'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_14.webp", '6ft Cedar Privacy Fence'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_15.webp", '6ft Cedar Privacy Fence'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_16.webp", '6ft Cedar Privacy Fence'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_17.webp", '6ft Cedar Privacy Fence'],
+                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_18.webp", '6ft Cedar Privacy Fence'],
             ]
         })
     }
@@ -86,16 +86,16 @@ class Feature5 extends Component {
                     <meta property="og:title" content="MyApp" />
                 </MetaTags>
                     <div className="imageSection">
-                            <h3 className="featuredTitle">Feature 6</h3>
+                            <h3 className="featuredTitle">6ft Cedar Privacy Fence</h3>
                         <div className="primaryImageBox">
-                            <img className="primaryImage" src={this.state.primaryImage}/>
+                            <img className="primaryImage" src={this.state.primaryImage[0]} alt={this.state.primaryImage[1]}/>
                             <FontAwesomeIcon onClick={() => this.changeImagesLeftArrow()} id='projectLeftArrow' icon={faChevronCircleLeft} color='black'/>
                             <FontAwesomeIcon onClick={() => this.changeImagesRightArrow()} id='projectRightArrow' icon={faChevronCircleRight} color='black'/>
                         </div>
                         <div>
                             <div className="secondaryCarousel">
                                 {this.state.allImages.map(image => (
-                                    <img onClick={() => this.changePrimary(image)} className="secondaryImages" src={image}/>
+                                    <img onClick={() => this.changePrimary(image)} className="secondaryImages" src={image[0]} alt={image[1]}/>
                                 ))}
                             </div>
                         </div>
