@@ -36,10 +36,10 @@ class Menu extends Component {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" class="navbarClass"/>
                     <Navbar.Collapse id="basic-navbar-nav" >
                         <Nav className="mr-auto">
-                        <Link id="nav-link" to="/">Home</Link>
-                        <Link id="nav-link" to="/about-us">About Us</Link>
-                        <Link id="nav-link" to="/contact-us">Contact Us</Link>
-                        <Link id="nav-link" to="/tools">Tools</Link>
+                            <Link id="nav-link" to="/">Home</Link>
+                            <Link id="nav-link" to="/about-us">About Us</Link>
+                            <Link id="nav-link" to="/contact-us">Contact Us</Link>
+                            <Link id="nav-link" to="/tools">Tools</Link>
                         <NavDropdown title="Services" id="basic-nav-dropdown">
                             <NavDropdown.Item className='ddItem' href="/fencing">
                                 Fencing

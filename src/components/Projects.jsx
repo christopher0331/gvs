@@ -48,7 +48,7 @@ const Projects = () => {
         </div>
             <div className="projects">
                 <div>  
-                    <Card.Img variant="custom" src={ironFence} className='projectImage' />
+                    <Card.Img variant="custom" src={ironFence} className='projectImage' alt=''/>
                     <Card.Body className='projectBody'>
                         <Card.Title>Wrought Iron Fence</Card.Title>
                         <Button variant="custom" className="successButton" onClick={handleShow}>
@@ -63,7 +63,7 @@ const Projects = () => {
                     </Card.Body>
                 </div>
                 <div>  
-                    <Card.Img variant="custom" src={splitRail2} className='projectImage' />
+                    <Card.Img variant="custom" src={splitRail2} className='projectImage' alt=''/>
                     <Card.Body className='projectBody'>
                         <Card.Title>Ranch Rail Fence</Card.Title>
                         <Button variant="custom" className="successButton" onClick={handleShow2}>
@@ -78,7 +78,7 @@ const Projects = () => {
                     </Card.Body>
                 </div>
                 <div>  
-                    <Card.Img variant="custom" src={meshTop} className='projectImage' />
+                    <Card.Img variant="custom" src={meshTop} className='projectImage' alt=''/>
                     <Card.Body className='projectBody'>
                         <Card.Title>Custom Residential</Card.Title>
                         <Button variant="custom" className="successButton" onClick={handleShow3}>
@@ -95,7 +95,7 @@ const Projects = () => {
             </div>
             <div className="projects">
                 <div>  
-                    <Card.Img variant="custom" src={schoolProject} className='projectImage' />
+                    <Card.Img variant="custom" src={schoolProject} className='projectImage' alt=''/>
                     <Card.Body className='projectBody'>
                         <Card.Title>Commercial Chainlink Fence</Card.Title>
                         <Button variant="custom" className="successButton" onClick={handleShow4}>
@@ -110,7 +110,7 @@ const Projects = () => {
                     </Card.Body>
                 </div>
                 <div>  
-                    <Card.Img variant="custom" src={Residential} className='projectImage' />
+                    <Card.Img variant="custom" src={Residential} className='projectImage' alt=''/>
                     <Card.Body className='projectBody'>
                         <Card.Title>6ft Cedar Privacy Fence</Card.Title>
                         <Button variant="custom" className="successButton" onClick={handleShow5}>
@@ -125,7 +125,7 @@ const Projects = () => {
                     </Card.Body>
                 </div>
                 <div>  
-                    <Card.Img variant="custom" src={Residential2} className='projectImage' />
+                    <Card.Img variant="custom" src={Residential2} className='projectImage' alt='This is an alt text for residential privacy fencing'/>
                     <Card.Body className='projectBody'>
                         <Card.Title>6ft Cedar Privacy Fence</Card.Title>
                         <Button variant="custom" className="successButton" onClick={handleShow6}>

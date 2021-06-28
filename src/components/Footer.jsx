@@ -10,7 +10,7 @@ const Footer = ()  => {
         return(
             <div className="footerOutterDivs">
                 <div className='footerDiv'>
-                    <img src={Logo} className="footerLogo"/>
+                    <img src={Logo} className="footerLogo" alt="GreenView Solutions Logo" />
                     <div className='Info'>
                         <div className='footerHeads'>
                             Contact Info

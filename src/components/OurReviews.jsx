@@ -13,7 +13,7 @@ const Reviews = () => {
             <div className="reviewsCarousel">
             <Carousel>
                 <Carousel.Item interval={1000}>
-                    <im
+                    <img
                     src={securityFence}
                     alt="First slide"
                     className="carouselImage"

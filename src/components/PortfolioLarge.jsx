@@ -161,8 +161,7 @@ const PortfolioLarge = () =>  {
                         </div>
                     </div>            
                 </div>
-    
-            )
+        )
     }
 
 export default PortfolioLarge;

@@ -3,6 +3,11 @@ a {
     text-decoration: none;
 } 
 
+.navbarClass {
+    background-color: blue;
+}
+
+
 #Menu {
     display: flex;
     justify-content: center;

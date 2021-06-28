@@ -19,7 +19,7 @@ const Irrigation = (props) => {
                         <div className="left">  
                             <div class="project1">
                                 <div className="image">
-                                <img src={Residential}/>
+                                <img src={Residential} alt=''/>
                                 </div>
                                 <div className="details">
                                 <div className="center">
