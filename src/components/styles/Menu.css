@@ -175,3 +175,24 @@ a {
         width: 40.6vw;
     }
 }
+
+@media screen and (max-width: 992px){
+    #Menu {
+        width: 180px;
+        z-index: 5;
+        background-color: #194b1e;
+        justify-content: flex-start;
+        border-radius: 10px;
+
+
+    }
+    .collapse {
+        width: 180px;
+        z-index: 5;
+        border-radius: 10px;
+        background-color: #194b1e;
+    }                                                              
+    #navbar-color {
+        background-color: #194b1e;
+    }
+}
