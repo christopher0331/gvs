@@ -16,8 +16,8 @@ const ArrowLeftStyle = styled.div`
     z-index: 0;
     transition: transform ease-in 0.1s;
     &:hover {
-    z-index: 6;
-    transform: scale(1.1);
+        z-index: 6;
+        transform: scale(1.1);
     }
     img {
     transform: translateX(2px);

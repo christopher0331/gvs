@@ -88,3 +88,41 @@
     }
 }
 
+.buttonDivLarge {
+    font-size: 30px;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: 2px solid green;
+    color: green;
+ }
+
+ .buttonDivLarge:hover {
+    font-size: 30px;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: 2px solid green;
+    color: white;
+    transform: scale(1.1);
+    transition: 1.1s;
+    background-color: darkgreen;
+
+ }
+
+ .buttonDivSmall {
+    font-size: 15px;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: 2px solid green;
+    color: green;
+ }
+
+ .buttonDivSmall:hover {
+    font-size: 15px;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: 2px solid green;
+    color: white;
+    transform: scale(1.1);
+    transition: 1.1s;
+    background-color: darkgreen;
+ }

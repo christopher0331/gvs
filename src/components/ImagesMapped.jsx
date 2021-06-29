@@ -5,7 +5,7 @@ import ArrowLeftStyle from './ArrowLeftCSS';
 import ArrowRightStyle from './ArrowRightCSS';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-
+import { Link } from 'react-router-dom';
 const ImageSlider = () => {
     
     const innerWidth = window.innerWidth;
@@ -74,8 +74,18 @@ const ImageSlider = () => {
                             </SlideStyle>
                           ))}
                   </SliderContent>
+                 
               </SliderCSSBS>
             <HoverButtonsBS>
+                  <CallToAction>
+                      Contact us to get started towards making your home dreams come true!! 
+                      <Button>
+                        <Link to='contact-us' style={{color: "white"}}>
+                            Click Here    
+                        </Link>
+                      </Button>
+                  </CallToAction>
+              
                 <ArrowRightStyle>
                         <Arrows direction="right" handleClick={nextSlide}/>
                 </ArrowRightStyle>
@@ -88,15 +98,49 @@ const ImageSlider = () => {
 
 }
 
+const Button = styled.div`
+    position: absolute;
+    background-color: rgba(255, 255, 255, .0);
+    border: 1px solid white;
+    color: white;
+    margin-top: 13%;
+    z-index: 10;
+    padding: 3px 3px;
+    border-radius: 5px;
+    transition: .5s;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.1);
+      color: darkgreen;
+      cursor: pointer;
+    }
+`; 
 
+const CallToAction = styled.div`
+    display: flex;
+    position: absolute; 
+    text-align: center;
+    height: 200px;
+    width: 900px;
+    font-size: 35px;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 5px;
+    justify-content: center;
+    margin-top: -20%;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 10;
+`;
 
 const HoverButtonsBS = styled.div`
+    display: flex;
     z-index: 3;
+    justify-content: center;
     &:hover{
-        z-index: 6
+        z-index: 8
     }
     &:active{
-        z-index: 6
+        z-index: 8
     }
 `;
 

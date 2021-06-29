@@ -26,7 +26,6 @@ const HomePage = (props) => {
             <div>
                 <MetaTags>
                     <meta name="description" content="Some description1." />
-                    <meta property="og:title" content="MyApp" />
                     <meta description="Wrought Iron Fencing, Ornamental Iron Fencing Project"/>
                 </MetaTags>
                 <div className="ImagesMappesBox">
@@ -35,7 +34,7 @@ const HomePage = (props) => {
                 <div className="FirstHomepageBox">
                     <h5 id="BoxText">Quality, Communication and Commitment Every Fence</h5>
                     <Link to="contact-us">
-                        <Button style={{marginLeft: '15px'}} variant="outline-success">Contact Us</Button>{' '}
+                        <button className="buttonDivSmall">Contact Us</button>
                     </Link>
                 </div>
                 <div className="outter">What We Do</div>
@@ -79,7 +78,7 @@ const HomePage = (props) => {
                 <div className="FirstHomepageBox">
                     <h5 id="BoxText">Quality, Communication and Commitment Every Fence</h5>
                     <Link to="contact-us">
-                        <Button style={{marginLeft: '15px'}} variant="outline-success">Contact Us</Button>{' '}
+                        <button className="buttonDivLarge">Contact Us</button>
                     </Link>
                 </div>
                 <div className="outter">What We Do</div>

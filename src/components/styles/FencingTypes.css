@@ -57,13 +57,13 @@
 }
 
 .project1 .image {
-    width: 350px;
+    width: 340px;
     height: 100%;
     overflow: hidden;
 }
 
 .project1 .image img {
-    width: 350px;
+    width: 340px;
     height: 100%;
     transition: .5s;
 }
@@ -146,12 +146,12 @@
     border: 3px solid black;
 }
 .project2 .image {
-    width: 350px;
+    width: 340px;
     height: 100%;
     overflow: hidden;
 }
 .project2 .image img {
-    width: 100%;
+    width: 340px;
     height: 100%;
     transition: .5s;
 }
