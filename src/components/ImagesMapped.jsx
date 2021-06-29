@@ -11,10 +11,10 @@ const ImageSlider = () => {
     const innerWidth = window.innerWidth;
 
     const data = [
-      ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/FullSizedWebp/HorizontalCedarStainedCarousel.webp","Cedar Pickets, Horizontal fencing, 182 linear feet"],
-      ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/FullSizedWebp/CommercialFence.webp","Commercial Fencing, Chain Link Fence, 16ft tall, 500 linear feet"],
-      ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/FullSizedWebp/PicketWithDecorationCarousel.webp","Privacy fence, 6ft tall picket fence, decorative gates"],
-      ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/FullSizedWebp/CustomPicketCarousel.webp","Cedar Picket, picket fencing, 4ft tall custom picket fence"]
+      ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/FullSizedWebp/HorizontalCedarStainedCarousel.webp","Cedar Pickets, Horizontal fencing, 182 linear feet", "Click below to learn more anout how we can make youpr home dreams come true"],
+      ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/FullSizedWebp/CommercialFence.webp","Commercial Fencing, Chain Link Fence, 16ft tall, 500 linear feet", "We youpr home dreams come true"],
+      ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/FullSizedWebp/PicketWithDecorationCarousel.webp","Privacy fence, 6ft tall picket fence, decorative gates", "About how we can make youpr home dreams come true"],
+      ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/FullSizedWebp/CustomPicketCarousel.webp","Cedar Picket, picket fencing, 4ft tall custom picket fence", "Click below to learn more anout how we can make "]
 ];
 
     const [state, setState] = useState({
@@ -70,22 +70,24 @@ const ImageSlider = () => {
                                       width={innerWidth}
                                       key={slide} 
                                     >
+
+                                    
                                   </LazyLoadImage>
+                                  <CallToAction>
+                                        <p>{slide[2]}</p>
+                                        <Button>
+                                          <Link to='contact-us' style={{color: "white"}}>
+                                              Click Here    
+                                          </Link>
+                                        </Button>
+                                    </CallToAction>
                             </SlideStyle>
                           ))}
+
                   </SliderContent>
                  
               </SliderCSSBS>
             <HoverButtonsBS>
-                  <CallToAction>
-                      Contact us to get started towards making your home dreams come true!! 
-                      <Button>
-                        <Link to='contact-us' style={{color: "white"}}>
-                            Click Here    
-                        </Link>
-                      </Button>
-                  </CallToAction>
-              
                 <ArrowRightStyle>
                         <Arrows direction="right" handleClick={nextSlide}/>
                 </ArrowRightStyle>
@@ -103,7 +105,7 @@ const Button = styled.div`
     background-color: rgba(255, 255, 255, .0);
     border: 1px solid white;
     color: white;
-    margin-top: 13%;
+    margin-top: 10vw;
     z-index: 10;
     padding: 3px 3px;
     border-radius: 5px;
@@ -118,16 +120,18 @@ const Button = styled.div`
 
 const CallToAction = styled.div`
     display: flex;
-    position: absolute; 
+    position: relative; 
     text-align: center;
-    height: 200px;
-    width: 900px;
-    font-size: 35px;
+    height: 18vw;
+    width: 70vw;
+    font-size: 3vw;
     border-radius: 10px;
     color: white;
     padding: 5px 5px;
     justify-content: center;
-    margin-top: -20%;
+    margin-left: 15vw;
+    margin-top: -500px;
+    align-content: center;
     background-color: rgba(0, 0, 0, .4);
     z-index: 10;
 `;
@@ -146,6 +150,8 @@ const HoverButtonsBS = styled.div`
 
 const SliderCSSBS = styled.div`
     position: relative;
+    display: flex;
+    justify-items: center;
     top: 0%;
     margin: 0 auto;
     overflow: hidden;
