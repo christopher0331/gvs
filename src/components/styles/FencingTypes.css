@@ -243,10 +243,22 @@
         justify-content: center;
         align-self: center;
         top: 0;
-        width: 60%;
+        width: 250px;
         height: 240px;
         background: #000;
         border: 3px solid black;
+    }
+    
+    .project1 .image {
+        width: 240px;
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    .project1 .image img {
+        width: 240px;
+        height: 100%;
+        transition: .5s;
     }
     
     .project2 {
@@ -254,11 +266,25 @@
         justify-content: center;
         align-self: center;
         top: 0;
-        width: 60%;
+        width: 250px;
         height: 240px;
         background: #000;
         border: 3px solid black;
     }
+
+        
+    .project2 .image {
+        width: 240px;
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    .project2 .image img {
+        width: 240px;
+        height: 100%;
+        transition: .5s;
+    }
+
     .project1Text {
         font-size: 18px;
     }
