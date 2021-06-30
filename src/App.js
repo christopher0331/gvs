@@ -16,6 +16,8 @@ const Fencing = lazy(() => import('./components/Fencing.jsx'));
 const Tools = lazy(() => import('./components/Tools.jsx'));
 const WoodFences = lazy(() => import('./components/WoodFences.jsx'));
 const ChainLinkFences = lazy(() => import('./components/ChainLinkFences.jsx'));
+const WroughtIronFences = lazy(() => import('./components/WroughtIronFences.jsx'));
+const CustomFences = lazy(() => import('./components/CustomFences.jsx'));
 
 function App() {
 
@@ -34,6 +36,9 @@ function App() {
                     <Route path="/tools" component={Tools} />
                     <Route path="/wood-fences" component={WoodFences} />
                     <Route path="/chainlink-fences" component={ChainLinkFences} />
+                    <Route path="/wrought-iron-fences" component={WroughtIronFences} />
+                    <Route path="/custom-fences" component={CustomFences} />
+
                 </Switch>
             <Footer />
         </Suspense>

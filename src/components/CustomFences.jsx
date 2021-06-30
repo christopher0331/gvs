@@ -3,7 +3,7 @@ import { React, lazy } from 'react';
 // import wireFence from './assets/wireFence.JPG'
 import './styles/FencingTypes.css';
 
-const ChainLinkFences = () => {
+const CustomFences = () => {
 
     const HorizontalPrivacy = "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/SmallSizedWEBP/ResidentialHP.webp"
     const wireFence = "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/SmallSizedWEBP/Security_642.webp";
@@ -182,4 +182,4 @@ const ChainLinkFences = () => {
     )
 }
 
-export default ChainLinkFences;
+export default CustomFences;
