@@ -6,6 +6,7 @@ const BackFlow = (props) => {
     return(
         <div>
             <Header changePage={props.changePage}/>
+            Backflow
             <Footer />
         </div>
  

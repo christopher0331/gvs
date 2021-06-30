@@ -18,6 +18,8 @@ const WoodFences = lazy(() => import('./components/WoodFences.jsx'));
 const ChainLinkFences = lazy(() => import('./components/ChainLinkFences.jsx'));
 const WroughtIronFences = lazy(() => import('./components/WroughtIronFences.jsx'));
 const CustomFences = lazy(() => import('./components/CustomFences.jsx'));
+const Backflow = lazy(() => import('./components/BackFlow.jsx'));
+const CommercialFences = lazy(() => import('./components/CommercialFences.jsx'));
 
 function App() {
 
@@ -38,7 +40,8 @@ function App() {
                     <Route path="/chainlink-fences" component={ChainLinkFences} />
                     <Route path="/wrought-iron-fences" component={WroughtIronFences} />
                     <Route path="/custom-fences" component={CustomFences} />
-
+                    <Route path="/commercial-fences" component={CommercialFences} />
+                    <Route path="/backflow" component={Backflow} />
                 </Switch>
             <Footer />
         </Suspense>

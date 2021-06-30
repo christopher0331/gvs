@@ -47,6 +47,9 @@ class Menu extends Component {
                                 <NavDropdown.Item className='ddItem' href="/wrought-iron-fences">
                                     Wrought Iron Fences
                                 </NavDropdown.Item>
+                                <NavDropdown.Item className='ddItem' href="/commercial-fences">
+                                    Commercial Fences
+                                </NavDropdown.Item>
                                 <NavDropdown.Item className='ddItem' href="/custom-fences">
                                     Custom and Special Fences
                                 </NavDropdown.Item>

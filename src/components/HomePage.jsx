@@ -110,10 +110,10 @@ const HomePage = (props) => {
                 <div>
                     <Project changePage={props.changePage}/>
                 </div>
-                <div>
+                {/* <div>
                     We Serve the Following Areas: 
-                    
-                </div>
+
+                </div> */}
             </div>
         
         )

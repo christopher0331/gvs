@@ -16,7 +16,7 @@ const ResidentialFences = (props) => {
                 <Card.Text className="cardText">
                     Privacy, decorative, and security fences to meet any of your residential fencing needs.
                 </Card.Text>
-                <Link to="/fencing" >
+                <Link to="/wood-fences" >
                     <button className='cardButton'>Learn More</button>{' '}
                 </Link>
                 
