@@ -15,7 +15,7 @@ const BackflowTests = (props) => {
                     Commercial or residential, we cover all backflow testing needs. Certified from APPB. 
                 </Card.Text>
                 <Link to="/fencing" >
-                    <button className='cardButton'>Learn More</button>{' '}
+                    <button className='cardButton'>Backflow Tests</button>{' '}
                 </Link>            
             </Card.Body>
         </div>

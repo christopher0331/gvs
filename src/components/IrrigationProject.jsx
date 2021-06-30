@@ -14,7 +14,7 @@ const Irrigation = (props) => {
                     Irrigation system installs, repairs or upgrades, our team can bring quality water control to your property.
                 </Card.Text>
                 <Link to="/irrigation" >
-                    <button className='cardButton'>Learn More</button>{' '}
+                    <button className='cardButton'>Irrigation Services</button>{' '}
                 </Link>            
             </Card.Body>
         </div>

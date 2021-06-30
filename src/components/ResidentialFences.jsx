@@ -17,7 +17,7 @@ const ResidentialFences = (props) => {
                     Privacy, decorative, and security fences to meet any of your residential fencing needs.
                 </Card.Text>
                 <Link to="/wood-fences" >
-                    <button className='cardButton'>Learn More</button>{' '}
+                    <button className='cardButton'>Residential Fences</button>{' '}
                 </Link>
                 
             </Card.Body>

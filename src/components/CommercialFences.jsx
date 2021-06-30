@@ -17,7 +17,7 @@ const CommercialFences = (props) => {
                     Schools, businesses or storage units, we've got you covered. 
                 </Card.Text>
                     <Link to="/commercial-fences" >
-                        <button className='cardButton'>Learn More</button>{' '}
+                        <button className='cardButton'>Commercial Fences</button>{' '}
                     </Link>            
                 </Card.Body>
         </div>

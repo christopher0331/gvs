@@ -77,7 +77,7 @@ const ImageSlider = () => {
                                         <p>{slide[2]}</p>
                                         <Button>
                                           <Link to='contact-us' style={{color: "white"}}>
-                                              Click Here    
+                                              Contact Us   
                                           </Link>
                                         </Button>
                                     </CallToAction>
