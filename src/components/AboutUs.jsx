@@ -9,7 +9,7 @@ const AboutUs = (props) => {
       }, [])
 
     return(
-        <div className="aboutUsDiv">
+        <div>
             <Overview />
             <OurProcess />
         </div>
@@ -19,13 +19,3 @@ const AboutUs = (props) => {
 
 export default AboutUs;
 
-// <div className="card4">
-// <img src={ResidentialFences} alt="Avatar" />
-//     <div className="container4">
-//         <h4><b>Standley Lake </b><br />
-//         </h4>4-30 <br />Wrap-Around Deck And ADA Walkway
-//         <a href="https://greenviewsolutions.net/standley-lake">
-//             <div className="btn from-left">View Project</div>
-//         </a>
-//     </div>
-// </div>

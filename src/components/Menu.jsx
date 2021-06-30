@@ -37,18 +37,27 @@ class Menu extends Component {
                     <Navbar.Collapse id="basic-navbar-nav" >
                         <Nav className="mr-auto">
                             <Link id="nav-link" to="/">Home</Link>
+                            <NavDropdown title="Services" id="basic-nav-dropdown">
+                                <NavDropdown.Item className='ddItem' href="/wood-fences">
+                                    Wood Fences
+                                </NavDropdown.Item>
+                                <NavDropdown.Item className='ddItem' href="/fencing">
+                                    Chain Link Fences
+                                </NavDropdown.Item>
+                                <NavDropdown.Item className='ddItem' href="/fencing">
+                                    Wrought Iron Fences
+                                </NavDropdown.Item>
+                                <NavDropdown.Item className='ddItem' href="/fencing">
+                                    Custom and Special Fences
+                                </NavDropdown.Item>
+                                <NavDropdown.Item className='ddItem' href="/irrigation">
+                                    Irrigation
+                                </NavDropdown.Item>
+                            </NavDropdown>
                             <Link id="nav-link" to="/about-us">About Us</Link>
                             <Link id="nav-link" to="/contact-us">Contact Us</Link>
                             <Link id="nav-link" to="/tools">Tools</Link>
-                        <NavDropdown title="Services" id="basic-nav-dropdown">
-                            <NavDropdown.Item className='ddItem' href="/fencing">
-                                Fencing
-                            </NavDropdown.Item>
-                            <NavDropdown.Item className='ddItem' href="/irrigation">
-                                Irrigation
-                            </NavDropdown.Item>
-                        </NavDropdown>
-                        <Link id="nav-link" to="/portfolio"> Portfolio </Link>
+                            <Link id="nav-link" to="/portfolio"> Portfolio </Link>
                         </Nav>
                     </Navbar.Collapse>
                     </Navbar>

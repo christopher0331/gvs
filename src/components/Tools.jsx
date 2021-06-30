@@ -1,11 +1,18 @@
 import React from 'react'; 
 import Calculator from './Calculator.jsx';
 import OurProcess from './OurProcess.jsx';
+import './styles/AboutUs.css';
 
 const Tools = (props) => {
 
     return(
         <div className='tools'>
+            <div className="pageTitleDiv">
+                <div className="pageTitle">
+                    Tools
+
+                </div>
+            </div>
             <OurProcess />
             <div className="calculatorSection">
                 <div className="calculatorInfo">

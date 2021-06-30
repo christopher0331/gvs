@@ -108,7 +108,7 @@
 }
 
 .btn2:hover:after {
-    background:linear-gradient(to right, #98c89a 1%,
+    background:linear-gradient(to right, #98c89a4f 1%,
 #0d3512 100%, #ffffff 3%);
 	transition-delay: .5s;
 }

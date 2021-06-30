@@ -3,6 +3,17 @@
     flex-direction: row;
 }
 
+.title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 15px;
+    color: black;
+    height: 100px;
+    font-size: 4.2vw;    
+    background-color: rgba(169, 169, 169, 0.365);
+}
+
 .info {
     display: flex;
     font-size: 16px;
@@ -24,14 +35,6 @@
     background: whitesmoke;
     padding: 20px;
     margin-bottom: 0px;
-}
-
-.title {
-    display: flex;
-    justify-content: center;
-    color: black;
-    padding: 8px 8px;
-    font-size: 58px;
 }
 
 .project1Text {
@@ -223,6 +226,10 @@
     background: #ff3636;
 }
 
+.lowerInformation {
+    margin: 50px 50px;
+}
+
 @media screen and (max-width: 800px){
     .left {
         display: flex;
@@ -291,4 +298,8 @@
     .project2Text {
         font-size: 18px;
     }
+}
+
+.woodFencesParagraph {
+    padding: 50px 150px;
 }

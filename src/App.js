@@ -14,6 +14,8 @@ const Irrigation = lazy(() => import('./components/Irrigation.jsx'));
 const Portfolio = lazy(() => import('./components/Portfolio.jsx'));
 const Fencing = lazy(() => import('./components/Fencing.jsx'));
 const Tools = lazy(() => import('./components/Tools.jsx'));
+const WoodFences = lazy(() => import('./components/WoodFences.jsx'));
+const ChainLinkFences = lazy(() => import('./components/ChainLinkFences.jsx'));
 
 function App() {
 
@@ -30,6 +32,8 @@ function App() {
                     <Route path="/contact-us" component={ContactUs} />
                     <Route path="/portfolio" component={Portfolio} />
                     <Route path="/tools" component={Tools} />
+                    <Route path="/wood-fences" component={WoodFences} />
+                    <Route path="/chainlink-fences" component={ChainLinkFences} />
                 </Switch>
             <Footer />
         </Suspense>
