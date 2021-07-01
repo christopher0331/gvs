@@ -10,7 +10,7 @@ const BackflowTests = (props) => {
         <div className="divBox">  
             <Card.Img variant="custom" src={securityFence} className='cardImage' alt="Backflow testing equipment"/>
             <Card.Body className='cardBody'>
-                <Card.Title>Backflow Tests</Card.Title>
+                <Card.Title><h1 id="CardTitles">Backflow Tests</h1></Card.Title>
                 <Card.Text>
                     Commercial or residential, we cover all backflow testing needs. Certified from APPB. 
                 </Card.Text>

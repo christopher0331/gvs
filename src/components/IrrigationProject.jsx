@@ -9,7 +9,7 @@ const Irrigation = (props) => {
         <div className="divBox">  
             <Card.Img variant="custom" src={IrrigationImage} className='cardImage' alt='Hunter MP Rotor with 6 inch pop up-head for Irrigation' />
             <Card.Body className='cardBody'>
-                <Card.Title>Irrigation</Card.Title>
+                <Card.Title><h1 id="CardTitles">Irrigation</h1></Card.Title>
                 <Card.Text>
                     Irrigation system installs, repairs or upgrades, our team can bring quality water control to your property.
                 </Card.Text>

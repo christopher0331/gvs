@@ -1,5 +1,6 @@
 import { React, lazy } from 'react';
 import './styles/FencingTypes.css';
+import { ReactTitle, MetaTags } from 'react-meta-tags';
 
 const FenceTypes = () => {
 
@@ -14,30 +15,34 @@ const FenceTypes = () => {
 
     return(
         <div>
-            <h1 className='title'>
-                Wood Fences
-            </h1>
-            <div >
-                <p className="woodFencesParagraph">
-                <h3>The Wood Fences We Offer Our Denver, CO Property Owners</h3>
-                When you need cost-effective and beautiful fencing services in Denver, CO 
-                for your property, the team at GreenView Solutions has a plethora of solutions 
-                you can choose from. Here are some of the styles we provide for wood fences:
-                    <ul>
-                        <li>Privacy Fence – Estate wood fences are an attractive and cost-effective fencing option.</li> 
-                        <li>Premium Privacy Fence – This wooden fence option offers galvanized panels great for holding areas, building corrals, and more.</li> 
-                        <li>Horizontal – This modern fence style offers the same security as a traditional option, but the fence boards are installed horizontally instead of vertically.</li>    
-                        <li>Ranch Rail – Modified panel wood fencing offers a way to add a gorgeous framed finish along the top of your fence.</li>    
-                        <li>Split Rail – This informal, open, and natural-looking fencing option offers a rustic look and takes little time to build and install.</li> 
-                        <li>Board Over Board – This informal, open, and natural-looking fencing option offers a rustic look and takes little time to build and install.</li> 
-                        <li>Custom Picket Fence – This informal, open, and natural-looking fencing option offers a rustic look and takes little time to build and install.</li> 
-                    </ul>
-                    No matter which fence type you choose, our team is dedicated to 
-                    “Building Better Fences,” which ensures you’ll receive quality work every time.
-                     Not sure what kind of fence is best for your budget and property? No worries! 
-                     We not only offer free estimates, but we can also weigh in on which wood fences 
-                     best suit your lifestyle.
+            <ReactTitle title="GreenView Solutions"/>
+
+            <h1 className='title'>Wood Fences for Your Denver, CO Property</h1>
+            <div>
+                <div className="woodFencesParagraph">
+                <h2>The Wood Fences We Offer Our Denver, CO Property Owners</h2>
+                <p>
+                    When you need cost-effective and beautiful fencing services in Denver, CO 
+                    for your property, the team at GreenView Solutions has a plethora of solutions 
+                    you can choose from. Here are some of the styles we provide for wood fences:
                 </p>
+                    <ul>
+                        <li><strong>Privacy Fence</strong> – Estate wood fences are an attractive and cost-effective fencing option.</li> 
+                        <li><strong>Premium Privacy Fence</strong> – This wooden fence option offers galvanized panels great for holding areas, building corrals, and more.</li> 
+                        <li><strong>Horizontal</strong> – This modern fence style offers the same security as a traditional option, but the fence boards are installed horizontally instead of vertically.</li>    
+                        <li><strong>Ranch Rail</strong> – Modified panel wood fencing offers a way to add a gorgeous framed finish along the top of your fence.</li>    
+                        <li><strong>Split Rail</strong> – This informal, open, and natural-looking fencing option offers a rustic look and takes little time to build and install.</li> 
+                        <li><strong>Board Over Board</strong> – This informal, open, and natural-looking fencing option offers a rustic look and takes little time to build and install.</li> 
+                        <li><strong>Custom Picket Fence</strong> – This informal, open, and natural-looking fencing option offers a rustic look and takes little time to build and install.</li> 
+                    </ul>
+                    <p>
+                        No matter which fence type you choose, our team is dedicated to 
+                        “Building Better Fences,” which ensures you’ll receive quality work every time.
+                        Not sure what kind of fence is best for your budget and property? No worries! 
+                        We not only offer free estimates, but we can also weigh in on which wood fences 
+                        best suit your lifestyle.
+                    </p>    
+                </div>
             </div>
             <div className='info'>(Hover Over Image for Details)</div>
                 <div className="fences">

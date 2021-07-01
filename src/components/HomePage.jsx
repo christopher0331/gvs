@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './styles/HomePage.css';
 import ImagesMapped from './ImagesMapped.jsx';
 import ImagesMappedSmall from './ImagesMappedSmall.jsx';
-import { MetaTags } from 'react-meta-tags';
+import { MetaTags, ReactTitle } from 'react-meta-tags';
 
 const Irrigation = lazy(() => import('./IrrigationProject.jsx'));
 const CommercialFences = lazy(() => import('./CommercialFences.jsx'));
@@ -25,9 +25,19 @@ const HomePage = (props) => {
         return  (
             <div>
                 <MetaTags>
-                    <meta name="description" content="Some description1." />
-                    <meta description="Wrought Iron Fencing, Ornamental Iron Fencing Project"/>
+                    <meta name="description" 
+                    content="GreenView Solutions is the most trusted name in Denver, CO 
+                                for wood fencing, chain link fencing, wrought iron fencing 
+                                and commercial fencing! Call us at 3030.358.8168 and get 
+                                placed on our calendar today! We've got 5 star reviews 
+                                everywhere you can find us. GreenView Solutions also 
+                                has certified irrigation 
+                                experts that can install irrigation systems, or test your 
+                                backflow devices. We serve the greater Denver 
+                                area, including Longmont CO, Erie CO, Arvada CO, 
+                                Frederick CO, and others." />
                 </MetaTags>
+                <ReactTitle title="GreenView Solutions"/>
                 <div className="ImagesMappesBox">
                    <ImagesMappedSmall />
                 </div>
@@ -72,6 +82,10 @@ const HomePage = (props) => {
       } else {
         return(
             <div>
+                <MetaTags>
+                    <meta name="description" content="GreenView Solutions is the most trusted name in Denver, CO for wood fencing, chain link fencing, wrought iron fencing and commercial fencing! Call us at 3030.358.8168 and get placed on our calendar today!" />
+                </MetaTags>
+
                 <div className="ImagesMappesBox">
                    <ImagesMapped />
                 </div>

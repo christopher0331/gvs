@@ -12,7 +12,7 @@ const CommercialFences = (props) => {
         <div className="divBox">  
             <Card.Img variant="custom" src={CommercialFenceImage} className='cardImage' alt="Commercial Chainlink Fencing, 8ft Tall to 16ft tall, and 2600 linear feet"/>
             <Card.Body className='cardBody'>
-                <Card.Title>Commercial Fences</Card.Title>
+                <Card.Title><h1 id="CardTitles">Commercial Fences</h1></Card.Title>
                 <Card.Text>
                     Schools, businesses or storage units, we've got you covered. 
                 </Card.Text>

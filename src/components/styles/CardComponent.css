@@ -4,6 +4,10 @@
     align-content: center;
 }
 
+#CardTitles {
+    font-size: 20px;
+}
+
 .cardImage {
     display: flex;
     justify-content: space-evenly; 
