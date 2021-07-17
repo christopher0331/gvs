@@ -1,6 +1,4 @@
-import { React, lazy } from 'react';
-// import Residential from './assets/residential.JPG';
-// import wireFence from './assets/wireFence.JPG'
+import { React } from 'react';
 import './styles/FencingTypes.css';
 
 const CustomFences = () => {
@@ -46,7 +44,15 @@ const CustomFences = () => {
                         </div>
                         <div className='project1Text'>
                             <h2>Custom Fence</h2>
-                            <div>Lorem Ipsum dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</div>
+                            <p>
+                                There are no limits to the different ways you can customize wood fences.
+                                From ornamental iron inserts for added beauty and visibilty (a favorite for 
+                                people with dogs), to cutom post topper designs, and even completely unique 
+                                designs like the one in this picture, with wiring to add some protection for their
+                                animals while staying with the HOA regualation, we can make it happen. We often
+                                customize fences for aesthetics, or practicalaty when there are strict regualtions for
+                                fencing.  
+                            </p>
                         </div> 
                     </div>
                 </div>

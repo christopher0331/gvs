@@ -26,16 +26,16 @@ const HomePage = (props) => {
             <div>
                 <MetaTags>
                     <meta name="description" 
-                    content="GreenView Solutions is the most trusted name in Denver, CO 
-                                for wood fencing, chain link fencing, wrought iron fencing 
-                                and commercial fencing! Call us at 3030.358.8168 and get 
-                                placed on our calendar today! We've got 5 star reviews 
-                                everywhere you can find us. GreenView Solutions also 
-                                has certified irrigation 
-                                experts that can install irrigation systems, or test your 
-                                backflow devices. We serve the greater Denver 
-                                area, including Longmont CO, Erie CO, Arvada CO, 
-                                Frederick CO, and others." />
+                          content="GreenView Solutions is the most trusted name in Denver, CO 
+                                    for wood fencing, chain link fencing, wrought iron fencing 
+                                    and commercial fencing! Call us at 3030.358.8168 and get 
+                                    placed on our calendar today! We've got 5 star reviews 
+                                    everywhere you can find us. GreenView Solutions also 
+                                    has certified irrigation 
+                                    experts that can install irrigation systems, or test your 
+                                    backflow devices."
+                            keywords="fencing, irrigation, backflow testing"
+                        />
                 </MetaTags>
                 <ReactTitle title="GreenView Solutions"/>
                 <div className="ImagesMappesBox">
@@ -83,9 +83,20 @@ const HomePage = (props) => {
         return(
             <div>
                 <MetaTags>
-                    <meta name="description" content="GreenView Solutions is the most trusted name in Denver, CO for wood fencing, chain link fencing, wrought iron fencing and commercial fencing! Call us at 3030.358.8168 and get placed on our calendar today!" />
+                    <meta name="description" 
+                          content="GreenView Solutions is the most trusted name in Denver, CO 
+                                    for wood fencing, chain link fencing, wrought iron fencing 
+                                    and commercial fencing! Call us at 3030.358.8168 and get 
+                                    placed on our calendar today! We've got 5 star reviews 
+                                    everywhere you can find us. GreenView Solutions also 
+                                    has certified irrigation 
+                                    experts that can install irrigation systems, or test your 
+                                    backflow devices. We serve the greater Denver 
+                                    area, including Longmont CO, Erie CO, Arvada CO, 
+                                    Frederick CO, and others." 
+                        />
                 </MetaTags>
-
+                <ReactTitle title="GreenView Solutions"/>
                 <div className="ImagesMappesBox">
                    <ImagesMapped />
                 </div>

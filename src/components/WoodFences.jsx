@@ -1,4 +1,4 @@
-import { React, lazy } from 'react';
+import { React } from 'react';
 import './styles/FencingTypes.css';
 import { ReactTitle, MetaTags } from 'react-meta-tags';
 
@@ -16,24 +16,34 @@ const FenceTypes = () => {
     return(
         <div>
             <ReactTitle title="GreenView Solutions"/>
-
+            <MetaTags>
+                <meta name="description" content="
+                                            Wood fencing is easily the requested fencing for many 
+                                            reasons. Afordability, durability, adapability, its value.
+                                            GreenView Solutions handles every wood fence style plus any
+                                            custom fencing options you might think of or see elsewhere.
+                                            Privacy fences, Ranch Rail, Split Rail, Horizontal Fencing and 
+                                            more. Alway compeleted to the highest degree of quality here in
+                                            the Denver, CO area.
+                                            "/>
+            </MetaTags>
             <h1 className='title'>Wood Fences for Your Denver, CO Property</h1>
             <div>
                 <div className="woodFencesParagraph">
                 <h2>The Wood Fences We Offer Our Denver, CO Property Owners</h2>
                 <p>
                     When you need cost-effective and beautiful fencing services in Denver, CO 
-                    for your property, the team at GreenView Solutions has a plethora of solutions 
-                    you can choose from. Here are some of the styles we provide for wood fences:
+                    for your property, at GreenView Solutions, we have a limitess number of solutions
+                    we can provide. Here are just a few styles we provide for wood fences: 
                 </p>
                     <ul>
-                        <li><strong>Privacy Fence</strong> – Estate wood fences are an attractive and cost-effective fencing option.</li> 
-                        <li><strong>Premium Privacy Fence</strong> – This wooden fence option offers galvanized panels great for holding areas, building corrals, and more.</li> 
+                        <li><strong>Privacy Fence</strong> – Privacy fences are an attractive and cost-effective fencing option.</li> 
+                        <li><strong>Premium Privacy Fence</strong> – Premium Privacy fences are very similar to privacy fencing, but with additional 2x4's for additions sturdiness, adding to your fences lifetime.</li> 
                         <li><strong>Horizontal</strong> – This modern fence style offers the same security as a traditional option, but the fence boards are installed horizontally instead of vertically.</li>    
-                        <li><strong>Ranch Rail</strong> – Modified panel wood fencing offers a way to add a gorgeous framed finish along the top of your fence.</li>    
+                        <li><strong>Ranch Rail</strong> – Ranch rail fences, also known as horse rail fences, are often used for HOA housing, or for pastures. They are quickly becoming our most requested fencing.</li>    
                         <li><strong>Split Rail</strong> – This informal, open, and natural-looking fencing option offers a rustic look and takes little time to build and install.</li> 
-                        <li><strong>Board Over Board</strong> – This informal, open, and natural-looking fencing option offers a rustic look and takes little time to build and install.</li> 
-                        <li><strong>Custom Picket Fence</strong> – This informal, open, and natural-looking fencing option offers a rustic look and takes little time to build and install.</li> 
+                        <li><strong>Board Over Board</strong> – Our best fencing options for inner city houses or houses near busy roads. The extra wood and overlap provides a great sound barrier to lots of noise, and adds additional privacy from people walking by.</li> 
+                        <li><strong>Custom Picket Fence</strong> – A catch all state, as there are no limits to how you customize a fence. We often add wire to residential areas with fencing height restrictions. We also handle custom request for inserted ornamental iron or customer post topper designs.</li> 
                     </ul>
                     <p>
                         No matter which fence type you choose, our team is dedicated to 
@@ -60,14 +70,25 @@ const FenceTypes = () => {
                         </div>
                         <div className='project1Text'>
                             <h2>Privacy Fence</h2>
-                            <div>Privacy fencing is one of the most common styles of fencing used by homeowners and contractors for several different reasons. When privacy fencing is installed it’s mainly for security, privacy, noise reduction, curb appeal and to add protection for your family. Regardless of the reason for installing a privacy fence, this style of fencing will add value to your home and add curb appeal.
-                                In order for a fence to be defined as a privacy fence, it must cover four categories: security, function, durability and design. For example, a chain link fence doesn’t offer much privacy or design, therefore it doesn’t qualify as a privacy fence.</div>
+                            <div>
+                                Privacy fencing is one of the most common styles of fencing used by homeowners and contractors 
+                                for several different reasons. When privacy fencing is installed it’s mainly for security, privacy, 
+                                noise reduction, curb appeal and to add protection for your family. Regardless of the reason for 
+                                installing a privacy fence, this style of fencing will add value to your home and add curb appeal.
+                                In order for a fence to be defined as a privacy fence, it must cover four categories: security, 
+                                function, durability and design. For example, a chain link fence doesn’t offer much privacy or 
+                                design, therefore it doesn’t qualify as a privacy fence.
+                            </div>
                         </div>
                     </div>     
                     <div className="right"> 
                         <div className='project2Text'>
                             <h2>Premium Privacy Fence</h2>
-                            <div>A premium privacy fence provides all the same benefits a privacy fence does but with some extra strudiness that will help te fence last much longer. Two additional 1x6's are added to the street facing side of the panel. And an additional 2x4 added to the top of the fence for each panel.</div>
+                            <div>
+                                A premium privacy fence provides all the same benefits a privacy fence does but with some extra 
+                                strudiness that will help te fence last much longer. Two additional 1x6's are added to the street 
+                                facing side of the panel. And an additional 2x4 added to the top of the fence for each panel.
+                            </div>
                         </div> 
                         <div className="project2">
                             <div className="image">
@@ -95,13 +116,25 @@ const FenceTypes = () => {
                         </div>
                         <div className='project1Text'>
                             <h2>Horizontal Privacy Fence</h2>
-                            <div>Feel like mixing it up a little? A horizontal privacy fence adds a new look to your fence yet provides all of the same benefits as a standard privacy fence.</div>
+                            <div>
+                                Feel like mixing it up a little? A horizontal privacy fence adds 
+                                a new look to your fence 
+                                yet provides all of the same benefits as a standard privacy fence.
+                            </div>
                         </div> 
                     </div>
                     <div className="right"> 
                         <div className='project2Text'>
                             <h2>Ranch Rail</h2>
-                            <div>Ranch rail, also known as Horse Fence, Field Fence, Board Fence, and Farm Fence, is becoming a more popular style of fencing among homeowners and not just ranchers or farmers. Some of the most common uses for this style of fencing is to keep livestock secure on ranches, keeping children and pets in their yard throughout neighborhoods and to add a design statement to mountain living. A traditional horse fence will be either two, three or four rails. You also have many different design options compared to split rail and post and dowel because there are no pre-cut holes.</div>
+                            <div>
+                                Ranch rail, also known as Horse Fence, Field Fence, Board Fence, and Farm Fence, is becoming 
+                                a more popular style of fencing among homeowners and not just ranchers or farmers. Some of 
+                                the most common uses for this style of fencing is to keep livestock secure on ranches, keeping 
+                                children and pets in their yard throughout neighborhoods and to add a design statement to 
+                                mountain living. A traditional horse fence will be either two, three or four rails. You also have 
+                                many different design options compared to split rail and post and dowel because there are no 
+                                pre-cut holes.
+                            </div>
                         </div> 
                         <div className="project2">
                             <div className="image">
@@ -129,13 +162,26 @@ const FenceTypes = () => {
                         </div>
                         <div className='project1Text'>
                             <h2>Split Rail</h2>
-                            <div> Split rail fencing is one of the earliest forms of fencing that was used in America. The main reason for this is because of its affordability and easy installation. When it comes to installing a split rail fence it requires little materials so you can install it quickly and with little help. A split rail fence is an ideal option is you are looking to add a rustic look to your home curb appeal on a budget.</div>
+                            <div>
+                                Split rail fencing is one of the earliest forms of fencing that was used in America. 
+                                The main reason for this is because of its affordability and easy installation. When it comes to 
+                                installing a split rail fence it requires little materials so you can install it quickly and with 
+                                little help. A split rail fence is an ideal option is you are looking to add a rustic look to 
+                                your home curb appeal on a budget.
+                            </div>
                         </div> 
                     </div>
                     <div className="right"> 
                     <div className='project2Text'>
                             <h2>Custom Fence</h2>
-                            <div>Lorem Ipsum dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</div>
+                            <div>
+                                Custom fences are often requested for several reasons. Often, HOA's only allow street facing
+                                fences at a certain height, often from 3ft to 4ft. Occasionally, it only pertains to closed fencing
+                                and not open fencing, in which case, we build the wood fence to the regulation and then use
+                                wire to add additional height. This helps with containing animals or just adds a bit of 
+                                pleasant aesthetics. We also frequently cut custom designs in the post topppers, or insert ornamental 
+                                iron in our wood fences.
+                            </div>
                         </div> 
                         <div className="project2">
                             <div className="image">
@@ -164,17 +210,22 @@ const FenceTypes = () => {
                         </div>
                         <div className='project1Text'>
                             <h2>Board Over Board</h2>
-                            <div>Lorem ipmsum</div>
+                            <div>
+                                Board over Board is quickly becoming the most requested fencing type for congested areas. 
+                                Board over Board means there is no space between each board like traditional wood fences because each
+                                board is overlapping by some fraction of an inch, depending on the customers request. This type of fence 
+                                helps block noise polution, and also prevents any visibilty through the fence, since there are no gaps between
+                                the boards. 
+                            </div>
                         </div> 
                     </div>
                 </div>
                 <div>
                 <h3 className="lowerInformation">The Benefits of Wood Fences</h3>
                     <p className="lowerInformation">
-                        When it’s time to add fencing to your commercial or residential property, 
-                        it can be hard to choose between the various options. At GreenView Solutions, 
-                        we know fences. Though chain link fences are a popular option, wood fences offer 
-                        benefits that may be more suitable for your fencing needs. These benefits include 
+                        Adding a fence to your property can be hard since there are so many options. 
+                        At GreenView Solutions, we know fences. Although chain link fences are a popular option, 
+                        wood fences offer benefits that may be more suitable for your fencing needs. These benefits include 
                         the following:
                     </p>
                     <ul className="lowerInformation">
@@ -183,10 +234,9 @@ const FenceTypes = () => {
                             fencing options, wood fences are typically much less 
                             expensive due to the lower prices of the materials. Since 
                             wood is a naturally occurring and abundant resource, its 
-                            prices stay relatively low. Additionally, when any part of 
-                            a wooden fence needs to be replaced, you will generally 
-                            only need to replace a single plank or post, rather than an 
-                            entire section. This makes any necessary repairs quick and easy!
+                            prices stay relatively low although, they have increased in recent years, that price
+                            is coming back down. Additionally, wood fences are easy to repair, and often only, 
+                            require a few planks, rather than an entire section. This makes any necessary repairs quick and easy!
                         </li>
                         <li>
                         <strong>Durable</strong> – If you’re looking to invest in an aesthetically-pleasing 
