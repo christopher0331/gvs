@@ -54,7 +54,9 @@ const Overview = () => (
                             What We Do: 
                         </div>
                         <div className="descText">
-                            Constructing beautiful and effective fencing, irrigation and service.
+                            GreenView Solutions builds beautiful fencing, in a timely manner, and  with quality
+                            as the primary concern. We strive to leave the customer feeling like they got more than
+                            they paid for.
                         </div>
                     </div>
                     <div className="aboutUsSection">
@@ -62,7 +64,10 @@ const Overview = () => (
                             About Us:
                         </div>
                         <div className="descText">
-                            lkfs  nm,n fsdi ufdsaerfn  nfdsfnisafien fnlsdkfnsf safjlksdjfiwferi nv sivskdnvwei i jonvs igoinvsn;lsvsv i fsd fo ijf;sdifj  osdijflk sdn;lcsidajf;lsd;v sldijflsa vcmcsmnvnclksdn  klsdjf
+                            GreenView Solutions was started 10 years ago, and has employed experts with decades
+                            of experience. There is no fencing or irrigation project our experts have completed,
+                            and our upper managment team ensures that all projects are done with the highest level
+                            of quality in mind.  
                         </div>
                     </div>
                 </div>

@@ -37,14 +37,27 @@ const FenceTypes = () => {
                         </div>
                         <div className='project1Text'>
                             <h2>Privacy Fence</h2>
-                            <div>Privacy fencing is one of the most common styles of fencing used by homeowners and contractors for several different reasons. When privacy fencing is installed it’s mainly for security, privacy, noise reduction, curb appeal and to add protection for your family. Regardless of the reason for installing a privacy fence, this style of fencing will add value to your home and add curb appeal.
-                                In order for a fence to be defined as a privacy fence, it must cover four categories: security, function, durability and design. For example, a chain link fence doesn’t offer much privacy or design, therefore it doesn’t qualify as a privacy fence.</div>
+                            <p>
+                                Privacy fencing is one of the most common styles of fencing used by 
+                                homeowners and contractors for several different reasons. When privacy 
+                                fencing is installed it’s mainly for security, privacy, noise reduction, 
+                                curb appeal and to add protection for your family. Regardless of the reason 
+                                for installing a privacy fence, this style of fencing will add value to your
+                                home and add curb appeal. In order for a fence to be defined as a privacy fence, 
+                                it must cover four categories: security, function, durability and design. 
+                                For example, a chain link fence doesn’t offer much privacy or design, 
+                                therefore it doesn’t qualify as a privacy fence.
+                            </p>
                         </div>
                     </div>     
                     <div className="right"> 
                         <div className='project2Text'>
                             <h2>Premium Privacy Fence</h2>
-                            <div>A premium privacy fence provides all the same benefits a privacy fence does but with some extra strudiness that will help te fence last much longer. Two additional 1x6's are added to the street facing side of the panel. And an additional 2x4 added to the top of the fence for each panel.</div>
+                            <p>A premium privacy fence provides all the same benefits a privacy fence does 
+                                but with some extra strudiness that will help te fence last much longer. 
+                                Two additional 1x6's are added to the street facing side of the panel. And an 
+                                additional 2x4 added to the top of the fence for each panel.
+                            </p>
                         </div> 
                         <div className="project2">
                             <div className="image">
@@ -72,13 +85,26 @@ const FenceTypes = () => {
                         </div>
                         <div className='project1Text'>
                             <h2>Horizontal Privacy Fence</h2>
-                            <div>Feel like mixing it up a little? A horizontal privacy fence adds a new look to your fence yet provides all of the same benefits as a standard privacy fence.</div>
+                            <p>
+                                Feel like mixing it up a little? A horizontal privacy fence adds a new look 
+                                to your fence yet provides all of the same benefits as a standard privacy fence.
+                            </p>
                         </div> 
                     </div>
                     <div className="right"> 
                         <div className='project2Text'>
                             <h2>Ranch Rail</h2>
-                            <div>Ranch rail, also known as Horse Fence, Field Fence, Board Fence, and Farm Fence, is becoming a more popular style of fencing among homeowners and not just ranchers or farmers. Some of the most common uses for this style of fencing is to keep livestock secure on ranches, keeping children and pets in their yard throughout neighborhoods and to add a design statement to mountain living. A traditional horse fence will be either two, three or four rails. You also have many different design options compared to split rail and post and dowel because there are no pre-cut holes.</div>
+                            <p>
+                                Ranch rail, also known as Horse Fence, Field Fence, 
+                                Board Fence, and Farm Fence, is becoming a more popular style of 
+                                fencing among homeowners and not just ranchers or farmers. Some of 
+                                the most common uses for this style of fencing is to keep 
+                                livestock secure on ranches, keeping children and pets in their 
+                                yard throughout neighborhoods and to add a design statement to 
+                                mountain living. A traditional horse fence will be either two, 
+                                three or four rails. You also have many different design options 
+                                compared to split rail and post and dowel because there are no pre-cut holes.
+                            </p>
                         </div> 
                         <div className="project2">
                             <div className="image">
@@ -106,13 +132,28 @@ const FenceTypes = () => {
                         </div>
                         <div className='project1Text'>
                             <h2>Split Rail</h2>
-                            <div> Split rail fencing is one of the earliest forms of fencing that was used in America. The main reason for this is because of its affordability and easy installation. When it comes to installing a split rail fence it requires little materials so you can install it quickly and with little help. A split rail fence is an ideal option is you are looking to add a rustic look to your home curb appeal on a budget.</div>
+                            <p>
+                                Split rail fencing is one of the earliest forms of fencing that was 
+                                used in America. The main reason for this is because of its affordability 
+                                and easy installation. When it comes to installing a split rail fence it 
+                                requires little materials so you can install it quickly and with little help. 
+                                A split rail fence is an ideal option is you are looking to add a rustic look 
+                                to your home curb appeal on a budget.
+                            </p>
                         </div> 
                     </div>
                     <div className="right"> 
                         <div className='project2Text'>
                             <h2>Composite Fence</h2>
-                            <div>Trex is a very well-known and popular manufacturer that works with suppliers and wholesalers across the country. They specialize in composite materials, specifically decking and fencing. Their fencing, which is a rather new product, has allowed clients to still reap the benefits of privacy fencing such as security and privacy, but without the natural wood hassle. Natural wood is a great option for fencing, however, if you are a homeowner looking for an easier to maintain option, composite fencing is the way to go.</div>
+                            <p>
+                                Trex is a very well-known and popular manufacturer that works with suppliers 
+                                and wholesalers across the country. They specialize in composite materials, 
+                                specifically decking and fencing. Their fencing, which is a rather new product, 
+                                has allowed clients to still reap the benefits of privacy fencing such as 
+                                security and privacy, but without the natural wood hassle. Natural wood is a 
+                                great option for fencing, however, if you are a homeowner looking for an 
+                                easier to maintain option, composite fencing is the way to go.
+                            </p>
                         </div> 
                         <div className="project2">
                             <div className="image">
@@ -140,13 +181,30 @@ const FenceTypes = () => {
                         </div>
                         <div className='project1Text'>
                             <h2>Custom Fence</h2>
-                            <div>Lorem Ipsum dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</div>
+                            <p>
+                                Custom fences are often requested for several reasons. Often, 
+                                HOA's only allow street facing fences at a certain height, often 
+                                from 3ft to 4ft. Occasionally, it only pertains to closed fencing and not open 
+                                fencing, in which case, we build the wood fence to the regulation and then 
+                                use wire to add additional height. This helps with containing animals or 
+                                just adds a bit of pleasant aesthetics. We also frequently cut custom designs 
+                                in the post topppers, or insert ornamental iron in our wood fences.
+                            </p>
                         </div> 
                     </div>
                     <div className="right"> 
                         <div className='project2Text'>
                             <h2>Wrought Iron</h2>
-                            <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</div>
+                            <div>
+                                Wrought Iron Fences, or Decorative Ornamental Iron fences are 
+                                really popular for those who are looking for security, durability, 
+                                beauty and an open look. As you've might've read above, these 
+                                fences can last for decades with little to no upkeep costs. They 
+                                are elegant and come in a wide variety of styles. You can add 
+                                toppers to you posts and bars for additional securtity, or keep 
+                                it flat for more laid back look. Whatever your preference, you can 
+                                count us to get it done right!
+                            </div>
                         </div> 
                         <div className="project2">
                             <div className="image">
@@ -174,7 +232,14 @@ const FenceTypes = () => {
                         </div>
                         <div className='project1Text'>
                             <h2>Board Over Board</h2>
-                            <div>Lorem ipmsum</div>
+                            <p>Board over Board is quickly becoming the most requested fencing 
+                                type for congested areas. Board over Board means there is no 
+                                space between each board like traditional wood fences because 
+                                each board is overlapping by some fraction of an inch, depending 
+                                on the customers request. This type of fence helps block noise 
+                                polution, and also prevents any visibilty through the fence, 
+                                since there are no gaps between the boards.
+                            </p>
                         </div> 
                     </div>
                 </div>

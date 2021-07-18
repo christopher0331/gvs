@@ -53,14 +53,21 @@ const ChainLinkFences = () => {
                             <div className="details">
                             <div className="center">
                                 <h1>Commercial Fencing<br /></h1>
-                                <p>Average Cost: $39 per linear foot.</p>
+                                <p>Prices Vary Widely</p>
                             </div>
                             </div>
                         </div>
                         <div className='project1Text'>
                             <h2>Commercial Fencing</h2>
-                            <div>Privacy fencing is one of the most common styles of fencing used by homeowners and contractors for several different reasons. When privacy fencing is installed it’s mainly for security, privacy, noise reduction, curb appeal and to add protection for your family. Regardless of the reason for installing a privacy fence, this style of fencing will add value to your home and add curb appeal.
-                                In order for a fence to be defined as a privacy fence, it must cover four categories: security, function, durability and design. For example, a chain link fence doesn’t offer much privacy or design, therefore it doesn’t qualify as a privacy fence.</div>
+                            <div>
+                                Commercial projects are some of the most detail heavy projects. When placing fencing at scale, it's 
+                                critical to get the planning done right, since there is very little room for error. Because of this, 
+                                we always place our top teams on these projects, and the top levels of the company are heavily focused 
+                                on the planning portion of these projects. Ensuring that the build teams are set up for success when 
+                                they start setting in posts and construct the fencing. Regardles of the type of fence, we handle all 
+                                commercial projects and have covered them all. Chain link fencing, 12ft wood fencing, and 12ft concrete 
+                                privacy walls, we've done them all. 
+                            </div>
                         </div>
                     </div>     
                 </div>

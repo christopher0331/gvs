@@ -53,8 +53,10 @@ const PortfolioMed = () =>  {
                         <div className="portfolioProjects">
                             <img src={DecorativeIronFence} className="portfolioImage" alt=''/>
                             <div className="portfolioBody">
-                                <h3>Greenwood Horizontal 2020</h3>
-                                    <p>Block1sa;dlfjk sdaklfjsa slakjfs d sdfkjfsdkfjasd</p>
+                                <h3>Wrought Iron Fence</h3>
+                                    <p>
+
+                                    </p>
                                 <div onClick={handleShow}>
                                     <div class="btn2 from-left2">
                                         View Project
@@ -71,8 +73,10 @@ const PortfolioMed = () =>  {
                         <div className="portfolioProjects">
                             <img src={RanchRail} className="portfolioImage"/>
                             <div className="portfolioBody">
-                                <h3>Greenwood Horizontal 2020</h3>
-                                Block1sa;dlfjk sdaklfjsa slakjfs d sdfkjfsdkfjasd
+                                <h3>Ranch Rail Fence</h3>
+                                <p>
+
+                                </p>
                                 <div onClick={handleShow2}>
                                     <div class="btn2 from-left2">
                                         View Project
@@ -91,8 +95,10 @@ const PortfolioMed = () =>  {
                         <div className="portfolioProjects">
                             <img src={CustomPickett} className="portfolioImage"/>
                             <div className="portfolioBody">
-                                <h3>Greenwood Horizontal 2020</h3>
-                                Block1sa;dlfjk sdaklfjsa slakjfs d sdfkjfsdkfjasd
+                                <h3>Custom Picket Fence</h3>
+                                <p>
+                                    
+                                </p>
                                 <div onClick={handleShow3}>
                                     <div class="btn2 from-left2">
                                         View Project
@@ -109,8 +115,10 @@ const PortfolioMed = () =>  {
                         <div className="portfolioProjects">
                             <img src={Commercial} className="portfolioImage"/>
                             <div className="portfolioBody">
-                                <h3>Greenwood Horizontal 2020</h3>
-                                Block1sa;dlfjk sdaklfjsa slakjfs d sdfkjfsdkfjasd
+                                <h3>Commercial Chain Link</h3>
+                                <p>
+
+                                </p>
                                 <div onClick={handleShow4}>
                                     <div class="btn2 from-left2">
                                         View Project
@@ -129,8 +137,10 @@ const PortfolioMed = () =>  {
                             <div className="portfolioProjects">
                                 <img src={HOA6FtPicket} className="portfolioImage"/>
                                 <div className="portfolioBody">
-                                    <h3>Greenwood Horizontal 2020</h3>
-                                    Block1sa;dlfjk sdaklfjsa slakjfs d sdfkjfsdkfjasd
+                                    <h3>Privacy Fence</h3>
+                                    <p>
+
+                                    </p>
                                     <div onClick={handleShow5}>
                                         <div class="btn2 from-left2">
                                             View Project
@@ -147,8 +157,10 @@ const PortfolioMed = () =>  {
                         <div className="portfolioProjects">
                             <img src={PicketFence} className="portfolioImage"/>
                             <div className="portfolioBody">
-                                <h3>Greenwood Horizontal 2020</h3>
-                                Block1sa;dlfjk sdaklfjsa slakjfs d sdfkjfsdkfjasd
+                                <h3>Privacy Fence</h3>
+                                <p>
+                                    
+                                </p>
                                 <div onClick={handleShow6}>
                                     <div class="btn2 from-left2">
                                         View Project

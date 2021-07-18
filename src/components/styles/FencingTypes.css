@@ -7,6 +7,10 @@ p {
     margin-bottom: 50px;
 }
 
+.woodFencesParagraph {
+    padding: 50px 150px;
+}
+
 .title {
     display: flex;
     justify-content: flex-start;
@@ -239,6 +243,13 @@ p {
 }
 
 @media screen and (max-width: 800px){
+
+    .woodFencesParagraph {
+        padding: 50px 50px;
+    }
+}
+
+@media screen and (max-width: 800px){
     .left {
         display: flex;
         flex-direction: column;
@@ -308,6 +319,3 @@ p {
     }
 }
 
-.woodFencesParagraph {
-    padding: 50px 150px;
-}
