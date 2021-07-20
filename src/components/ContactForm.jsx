@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/FreeEstimate.css'
-import { emailjs } from 'emailjs-com';
+import emailjs from 'emailjs-com';
 
 class ContactForm extends React.Component {
     constructor(props){
