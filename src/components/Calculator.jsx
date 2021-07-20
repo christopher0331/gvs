@@ -24,70 +24,70 @@ class Calculator extends React.Component {
             this.setState({
                 fenceType: fenceType.target.value,
                 costPerFoot: 39,
-                removalCostPerFoot: 6
+                removalCostPerFoot: 5
             })
         } 
         if(fenceType.target.value === 'PremiumPickets'){
             this.setState({
                 fenceType: fenceType.target.value,
                 costPerFoot: 48,
-                removalCostPerFoot: 6
+                removalCostPerFoot: 5
             })
         }
         if(fenceType.target.value === 'Horizontal'){
             this.setState({
                 fenceType: fenceType.target.value,
                 costPerFoot: 50,
-                removalCostPerFoot: 6
+                removalCostPerFoot: 5
             })
         } 
         if(fenceType.target.value === 'RanchRail'){
             this.setState({
                 fenceType: fenceType.target.value,
                 costPerFoot: 38,
-                removalCostPerFoot: 6
+                removalCostPerFoot: 5
             })
         }
         if(fenceType.target.value === 'SplitRail'){
             this.setState({
                 fenceType: fenceType.target.value,
                 costPerFoot: 31,
-                removalCostPerFoot: 6
+                removalCostPerFoot: 5
             })
         }
         if(fenceType.target.value === 'Custom'){
             this.setState({
                 fenceType: fenceType.target.value,
                 costPerFoot: 48,
-                removalCostPerFoot: 6
+                removalCostPerFoot: 5
             })
         }
         if(fenceType.target.value === 'BoardOverBoard'){
             this.setState({
                 fenceType: fenceType.target.value,
                 costPerFoot: 52,
-                removalCostPerFoot: 6
+                removalCostPerFoot: 5
             })
         }
         if(fenceType.target.value === 'ChainLinkFence'){
             this.setState({
                 fenceType: fenceType.target.value,
                 costPerFoot: 27,
-                removalCostPerFoot: 6
+                removalCostPerFoot: 5
             })
         }
         if(fenceType.target.value === 'WroughtIron'){
             this.setState({
                 fenceType: fenceType.target.value,
                 costPerFoot: 60,
-                removalCostPerFoot: 6
+                removalCostPerFoot: 5
             })
         }
         if(fenceType.target.value === 'CompositeFence'){
             this.setState({
                 fenceType: fenceType.target.value,
                 costPerFoot: 80,
-                removalCostPerFoot: 6
+                removalCostPerFoot: 5
             })
         }
     }
