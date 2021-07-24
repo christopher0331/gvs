@@ -75,13 +75,14 @@ class ContactForm extends React.Component {
                 }
             );
 
-            this.setState({
-                name: "",
-                phone: "",
-                email: "",
-                company: "",
-                message: "",
-            });
+            alert('thanks for submitting')
+            // this.setState({
+            //     name: "",
+            //     phone: "",
+            //     email: "",
+            //     company: "",
+            //     message: "",
+            // });
         }
 
 
