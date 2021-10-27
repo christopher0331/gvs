@@ -12,9 +12,11 @@ const ImageSlider = () => {
 
     const data = [
       ["https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/HomePage/FullSizedWebp/homepage1.webp","Cedar Pickets, Horizontal fencing, 182 linear feet", "We Handle Wood Fences with Precision and Love. Our Fences are Built to the Highest Quality"],
-      ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/FullSizedWebp/CommercialFence.webp","Commercial Fencing, Chain Link Fence, 16ft tall, 500 linear feet", "Our Commercial Fences are Built to Last and Provide Security and Protection for Decades!"],
-      ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/FullSizedWebp/PicketWithDecorationCarousel.webp","Privacy fence, 6ft tall picket fence, decorative gates", "Got a Custom Request? From Cutomer Post Toppers, toOranmental Iron, We Bring Your Vision to Fruition!"],
-      ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/FullSizedWebp/CustomPicketCarousel.webp","Cedar Picket, picket fencing, 4ft tall custom picket fence", "The Amount of Customizations are Limitless!"]
+      ["https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/HomePage/FullSizedWebp/homepage2.webp","Commercial Fencing, Chain Link Fence, 16ft tall, 500 linear feet", "Our Commercial Fences are Built to Last and Provide Security and Protection for Decades!"],
+      ["https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/HomePage/FullSizedWebp/homepage3.webp","Privacy fence, 6ft tall picket fence, decorative gates", "Got a Custom Request? From Cutomer Post Toppers, toOranmental Iron, We Bring Your Vision to Fruition!"],
+      ["https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/HomePage/FullSizedWebp/homepage4.webp","Cedar Picket, picket fencing, 4ft tall custom picket fence", "The Amount of Customizations are Limitless!"],
+      ["https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/HomePage/FullSizedWebp/homepage5.webp","Privacy fence, 6ft tall picket fence, decorative gates", "Got a Custom Request? From Cutomer Post Toppers, toOranmental Iron, We Bring Your Vision to Fruition!"],
+      ["https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/HomePage/FullSizedWebp/homepage6.webp","Cedar Picket, picket fencing, 4ft tall custom picket fence", "The Amount of Customizations are Limitless!"]
 ];
 
     const [state, setState] = useState({
