@@ -11,6 +11,8 @@ const PortfolioLarge = () =>  {
         const FeaturedProject4 = lazy(() => import('./FeaturedProject4.jsx'));
         const FeaturedProject5 = lazy(() => import('./FeaturedProject5.jsx'));
         const FeaturedProject6 = lazy(() => import('./FeaturedProject6.jsx'));
+        const FeaturedProject7 = lazy(() => import('./FeaturedProject7.jsx'));
+
 
         const [show, setShow] = useState(false);
         const handleClose = () => setShow(false);
@@ -36,17 +38,43 @@ const PortfolioLarge = () =>  {
         const handleClose6 = () => setShow6(false);
         const handleShow6 = () => setShow6(true);
 
+        const [show7, setShow7] = useState(false);
+        const handleClose7 = () => setShow7(false);
+        const handleShow7 = () => setShow7(true);
+
         const DecorativeIronFence = "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/SmallSizedWEBP/DecorativeIronFence_642_6.webp";
         const RanchRail ="https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/SmallSizedWEBP/RanchRail.webp";
         const CustomPickett ="https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/SmallSizedWEBP/CustomPickett_642.webp";
         const Commercial ="https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/SmallSizedWEBP/Commercial_642.webp";
         const HOA6FtPicket ="https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/Mobile/4.23.21-HOA6FtPicket_6.webp";
         const PicketFence ="https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/Mobile/4.14.21-6ftPickett_6.webp";
-            
+        const HorizontalPickett = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/2.28.22-Horizontal-Stained-Pickett/IMG_2869.webp";
         return(
             <div id="primaryBox">
                     <div className="portfolioTitle">
                         <h1>Portfolio</h1>   
+                    </div>
+                    <div className="portfolioBlock">
+                    <div className="portfolioProjects">
+                            <img src={HorizontalPickett} className="portfolioImage" alt=''/>
+                            <div className="portfolioBody">
+                                <h3>Horizontal Stained Pickett Fence</h3>
+                                <p>
+
+                                </p>        
+                                <div onClick={handleShow7}>
+                                    <div class="btn2 from-left2">
+                                        View Project
+                                    </div>
+                                </div>
+                                <Modal show={show7} onHide={handleClose}>
+                                    <FeaturedProject7 />
+                                    <Button variant="secondary" onClick={handleClose7} className="projectButton">
+                                        Close
+                                    </Button>
+                                </Modal>   
+                            </div>
+                        </div>
                     </div>
                     <div className="portfolioBlock">
                         <div className="portfolioProjects">
@@ -171,7 +199,8 @@ const PortfolioLarge = () =>  {
                                 </Modal>   
                             </div>
                         </div>
-                    </div>            
+                    </div>   
+
                 </div>
         )
     }
