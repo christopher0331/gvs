@@ -30,6 +30,7 @@ function App() {
             <Header />
               <Switch>
                     <Route path="/" exact component={HomePage} />
+                    <Route path="/services" component={AboutUs}/>
                     <Route path="/about-us" component={AboutUs}/>
                     <Route path="/fencing" component={Fencing} />
                     <Route path="/irrigation" component={Irrigation} />
@@ -41,7 +42,8 @@ function App() {
                     <Route path="/wrought-iron-fences" component={WroughtIronFences} />
                     <Route path="/custom-fences" component={CustomFences} />
                     <Route path="/commercial-fences" component={CommercialFencing} />
-                    <Route path="/backflow" component={Backflow} />
+                    <Route path="/backflow" component={Backflow} />                    
+                    <Route path="*" component={HomePage} />
                 </Switch>
             <Footer />
         </Suspense>
