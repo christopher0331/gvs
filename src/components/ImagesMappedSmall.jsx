@@ -5,18 +5,19 @@ import ArrowLeftStyle from './ArrowLeftCSS';
 import ArrowRightStyle from './ArrowRightCSS';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { Link } from 'react-router-dom';
 
 const ImageSliderSmall = () => {
     
     const innerWidth = window.innerWidth;
 
     const dataSmall = [
-      ["https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/HomePage/FullSizedWebp/homepage1.webp","Cedar Pickets, Horizontal fencing, 182 linear feet", "From Privacy Structures, to Quality Fences, We've Got You Covered"],
-      ["https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/HomePage/FullSizedWebp/homepage2.webp","Commercial Fencing, Chain Link Fence, 16ft tall, 500 linear feet", "Our Commercial Fences are Built to Last and Provide Security and Protection for Decades!"],
-      ["https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/HomePage/FullSizedWebp/homepage3.webp","Privacy fence, 6ft tall picket fence, decorative gates", "We Handle Wood Fences with Precision and Love. Our Fences are Built to the Highest Quality"],
-      ["https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/HomePage/FullSizedWebp/homepage4.webp","Cedar Picket, picket fencing, 4ft tall custom picket fence", "The Amount of Customizations are Limitless!"],
-      ["https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/HomePage/FullSizedWebp/homepage5.webp","Privacy fence, 6ft tall picket fence, decorative gates", "Composite Fencing Provides a Beautiful Natural Looking Barrier to Your Home"],
-      ["https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/HomePage/FullSizedWebp/homepage6.webp","Cedar Picket, picket fencing, 4ft tall custom picket fence", "A Growing Family Dedicated to Bringing Quality Service to Yours!"]
+        ["https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/HomePage/FullSizedWebp/homepage1.webp","Cedar Pickets, Horizontal fencing, 182 linear feet", "From Privacy Structures, to Quality Fences, We've Got You Covered"],
+        ["https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/HomePage/FullSizedWebp/homepage2.webp","Commercial Fencing, Chain Link Fence, 16ft tall, 500 linear feet", "Our Commercial Fences are Built to Last and Provide Security and Protection for Decades!"],
+        ["https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/HomePage/FullSizedWebp/homepage3.webp","Privacy fence, 6ft tall picket fence, decorative gates", "We Handle Wood Fences with Precision and Love. Our Fences are Built to the Highest Quality"],
+        ["https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/HomePage/FullSizedWebp/homepage4.webp","Cedar Picket, picket fencing, 4ft tall custom picket fence", "The Amount of Customizations are Limitless!"],
+        ["https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/HomePage/FullSizedWebp/homepage5.webp","Privacy fence, 6ft tall picket fence, decorative gates", "Composite Fencing Provides a Beautiful Natural Looking Barrier to Your Home"],
+        ["https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/HomePage/FullSizedWebp/homepage6.webp","Cedar Picket, picket fencing, 4ft tall custom picket fence", "A Growing Family Dedicated to Bringing Quality Service to Yours!"]
       ];
 
     const [state, setState] = useState({
@@ -65,7 +66,7 @@ const ImageSliderSmall = () => {
                 <SliderContent translate={translate} transition={transition}>
                     {dataSmall.map(slide => (
                           <SlideStyle key={slide[0]}>
-                                  <LazyLoadImage 
+                                <LazyLoadImage 
                                   alt={slide[1]} 
                                   src={slide[0]} 
                                   height = "400px" 
@@ -73,9 +74,19 @@ const ImageSliderSmall = () => {
                                   key={slide} 
                                   >
                                 </LazyLoadImage>
+
+                                <CallToAction>
+                                        <p>{slide[2]}</p>
+                                        <Button>
+                                          <Link to='contact-us' style={{color: "white"}}>
+                                              Contact Us   
+                                          </Link>
+                                        </Button>
+                                    </CallToAction>
                           </SlideStyle>
                         ))}
                 </SliderContent>
+
             </SliderCSSBS>
             <HoverButtonsBS>
                 <ArrowRightStyle>
@@ -92,6 +103,41 @@ const ImageSliderSmall = () => {
 }
 
 
+const Button = styled.div`
+    position: absolute;
+    background-color: rgba(255, 255, 255, .0);
+    border: 1px solid white;
+    color: white;
+    margin-top: 11vw;
+    z-index: 10;
+    padding: 3px 3px;
+    border-radius: 5px;
+    transition: .5s;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.1);
+      color: darkgreen;
+      cursor: pointer;
+    }
+`; 
+
+const CallToAction = styled.div`
+    display: flex;
+    position: relative; 
+    text-align: center;
+    height: 21vw;
+    width: 75vw;
+    font-size: 3.7vw;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 5px;
+    justify-content: center;
+    margin-left: 15vw;
+    margin-top: -200px;
+    align-content: center;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 10;
+`;
 
 const HoverButtonsBS = styled.div`
     z-index: 3;
