@@ -20,42 +20,8 @@ class AdminUse extends React.Component {
         this.handleFenceTypeChange = this.handleFenceTypeChange.bind(this);
         this.handleFenceLengthChange = this.handleFenceLengthChange.bind(this);
         this.handleGates = this.handleGates.bind(this);
-        // this.handleFence = this.handleFence.bind(this);
     }
 
-
-    // handleFence(fenceType) {
-
-    //     if(fenceType.target.value === 'OneBySixPickets'){
-    //         this.setState({
-    //             fenceType: fenceType.target.value,
-    //         })
-    //     } 
-
-    //     if(fenceType.target.value === 'OneByFourPickets'){
-    //         this.setState({
-    //             fenceType: fenceType.target.value,
-    //         })
-    //     }
-
-
-    //     if(fenceType.target.value === 'Horizontal'){
-    //         this.setState({
-    //             fenceType: fenceType.target.value,
-    //             costPerFoot: 50,
-    //             removalCostPerFoot: 5
-    //         })
-    //     } 
-    //     if(fenceType.target.value === 'RanchRail'){
-    //         this.setState({
-    //             fenceType: fenceType.target.value,
-    //             costPerFoot: 38,
-    //             removalCostPerFoot: 5
-    //         })
-    //     }
-
-    //     // For more fences, add from Calculator.js
-    // }
 
     handleFenceTypeChange(event){
         this.setState({
@@ -115,7 +81,7 @@ class AdminUse extends React.Component {
             }
 
         } else if(this.state.fenceType === "OneByFourPickets"){
-            let pickets = Math.ceil(this.state.fenceLength*(100*12/5)/100);
+            let pickets = Math.ceil(this.state.fenceLength*(100*12/3)/100);
             let posts = Math.ceil(this.state.fenceLength*((100/8)*(0.1)+(100/8))/100);
 
             // One By Four
