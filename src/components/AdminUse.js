@@ -2,26 +2,29 @@ import React from 'react';
 import './styles/Calculator.css';
 import AdminSelector from './AdminSelector.js';
 import GateSelector from './GateSelector';
+import { isElementOfType } from 'react-dom/test-utils';
 
 class AdminUse extends React.Component {
     constructor(props){
         super(props)
 
         this.state = {
-            fenceType: '',
+            fenceType: 'Select',
+            gateType: "Select",
             fenceLength: 0,
-            doubleGate: false,
             posts: 0,
             rails: 0,
             pickets: 0,
-            gates: "",
+            gates: 0,
+            topCaps: 0,
+            trim6ft: 0,
+            trim8ft: 0
         }
 
         this.handleFenceTypeChange = this.handleFenceTypeChange.bind(this);
         this.handleFenceLengthChange = this.handleFenceLengthChange.bind(this);
         this.handleGates = this.handleGates.bind(this);
     }
-
 
     handleFenceTypeChange(event){
         this.setState({
@@ -35,93 +38,155 @@ class AdminUse extends React.Component {
         })
     }
 
+    handleGates(event){  
+        console.log(event.target.value)  
 
-    handleGates(event){      
-        this.setState({
-            gates: event.target.value
-        })
+        if(event.target.value === "No Gates"){
+            this.setState({
+                gateType: event.target.value,
+                gates: 0
+            }) 
+        } else if(event.target.value === "One Gate"){
+                this.setState({
+                    gateType: event.target.value,
+                    gates: 4
+                })
+      
+        } else if(event.target.value === "Two Gates"){
+            this.setState({
+                gateType: event.target.value,
+                gates: 8
+            })
+        }
     }
 
 
     calculateList(){
-
         if(this.state.fenceType === "OneBySixPickets"){
             let pickets = Math.ceil(this.state.fenceLength*(100*12/5)/100);
             let posts = Math.ceil(this.state.fenceLength*((100/8)*(0.1)+(100/8))/100);
+                
+            let rails = (posts * 3);
+            
+            this.setState({
+                pickets: pickets,
+                posts: posts,
+                rails: rails + this.state.gates,
+                topCaps: 0,
+                trim6ft: 0,
+                trim8ft: 0,
 
-            if(this.state.gates === "No Gates"){
-                // One By Six
-                let rails = (posts * 3);
-
-                // No Gates
-                this.setState({
-                    pickets: pickets,
-                    posts: posts,
-                    rails: rails
-                })
-
-            // One Gate
-            } else if(this.state.gates === "One Gate"){
-                let rails = (posts * 3) + 4;
-                this.setState({
-                    pickets: pickets,
-                    posts: posts,
-                    rails: rails
-                })
-
-            // Two Gates
-            } else if(this.state.gates === "Two Gates"){
-                let rails = (posts * 3) + 8;
-                this.setState({
-                    pickets: pickets,
-                    posts: posts,
-                    rails: rails
-                })
-
-            }
+            })
 
         } else if(this.state.fenceType === "OneByFourPickets"){
             let pickets = Math.ceil(this.state.fenceLength*(100*12/3)/100);
             let posts = Math.ceil(this.state.fenceLength*((100/8)*(0.1)+(100/8))/100);
 
-            // One By Four
-            if(this.state.gates === "No Gates"){
-                // One By Six
-                let rails = (posts * 3);
+            let rails = (posts * 3);
 
-                // No Gates
-                this.setState({
-                    pickets: pickets,
-                    posts: posts,
-                    rails: rails
-                })
+            this.setState({
+                pickets: pickets,
+                posts: posts,
+                rails: rails + this.state.gates,
+                topCaps: 0,
+                trim6ft: 0,
+                trim8ft: 0
+            })
 
-            // One Gate
-            } else if(this.state.gates === "One Gate"){
-                let rails = (posts * 3) + 4;
-                this.setState({
-                    pickets: pickets,
-                    posts: posts,
-                    rails: rails
-                })
+        } else if(this.state.fenceType === "P_OneBySixPickets"){
+            let pickets = Math.ceil(this.state.fenceLength*(100*12/5)/100);
+            let posts = Math.ceil(this.state.fenceLength*((100/8)*(0.1)+(100/8))/100);
 
-            // Two Gates
-            } else if(this.state.gates === "Two Gates"){
-                let rails = (posts * 3) + 8;
-                this.setState({
-                    pickets: pickets,
-                    posts: posts,
-                    rails: rails
-                })
-            }
-        }
+            let rails = (posts * 3);
+
+            this.setState({
+                pickets: pickets,
+                posts: posts,
+                rails: rails + this.state.gates,
+                trim6ft: 0,
+                trim8ft: posts,
+                topCaps: posts
+            })
+
+        } else if(this.state.fenceType === "P_OneByFourPickets"){
+            let pickets = Math.ceil(this.state.fenceLength*(100*12/3)/100);
+            let posts = Math.ceil(this.state.fenceLength*((100/8)*(0.1)+(100/8))/100);
+
+            let rails = (posts * 3);
+
+            this.setState({
+                pickets: pickets,
+                posts: posts,
+                rails: rails + this.state.gates,
+                topCaps: posts,
+                trim6ft: 0,
+                trim8ft: posts
+            })
+
+        } else if(this.state.fenceType === "Horizontal"){
+            let posts = Math.ceil(this.state.fenceLength*((100/6)*(0.1)+(100/6))/100);
+            let pickets = Math.ceil(this.state.fenceLength*(posts*13)/100);
+
+            this.setState({
+                pickets: pickets,
+                posts: posts,
+                rails: posts,
+                topCaps: 0,
+                trim6ft: posts,
+                trim8ft: 0
+            })
+
+        } else if(this.state.fenceType === "Horizontal - Boulder"){
+            let posts = Math.ceil(this.state.fenceLength*((100/5)*(0.1)+(100/5))/100);
+            let pickets = Math.ceil(this.state.fenceLength*(posts*13)/100);
+
+            this.setState({
+                pickets: pickets,
+                posts: posts,
+                rails: posts,
+                trim6ft: posts,
+                trim8ft: 0,
+                topCaps: 0,
+            })
+
+        } else if(this.state.fenceType === "BoardOverBoard"){
+            let pickets = Math.ceil(this.state.fenceLength*(100*12/5)/100)*(1.3);
+            let posts = Math.ceil(this.state.fenceLength*((100/8)*(0.1)+(100/6))/100);
+
+            let rails = (posts * 3);
+
+            this.setState({
+                pickets: pickets,
+                posts: posts,
+                rails: rails + this.state.gates,
+                trim6ft: 0,
+                trim8ft: 0,
+                topCaps: 0
+            })
+
+        } else if(this.state.fenceType === "P_BoardOverBoard"){
+            let pickets = Math.ceil(this.state.fenceLength*(100*12/5)/100)*(1.3);
+            let posts = Math.ceil(this.state.fenceLength*((100/8)*(0.1)+(100/6))/100);
+
+            let rails = (posts * 3);
+
+            this.setState({
+                pickets: pickets,
+                posts: posts,
+                rails: rails + this.state.gates,
+                trim6ft: 0,
+                trim8ft: posts,
+                topCaps: posts
+            })
+        } 
     }
+
 
     render(){
         return(
             <div className='calculator'>
                 <div className='calculatorTitle'>
-                    Fencing Cost Calculator
+                    Supplies Calculator    
                 </div>
 
                 <label className="calculatorInputs">
@@ -135,12 +200,16 @@ class AdminUse extends React.Component {
                 </label>
                 <label className="calculatorInputs">
                 <div className="inputTitles"> Gates </div>                    
-                    <GateSelector gates={this.state.gates} handleGates={this.handleGates} />
+                    <GateSelector gateType={this.state.gateType} handleGates={this.handleGates} />
                 </label>
 
                 <div>Pickets: {this.state.pickets} </div>
                 <div>Posts: {this.state.posts} </div>
                 <div>Rails: {this.state.rails} </div>
+                <div>Top Caps: {this.state.topCaps} </div>
+                <div>Trim Piece (1x4x8 Flat): {this.state.trim8ft} </div>
+                <div>Trim Piece (1x4x6 Flat): {this.state.trim6ft} </div>
+
 
                 <button onClick={ ()=>{ this.calculateList() } }> Calculate List </button>
 
