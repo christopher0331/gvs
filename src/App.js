@@ -44,7 +44,7 @@ function App() {
                     <Route path="/custom-fences" component={CustomFences} />
                     <Route path="/commercial-fences" component={CommercialFencing} />
                     <Route path="/backflow" component={Backflow} />
-                    <Route path="/adminuse" component={AdminUse} />                    
+                    <Route path="/adminuse" component={AdminUse} />
                     <Route path="*" component={HomePage} />
                 </Switch>
             <Footer />
