@@ -7,7 +7,7 @@ const FenceTypes = () => {
     const HorizontalPrivacy = "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/SmallSizedWEBP/ResidentialHP.webp"
     const PremiumPicket = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/11.14.20-PremiumPicket/Mobile/PremiumPicket14.webp";
     const PrivacyFence = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/Mobile/4.14.21-6ftPickett_4.webp";
-    const RanchRail = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/10.30.20-RanchRail/Mobile/10.30.20-RanchRail21.webp";
+    const RanchRail = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/Portfolio/Project6/Mobile/project6Picture3Mobile.webp";
     const SplitRail = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/SplitRail/Mobile/SplitRailFence.webp";
     const CustomFence = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/HomePage/FullSizedWebp/CustomPicketCarousel.webp";
     const BoardOverBoard = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/5.27.21-BoardOverBoard/Mobile/5.27.21-BoardOverBoard13.webp";
@@ -55,6 +55,8 @@ const FenceTypes = () => {
                 </div>
             </div>
             <div className='info'>(Hover Over Image for Details)</div>
+            <p className='info' >Prices are a general estimate. Price is subject to changes in cost of materials. Premium and Standard fencing is based on a 6ft height.</p>
+
                 <div className="fences">
                     <div className="left">  
                         <div className="project1">
@@ -64,7 +66,7 @@ const FenceTypes = () => {
                             <div className="details">
                             <div className="center">
                                 <h1>Privacy Fence<br /></h1>
-                                <p>Average Cost: $39 per linear foot.</p>
+                                <p>Average Cost: $58 per linear foot.</p>
                             </div>
                             </div>
                         </div>
@@ -97,7 +99,7 @@ const FenceTypes = () => {
                             <div className="details">
                             <div className="center">
                                 <h1>Premium Privacy<br /></h1>
-                                <p>Average Cost: $48 per linear foot</p>
+                                <p>Average Cost: $65 per linear foot</p>
                             </div>
                             </div>
                         </div>
@@ -270,5 +272,6 @@ const FenceTypes = () => {
         </div>
     )
 }
+
 
 export default FenceTypes;
