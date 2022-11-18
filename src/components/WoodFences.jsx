@@ -7,10 +7,10 @@ const FenceTypes = () => {
     const HorizontalPrivacy = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FencesPages/CenteredHorizontalFence.jpeg"
     const PremiumPicket = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FencesPages/8ftPremiumPrivacyWithSign.jpeg";
     const PrivacyFence = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FencesPages/PrivacyFence.JPG";
-    const RanchRail = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FencesPages/RanchRail.jpeg";
-    const SplitRail = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/SplitRail/Mobile/SplitRailFence.webp";
+    const RanchRail = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FencesPages/RanchRail2.jpeg";
+    const SplitRail = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FencesPages/SplitRail.JPG";
     const CustomFence = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FencesPages/CustomHorizontalBlack.jpeg";
-    const BoardOverBoard = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FencesPages/BrownBoardOverBoard.jpeg";
+    const BoardOverBoard = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FencesPages/BoarOverBoardGate.jpeg";
 
 
     return(
