@@ -4,13 +4,13 @@ import { ReactTitle, MetaTags } from 'react-meta-tags';
 
 const FenceTypes = () => {
 
-    const HorizontalPrivacy = "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/SmallSizedWEBP/ResidentialHP.webp"
-    const PremiumPicket = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/11.14.20-PremiumPicket/Mobile/PremiumPicket14.webp";
-    const PrivacyFence = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/Mobile/4.14.21-6ftPickett_4.webp";
-    const RanchRail = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/Portfolio/Project6/Mobile/project6Picture3Mobile.webp";
+    const HorizontalPrivacy = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FencesPages/CenteredHorizontalFence.jpeg"
+    const PremiumPicket = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FencesPages/8ftPremiumPrivacyWithSign.jpeg";
+    const PrivacyFence = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FencesPages/PrivacyFence.JPG";
+    const RanchRail = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FencesPages/RanchRail.jpeg";
     const SplitRail = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/SplitRail/Mobile/SplitRailFence.webp";
-    const CustomFence = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/HomePage/FullSizedWebp/CustomPicketCarousel.webp";
-    const BoardOverBoard = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/5.27.21-BoardOverBoard/Mobile/5.27.21-BoardOverBoard13.webp";
+    const CustomFence = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FencesPages/CustomHorizontalBlack.jpeg";
+    const BoardOverBoard = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FencesPages/BrownBoardOverBoard.jpeg";
 
 
     return(

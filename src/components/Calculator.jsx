@@ -23,49 +23,49 @@ class Calculator extends React.Component {
         if(fenceType.target.value === 'StandardPickets'){
             this.setState({
                 fenceType: fenceType.target.value,
-                costPerFoot: 39,
+                costPerFoot: 52,
                 removalCostPerFoot: 5
             })
         } 
         if(fenceType.target.value === 'PremiumPickets'){
             this.setState({
                 fenceType: fenceType.target.value,
-                costPerFoot: 48,
+                costPerFoot: 65,
                 removalCostPerFoot: 5
             })
         }
         if(fenceType.target.value === 'Horizontal'){
             this.setState({
                 fenceType: fenceType.target.value,
-                costPerFoot: 50,
+                costPerFoot: 55,
                 removalCostPerFoot: 5
             })
         } 
         if(fenceType.target.value === 'RanchRail'){
             this.setState({
                 fenceType: fenceType.target.value,
-                costPerFoot: 38,
+                costPerFoot: 45,
                 removalCostPerFoot: 5
             })
         }
         if(fenceType.target.value === 'SplitRail'){
             this.setState({
                 fenceType: fenceType.target.value,
-                costPerFoot: 31,
+                costPerFoot: 45,
                 removalCostPerFoot: 5
             })
         }
         if(fenceType.target.value === 'Custom'){
             this.setState({
                 fenceType: fenceType.target.value,
-                costPerFoot: 48,
+                costPerFoot: 65,
                 removalCostPerFoot: 5
             })
         }
         if(fenceType.target.value === 'BoardOverBoard'){
             this.setState({
                 fenceType: fenceType.target.value,
-                costPerFoot: 52,
+                costPerFoot: 60,
                 removalCostPerFoot: 5
             })
         }
