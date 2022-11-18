@@ -37,7 +37,7 @@ const Projects = () => {
     const CustomMultiFamilyHome = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FeaturedProjects/Project5/picture23";
     const SplitRailFencing = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FeaturedProjects/Project6/picture1";
     const horizontalPrivacyFence = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FeaturedProjects/Project1/picture13";
-    const EightftPremiumPrivacy = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FeaturedProjects/Project3/picture1";
+    const EightftPremiumPrivacy = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FeaturedProjects/Project3/picture6";
     const shortHorizontalDecorativeFence = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FeaturedProjects/Project4/picture7"; 
     const horizontalPrivacyFence2 = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FeaturedProjects/Project2/picture1";
 
@@ -50,7 +50,7 @@ const Projects = () => {
                 <div>  
                     <Card.Img variant="custom" src={horizontalPrivacyFence} className='projectImage' alt=''/>
                     <Card.Body className='projectBody'>
-                        <Card.Title>Custom Horizontal Privacy</Card.Title>
+                        <Card.Title>Standard Horizontal Privacy</Card.Title>
                         <Button variant="custom" className="successButton" onClick={handleShow}>
                             View Project
                         </Button>
@@ -65,7 +65,7 @@ const Projects = () => {
                 <div>  
                     <Card.Img variant="custom" src={horizontalPrivacyFence2} className='projectImage' alt=''/>
                     <Card.Body className='projectBody'>
-                        <Card.Title>Horizontal Privacy Fence</Card.Title>
+                        <Card.Title>Premium Horizontal Privacy Fence</Card.Title>
                         <Button variant="custom" className="successButton" onClick={handleShow2}>
                             View Project
                         </Button>
@@ -127,7 +127,7 @@ const Projects = () => {
                 <div>  
                     <Card.Img variant="custom" src={SplitRailFencing} className='projectImage' alt='This is an alt text for residential privacy fencing'/>
                     <Card.Body className='projectBody'>
-                        <Card.Title>Split Rail Fencing</Card.Title>
+                        <Card.Title>Ranch Rail Fencing</Card.Title>
                         <Button variant="custom" className="successButton" onClick={handleShow6}>
                             View Project
                         </Button>

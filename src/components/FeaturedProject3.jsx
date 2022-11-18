@@ -27,7 +27,7 @@ class Feature3 extends Component {
         }
 
         this.setState({
-            primaryImage: [`https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FeaturedProjects/Project3/picture1`, "custom horizontal fence, 300 linear feet"],
+            primaryImage: [`https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FeaturedProjects/Project3/picture6`, "custom horizontal fence, 300 linear feet"],
             allImages: projectOneImageArray,
         })
     }

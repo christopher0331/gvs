@@ -1,7 +1,7 @@
 import { React } from 'react';
 import './styles/AboutUs.css';
 
-const CrewWithTruck = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/AboutUs/AboutUsImage.webp";
+const CrewWithTruck = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/AboutUs/AboutUsImage.jpg";
 
 
 const Overview = () => (

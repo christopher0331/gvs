@@ -46,7 +46,7 @@ const PortfolioLarge = () =>  {
         const CustomMultiFamilyHome = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FeaturedProjects/Project5/picture23";
         const SplitRailFencing = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FeaturedProjects/Project6/picture1";
         const horizontalPrivacyFence = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FeaturedProjects/Project1/picture13";
-        const EightftPremiumPrivacy = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FeaturedProjects/Project3/picture1";
+        const EightftPremiumPrivacy = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FeaturedProjects/Project3/picture6";
         const shortHorizontalDecorativeFence = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FeaturedProjects/Project4/picture7"; 
     
        
@@ -62,7 +62,7 @@ const PortfolioLarge = () =>  {
                         <div className="portfolioProjects">
                             <img src={horizontalPrivacyFence} className="portfolioImage" alt=''/>
                             <div className="portfolioBody">
-                                <h3>Horizontal Privacy Fence</h3>
+                                <h3>Standard Horizontal Privacy Fence</h3>
                                 <p>
 
                                 </p>        
@@ -82,7 +82,7 @@ const PortfolioLarge = () =>  {
                         <div className="portfolioProjects">
                             <img src={horizontalPrivacyFence2} className="portfolioImage" alt=''/>
                             <div className="portfolioBody">
-                                <h3>Horizontal Privacy Fence</h3>
+                                <h3>Premium Horizontal Privacy Fence</h3>
                                 <p>
 
                                 </p>
@@ -144,7 +144,7 @@ const PortfolioLarge = () =>  {
                         <div className="portfolioProjects">
                             <img src={SplitRailFencing} className="portfolioImage" alt=''/>
                             <div className="portfolioBody">
-                                <h3>Split Rail Fencing</h3>
+                                <h3>Ranch Rail Fencing</h3>
                                 <p>
 
                                 </p>
