@@ -34,12 +34,12 @@ const Projects = () => {
     const FeaturedProject5 = lazy(() => import('./FeaturedProject5.jsx'));
     const FeaturedProject6 = lazy(() => import('./FeaturedProject6.jsx'));
 
-    const Residential = "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/Mobile/4.14.21-6ftPickett_6.webp";
-    const Residential2 = "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/Mobile/4.23.21-HOA6FtPicket_6.webp";
-    const ironFence = "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/SmallSizedWEBP/DecorativeIronFence_642_6.webp";
-    const meshTop = "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/SmallSizedWEBP/CustomPickett_642.webp";
-    const schoolProject = "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/SmallSizedWEBP/Commercial_642.webp"; 
-    const splitRail2 = "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/SmallSizedWEBP/RanchRail.webp";
+    const CustomMultiFamilyHome = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FeaturedProjects/Project5/picture23";
+    const SplitRailFencing = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FeaturedProjects/Project6/picture1";
+    const horizontalPrivacyFence = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FeaturedProjects/Project1/picture13";
+    const EightftPremiumPrivacy = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FeaturedProjects/Project3/picture1";
+    const shortHorizontalDecorativeFence = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FeaturedProjects/Project4/picture7"; 
+    const horizontalPrivacyFence2 = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FeaturedProjects/Project2/picture1";
 
     return(
     <div>
@@ -48,9 +48,9 @@ const Projects = () => {
         </div>
             <div className="projects">
                 <div>  
-                    <Card.Img variant="custom" src={ironFence} className='projectImage' alt=''/>
+                    <Card.Img variant="custom" src={horizontalPrivacyFence} className='projectImage' alt=''/>
                     <Card.Body className='projectBody'>
-                        <Card.Title>Wrought Iron Fence</Card.Title>
+                        <Card.Title>Custom Horizontal Privacy</Card.Title>
                         <Button variant="custom" className="successButton" onClick={handleShow}>
                             View Project
                         </Button>
@@ -63,9 +63,9 @@ const Projects = () => {
                     </Card.Body>
                 </div>
                 <div>  
-                    <Card.Img variant="custom" src={splitRail2} className='projectImage' alt=''/>
+                    <Card.Img variant="custom" src={horizontalPrivacyFence2} className='projectImage' alt=''/>
                     <Card.Body className='projectBody'>
-                        <Card.Title>Ranch Rail Fence</Card.Title>
+                        <Card.Title>Horizontal Privacy Fence</Card.Title>
                         <Button variant="custom" className="successButton" onClick={handleShow2}>
                             View Project
                         </Button>
@@ -78,9 +78,9 @@ const Projects = () => {
                     </Card.Body>
                 </div>
                 <div>  
-                    <Card.Img variant="custom" src={meshTop} className='projectImage' alt=''/>
+                    <Card.Img variant="custom" src={EightftPremiumPrivacy} className='projectImage' alt=''/>
                     <Card.Body className='projectBody'>
-                        <Card.Title>Custom Residential</Card.Title>
+                        <Card.Title>8ft Premium Privacy Fencing</Card.Title>
                         <Button variant="custom" className="successButton" onClick={handleShow3}>
                             View Project
                         </Button>
@@ -95,9 +95,9 @@ const Projects = () => {
             </div>
             <div className="projects">
                 <div>  
-                    <Card.Img variant="custom" src={schoolProject} className='projectImage' alt=''/>
+                    <Card.Img variant="custom" src={shortHorizontalDecorativeFence} className='projectImage' alt=''/>
                     <Card.Body className='projectBody'>
-                        <Card.Title>Commercial Chainlink Fence</Card.Title>
+                        <Card.Title>4ft Horizontal Decorative Fence</Card.Title>
                         <Button variant="custom" className="successButton" onClick={handleShow4}>
                             View Project
                         </Button>
@@ -110,9 +110,9 @@ const Projects = () => {
                     </Card.Body>
                 </div>
                 <div>  
-                    <Card.Img variant="custom" src={Residential} className='projectImage' alt=''/>
+                    <Card.Img variant="custom" src={CustomMultiFamilyHome} className='projectImage' alt=''/>
                     <Card.Body className='projectBody'>
-                        <Card.Title>6ft Cedar Privacy Fence</Card.Title>
+                        <Card.Title>Custom Multi-Family Home</Card.Title>
                         <Button variant="custom" className="successButton" onClick={handleShow5}>
                             View Project
                         </Button>
@@ -125,9 +125,9 @@ const Projects = () => {
                     </Card.Body>
                 </div>
                 <div>  
-                    <Card.Img variant="custom" src={Residential2} className='projectImage' alt='This is an alt text for residential privacy fencing'/>
+                    <Card.Img variant="custom" src={SplitRailFencing} className='projectImage' alt='This is an alt text for residential privacy fencing'/>
                     <Card.Body className='projectBody'>
-                        <Card.Title>6ft Cedar Privacy Fence</Card.Title>
+                        <Card.Title>Split Rail Fencing</Card.Title>
                         <Button variant="custom" className="successButton" onClick={handleShow6}>
                             View Project
                         </Button>

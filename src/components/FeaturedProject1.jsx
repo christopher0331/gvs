@@ -22,17 +22,15 @@ class Feature1 extends Component {
     }
 
     componentDidMount(){
+        const projectOneImageArray = [];
+
+        for(let i = 1; i < 19; i++){
+            projectOneImageArray.push([`https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FeaturedProjects/Project1/picture${i}`, "custom horizontal fence, 300 linear feet"]);
+        }
+
         this.setState({
-            primaryImage: ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.13.21-IronFencing-Folder/FullSize/DecorativeIronFence_642+(1).webp",'Decorative iron fencing, wrought iron fencing, 4ft tall, 80 linear feet'],
-            allImages: 
-            [
-               ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.13.21-IronFencing-Folder/Mobile/DecorativeIronFence_642+(1).webp",'Decorative iron fencing, wrought iron fencing, 4ft tall, 80 linear feet'], 
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.13.21-IronFencing-Folder/Mobile/DecorativeIronFence_642_2+(1).webp",'Decorative iron fencing, wrought iron fencing, 4ft tall, 80 linear feet'], 
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.13.21-IronFencing-Folder/Mobile/DecorativeIronFence_642_3+(1).webp",'Decorative iron fencing, wrought iron fencing, 4ft tall, 80 linear feet'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.13.21-IronFencing-Folder/Mobile/DecorativeIronFence_642_4+(1).webp",'Decorative iron fencing, wrought iron fencing, 4ft tall, 80 linear feet'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.13.21-IronFencing-Folder/Mobile/DecorativeIronFence_642_5+(1).webp",'Decorative iron fencing, wrought iron fencing, 4ft tall, 80 linear feet'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.13.21-IronFencing-Folder/Mobile/DecorativeIronFence_642_6+(1).webp",'Decorative iron fencing, wrought iron fencing, 4ft tall, 80 linear feet']
-            ]
+            primaryImage: [`https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FeaturedProjects/Project1/picture13`, "custom horizontal fence, 300 linear feet"],
+            allImages: projectOneImageArray,
         })
     }
 
@@ -77,7 +75,7 @@ class Feature1 extends Component {
                     <meta name="description" description="Wrought Iron Fencing, Ornamental Iron Fencing Project" />
                 </MetaTags>
                     <div className="imageSection">
-                            <h2 className="featuredTitle">Wrought Iron Fencing</h2>
+                            <h2 className="featuredTitle">Horizontal Privacy Fence</h2>
                         <div className="primaryImageBox">
                             <img className="primaryImage" src={this.state.primaryImage[0]} alt={this.state.primaryImage[1]} />
                             <FontAwesomeIcon onClick={() => this.changeImagesLeftArrow()} id='projectLeftArrow' icon={faChevronCircleLeft} color='black'/>

@@ -20,27 +20,15 @@ class Feature4 extends Component {
     }
 
     componentDidMount(){
+        const projectOneImageArray = [];
+
+        for(let i = 1; i < 19; i++){
+            projectOneImageArray.push([`https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FeaturedProjects/Project4/picture${i}`, "custom horizontal fence, 300 linear feet"]);
+        }
+
         this.setState({
-            primaryImage: ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_18.webp",'Commercial Fencing, Chainlink Fencing'],
-            allImages: [
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence.webp",'Chainlink Fencing'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_2.webp",'Chainlink Fencing'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_3.webp",'Chainlink Fencing'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_4.webp",'Chainlink Fencing'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_5.webp",'Chainlink Fencing'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_6.webp",'Chainlink Fencing'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_8.webp",'Chainlink Fencing'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_9.webp",'Chainlink Fencing'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_10.webp",'Chainlink Fencing'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_11.webp",'Chainlink Fencing'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_12.webp",'Chainlink Fencing'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_13.webp",'Chainlink Fencing'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_14.webp",'Chainlink Fencing'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_15.webp",'Chainlink Fencing'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_16.webp",'Chainlink Fencing'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_17.webp",'Chainlink Fencing'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/CommercialFencing/Mobile/CommercialFence_18.webp",'Chainlink Fencing']
-            ]
+            primaryImage: [`https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FeaturedProjects/Project4/picture1`, "custom horizontal fence, 300 linear feet"],
+            allImages: projectOneImageArray,
         })
     }
 
@@ -86,7 +74,7 @@ class Feature4 extends Component {
                     <meta property="og:title" content="MyApp" />
                 </MetaTags>
                     <div className="imageSection">
-                            <h3 className="featuredTitle">Commercial Chainlink Fence</h3>
+                            <h3 className="featuredTitle">Short Horizontal Decorative Fence</h3>
                         <div className="primaryImageBox">
                             <img className="primaryImage" src={this.state.primaryImage[0]} alt={this.state.primaryImage[1]}/>
                             <FontAwesomeIcon onClick={() => this.changeImagesLeftArrow()} id='projectLeftArrow' icon={faChevronCircleLeft} color='black'/>

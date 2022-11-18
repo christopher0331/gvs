@@ -20,15 +20,15 @@ class Feature3 extends Component {
     }
 
     componentDidMount(){
+        const projectOneImageArray = [];
+
+        for(let i = 1; i < 7; i++){
+            projectOneImageArray.push([`https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FeaturedProjects/Project3/picture${i}`, "custom horizontal fence, 300 linear feet"]);
+        }
+
         this.setState({
-            primaryImage: ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/3.12.21-Custom-Folder/FullSize/webp.webp",''],
-            allImages: [
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/3.12.21-Custom-Folder/Mobile/webp+(2).webp",''],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/3.12.21-Custom-Folder/Mobile/webp+(3).webp",''],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/3.12.21-Custom-Folder/Mobile/webp+(4).webp",''],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/3.12.21-Custom-Folder/Mobile/webp+(5).webp",''],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/3.12.21-Custom-Folder/Mobile/webp.webp",'']
-            ]
+            primaryImage: [`https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FeaturedProjects/Project3/picture1`, "custom horizontal fence, 300 linear feet"],
+            allImages: projectOneImageArray,
         })
     }
 
@@ -74,7 +74,7 @@ class Feature3 extends Component {
                     <meta property="og:title" content="MyApp" />
                 </MetaTags>
                     <div className="imageSection">
-                            <h3 className="featuredTitle">Feature 3</h3>
+                            <h3 className="featuredTitle">8 ft Premium Privacy Fence</h3>
                         <div className="primaryImageBox">
                             <img className="primaryImage" src={this.state.primaryImage[0]} alt={this.state.primaryImage[1]} />
                             <FontAwesomeIcon onClick={() => this.changeImagesLeftArrow()} id='projectLeftArrow' icon={faChevronCircleLeft} color='black'/>

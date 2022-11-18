@@ -20,25 +20,15 @@ class Feature2 extends Component {
     }
 
     componentDidMount(){
+        const projectOneImageArray = [];
+
+        for(let i = 1; i < 19; i++){
+            projectOneImageArray.push([`https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FeaturedProjects/Project2/picture${i}`, "custom horizontal fence, 300 linear feet"]);
+        }
+
         this.setState({
-            primaryImage: ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/3.10.21-RanchRail-Folder/FullSize/webp+(13).webp", 'Ranch Rail Fencing, Horse Fencing, 240 linear feet'],
-            allImages: 
-            [
-                [ "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/3.10.21-RanchRail-Folder/Mobile/webp+(1).webp",'Ranch Rail Fencing, Horse Fencing, 240 linear feet'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/3.10.21-RanchRail-Folder/Mobile/webp+(2).webp",'Ranch Rail Fencing, Horse Fencing, 240 linear feet'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/3.10.21-RanchRail-Folder/Mobile/webp+(3).webp",'Ranch Rail Fencing, Horse Fencing, 240 linear feet'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/3.10.21-RanchRail-Folder/Mobile/webp+(4).webp",'Ranch Rail Fencing, Horse Fencing, 240 linear feet'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/3.10.21-RanchRail-Folder/Mobile/webp+(5).webp",'Ranch Rail Fencing, Horse Fencing, 240 linear feet'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/3.10.21-RanchRail-Folder/Mobile/webp+(6).webp",'Ranch Rail Fencing, Horse Fencing, 240 linear feet'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/3.10.21-RanchRail-Folder/Mobile/webp+(7).webp",'Ranch Rail Fencing, Horse Fencing, 240 linear feet'],           
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/3.10.21-RanchRail-Folder/Mobile/webp+(8).webp",'Ranch Rail Fencing, Horse Fencing, 240 linear feet'],          
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/3.10.21-RanchRail-Folder/Mobile/webp+(9).webp",'Ranch Rail Fencing, Horse Fencing, 240 linear feet'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/3.10.21-RanchRail-Folder/Mobile/webp+(9).webp",'Ranch Rail Fencing, Horse Fencing, 240 linear feet'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/3.10.21-RanchRail-Folder/Mobile/webp+(10).webp",'Ranch Rail Fencing, Horse Fencing, 240 linear feet'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/3.10.21-RanchRail-Folder/Mobile/webp+(11).webp",'Ranch Rail Fencing, Horse Fencing, 240 linear feet'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/3.10.21-RanchRail-Folder/Mobile/webp+(12).webp",'Ranch Rail Fencing, Horse Fencing, 240 linear feet'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/3.10.21-RanchRail-Folder/Mobile/webp+(13).webp",'Ranch Rail Fencing, Horse Fencing, 240 linear feet'],
-            ]
+            primaryImage: [`https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FeaturedProjects/Project2/picture1`, "custom horizontal fence, 300 linear feet"],
+            allImages: projectOneImageArray,
         })
     }
 
@@ -84,7 +74,7 @@ class Feature2 extends Component {
                     <meta property="og:title" content="MyApp" />
                 </MetaTags>
                     <div className="imageSection">
-                            <h3 className="featuredTitle">Ranch Rail Fencing</h3>
+                            <h3 className="featuredTitle">Horizontal Privacy Fence</h3>
                         <div className="primaryImageBox">
                             <img className="primaryImage" src={this.state.primaryImage[0]} alt={this.state.primaryImage[1]} />
                             <FontAwesomeIcon onClick={() => this.changeImagesLeftArrow()} id='projectLeftArrow' icon={faChevronCircleLeft} color='black'/>

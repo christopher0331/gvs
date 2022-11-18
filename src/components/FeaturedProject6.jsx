@@ -20,27 +20,15 @@ class Feature5 extends Component {
     }
 
     componentDidMount(){
+        const projectOneImageArray = [];
+
+        for(let i = 1; i < 19; i++){
+            projectOneImageArray.push([`https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FeaturedProjects/Project6/picture${i}`, "custom horizontal fence, 300 linear feet"]);
+        }
+
         this.setState({
-            primaryImage: ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_1.webp", '6ft Cedar Privacy Fence'],
-            allImages: [
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_2.webp", '6ft Cedar Privacy Fence'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_3.webp", '6ft Cedar Privacy Fence'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_4.webp", '6ft Cedar Privacy Fence'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_5.webp", '6ft Cedar Privacy Fence'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_6.webp", '6ft Cedar Privacy Fence'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_7.webp", '6ft Cedar Privacy Fence'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_8.webp", '6ft Cedar Privacy Fence'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_9.webp", '6ft Cedar Privacy Fence'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_10.webp", '6ft Cedar Privacy Fence'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_11.webp", '6ft Cedar Privacy Fence'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_12.webp", '6ft Cedar Privacy Fence'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_13.webp", '6ft Cedar Privacy Fence'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_14.webp", '6ft Cedar Privacy Fence'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_15.webp", '6ft Cedar Privacy Fence'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_16.webp", '6ft Cedar Privacy Fence'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_17.webp", '6ft Cedar Privacy Fence'],
-                ["https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/FullSize/4.23.21-HOA6FtPicket_18.webp", '6ft Cedar Privacy Fence'],
-            ]
+            primaryImage: [`https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FeaturedProjects/Project6/picture1`, "custom horizontal fence, 300 linear feet"],
+            allImages: projectOneImageArray,
         })
     }
     
@@ -86,7 +74,7 @@ class Feature5 extends Component {
                     <meta property="og:title" content="MyApp" />
                 </MetaTags>
                     <div className="imageSection">
-                            <h3 className="featuredTitle">6ft Cedar Privacy Fence</h3>
+                            <h3 className="featuredTitle">Split Rail Fencing</h3>
                         <div className="primaryImageBox">
                             <img className="primaryImage" src={this.state.primaryImage[0]} alt={this.state.primaryImage[1]}/>
                             <FontAwesomeIcon onClick={() => this.changeImagesLeftArrow()} id='projectLeftArrow' icon={faChevronCircleLeft} color='black'/>
