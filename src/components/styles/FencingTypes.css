@@ -27,6 +27,7 @@ p {
     font-size: 16px;
     color: grey;
     justify-content: center;
+    text-align: center;
 }
 
 .fencingUpperInformationBlock {
