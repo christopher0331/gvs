@@ -17,8 +17,8 @@ const ContactInformation = () => {
                     (Available from 8:00am to 8:00pm)
                 </div>
                 <div className="contactAddress">
-                    <div>700 S Beshear Ct</div>
-                    <div>Erie, CO</div>
+                    <div>5417 Fox Run Blvd.</div>
+                    <div>Frederick, CO</div>
                     <div>9952 W 86th Ave</div>
                     <div>Arvada, CO</div>
                 </div>
