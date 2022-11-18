@@ -42,45 +42,27 @@ const PortfolioLarge = () =>  {
         const handleClose7 = () => setShow7(false);
         const handleShow7 = () => setShow7(true);
 
-        const DecorativeIronFence = "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/SmallSizedWEBP/DecorativeIronFence_642_6.webp";
-        const RanchRail ="https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/SmallSizedWEBP/RanchRail.webp";
-        const CustomPickett ="https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/SmallSizedWEBP/CustomPickett_642.webp";
-        const Commercial ="https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/SmallSizedWEBP/Commercial_642.webp";
-        const HOA6FtPicket ="https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/Mobile/4.23.21-HOA6FtPicket_6.webp";
-        const PicketFence ="https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/Mobile/4.14.21-6ftPickett_6.webp";
-        const HorizontalPickett = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/2.28.22-Horizontal-Stained-Pickett/IMG_2869.webp";
+        const horizontalPrivacyFence2 = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FeaturedProjects/Project2/picture1";
+        const CustomMultiFamilyHome = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FeaturedProjects/Project5/picture23";
+        const SplitRailFencing = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FeaturedProjects/Project6/picture1";
+        const horizontalPrivacyFence = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FeaturedProjects/Project1/picture13";
+        const EightftPremiumPrivacy = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FeaturedProjects/Project3/picture1";
+        const shortHorizontalDecorativeFence = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FeaturedProjects/Project4/picture7"; 
+    
+       
         return(
             <div id="primaryBox">
                     <div className="portfolioTitle">
                         <h1>Portfolio</h1>   
                     </div>
                     <div className="portfolioBlock">
-                    <div className="portfolioProjects">
-                            <img src={HorizontalPickett} className="portfolioImage" alt=''/>
-                            <div className="portfolioBody">
-                                <h3>Horizontal Stained Pickett Fence</h3>
-                                <p>
 
-                                </p>        
-                                <div onClick={handleShow7}>
-                                    <div class="btn2 from-left2">
-                                        View Project
-                                    </div>
-                                </div>
-                                <Modal show={show7} onHide={handleClose}>
-                                    <FeaturedProject7 />
-                                    <Button variant="secondary" onClick={handleClose7} className="projectButton">
-                                        Close
-                                    </Button>
-                                </Modal>   
-                            </div>
-                        </div>
                     </div>
                     <div className="portfolioBlock">
                         <div className="portfolioProjects">
-                            <img src={DecorativeIronFence} className="portfolioImage" alt=''/>
+                            <img src={horizontalPrivacyFence} className="portfolioImage" alt=''/>
                             <div className="portfolioBody">
-                                <h3>Wrought Iron Fence</h3>
+                                <h3>Horizontal Privacy Fence</h3>
                                 <p>
 
                                 </p>        
@@ -98,9 +80,9 @@ const PortfolioLarge = () =>  {
                             </div>
                         </div>
                         <div className="portfolioProjects">
-                            <img src={RanchRail} className="portfolioImage" alt=''/>
+                            <img src={horizontalPrivacyFence2} className="portfolioImage" alt=''/>
                             <div className="portfolioBody">
-                                <h3>Ranch Rail Fence</h3>
+                                <h3>Horizontal Privacy Fence</h3>
                                 <p>
 
                                 </p>
@@ -118,9 +100,9 @@ const PortfolioLarge = () =>  {
                             </div>
                         </div>
                         <div className="portfolioProjects">
-                            <img src={CustomPickett} className="portfolioImage" alt=''/>
+                            <img src={EightftPremiumPrivacy} className="portfolioImage" alt=''/>
                             <div className="portfolioBody">
-                                <h3>Custom Fence</h3>
+                                <h3>8ft Premium Privacy Fence</h3>
                                 <p>
 
                                 </p>
@@ -140,9 +122,9 @@ const PortfolioLarge = () =>  {
                     </div>
                     <div className="portfolioBlock">
                     <div className="portfolioProjects">
-                        <img src={Commercial} className="portfolioImage" alt=''/>
+                        <img src={shortHorizontalDecorativeFence} className="portfolioImage" alt=''/>
                         <div className="portfolioBody">
-                                <h3>Commercial Chain Link Fence</h3>
+                                <h3>Short Horizontal Decorative Fence</h3>
                                 <p>
 
                                 </p>
@@ -160,9 +142,9 @@ const PortfolioLarge = () =>  {
                             </div>
                         </div>
                         <div className="portfolioProjects">
-                            <img src={HOA6FtPicket} className="portfolioImage" alt=''/>
+                            <img src={SplitRailFencing} className="portfolioImage" alt=''/>
                             <div className="portfolioBody">
-                                <h3>Privacy Fence</h3>
+                                <h3>Split Rail Fencing</h3>
                                 <p>
 
                                 </p>
@@ -180,9 +162,9 @@ const PortfolioLarge = () =>  {
                             </div>
                         </div>
                         <div className="portfolioProjects">
-                            <img src={PicketFence} className="portfolioImage" alt=''/>
+                            <img src={CustomMultiFamilyHome} className="portfolioImage" alt=''/>
                             <div className="portfolioBody">
-                                <h3>Privacy Fence</h3>
+                                <h3>Custom Multi-Family Home Fencing</h3>
                                 <p>
 
                                 </p>
