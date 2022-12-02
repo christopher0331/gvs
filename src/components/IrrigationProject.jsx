@@ -2,7 +2,7 @@ import { React } from 'react';
 import { Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-const IrrigationImage = "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/SmallSizedWEBP/Irrigation_642.webp";
+const IrrigationImage = "https://ik.imagekit.io/greenviewsolutions/HomePage/SmallSizedWEBP/Irrigation_642.webp?tr=w-700,h-700";
 
 const Irrigation = (props) => {
     return(

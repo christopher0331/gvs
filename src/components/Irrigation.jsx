@@ -4,11 +4,11 @@ import './styles/FencingTypes.css';
 
 const Irrigation = (props) => {
     
-    const IrrigationImage = "https://ik.imagekit.io/greenviewsolutions/HomePage/SmallSizedWEBP/Irrigation_642.webp";
-    const SeasonalImages = "https://ik.imagekit.io/greenviewsolutions/Irrigation/pexels-anon-754276.jpg";
-    const BackFlowTests = "https://ik.imagekit.io/greenviewsolutions/HomePage/FullSizedWebp/Backflow_Testing_Device.webp";
-    const RainBirdWifiController = "https://ik.imagekit.io/greenviewsolutions/Irrigation/Rainbird+WiFi+Controller.jpeg";
-    const IrrigationRepairs = "https://ik.imagekit.io/greenviewsolutions/Irrigation/IrrigationRepairs.jpeg";
+    const IrrigationImage = "https://ik.imagekit.io/greenviewsolutions/HomePage/SmallSizedWEBP/Irrigation_642.webp?tr=w-400,h-400";
+    const SeasonalImages = "https://ik.imagekit.io/greenviewsolutions/Irrigation/pexels-anon-754276.jpg?tr=w-400,h-400";
+    const BackFlowTests = "https://ik.imagekit.io/greenviewsolutions/HomePage/FullSizedWebp/Backflow_Testing_Device.webp?tr=w-400,h-400";
+    const RainBirdWifiController = "https://ik.imagekit.io/greenviewsolutions/Irrigation/RainbirdWiFiController.jpeg?tr=w-400,h-400";
+    const IrrigationRepairs = "https://ik.imagekit.io/greenviewsolutions/Irrigation/IrrigationRepairs.jpeg?tr=w-400,h-400";
 
     useEffect(() => {
         window.scrollTo(0, 0)
