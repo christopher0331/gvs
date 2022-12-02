@@ -11,7 +11,7 @@ const ImageSlider = () => {
     const innerWidth = window.innerWidth;
 
     const data = [
-      ["https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/HomePage/FullSizedWebp/homepage1.webp","Cedar Pickets, Horizontal fencing, 182 linear feet", "From Privacy Structures, to Quality Fences, We've Got You Covered"],
+      ["https://ik.imagekit.io/greenviewsolutions/FullSizedWebp/homepage1.webp","Cedar Pickets, Horizontal fencing, 182 linear feet", "From Privacy Structures, to Quality Fences, We've Got You Covered"],
       ["https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/HomePage/FullSizedWebp/homepage2.webp","Commercial Fencing, Chain Link Fence, 16ft tall, 500 linear feet", "Our Commercial Fences are Built to Last and Provide Security and Protection for Decades!"],
       ["https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/HomePage/FullSizedWebp/homepage3.webp","Privacy fence, 6ft tall picket fence, decorative gates", "We Handle Wood Fences with Precision and Love. Our Fences are Built to the Highest Quality"],
       ["https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/HomePage/FullSizedWebp/homepage4.webp","Cedar Picket, picket fencing, 4ft tall custom picket fence", "The Amount of Customizations are Limitless!"],
