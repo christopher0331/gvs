@@ -5,7 +5,7 @@ import './styles/CardComponent.css';
 // import CommercialFenceImage from './assets/CommercialFence.jpeg';
 import { Link } from 'react-router-dom';
 
-const CommercialFenceImage = "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/SmallSizedWEBP/Commercial_642.webp";
+const CommercialFenceImage = "https://ik.imagekit.io/greenviewsolutions/HomePage/SmallSizedWEBP/Commercial_642.webp";
 
 const CommercialFences = (props) => {
     return(

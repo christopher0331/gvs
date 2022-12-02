@@ -2,10 +2,8 @@ import { Suspense, lazy, React, Component }  from 'react';
 import { Carousel, Button } from 'react-bootstrap'
 import './styles/Carousel.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import Image from 'https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/CustomPicketCarousel.JPG';
-// import Image2 from '././assets/pexels-pok-rie-132037.jpg';
 
-const Image = "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/CustomPicketCarousel.JPG";
+const Image = "https://ik.imagekit.io/greenviewsolutions/HomePage/CustomPicketCarousel.JPG";
 const Image2 = "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/HorizontalCedarStainedCarousel.JPG";
 const Image3 = "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/PicketWithDecorationCarousel.JPG";
 
