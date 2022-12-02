@@ -3,7 +3,7 @@ import { Card } from 'react-bootstrap';
 import './styles/CardComponent.css';
 import { Link } from 'react-router-dom';
 
-const BackFlowTester = "https://ik.imagekit.io/greenviewsolutions/HomePage/FullSizedWebp/Backflow_Testing_Device.webp";
+const BackFlowTester = "https://ik.imagekit.io/greenviewsolutions/HomePage/FullSizedWebp/Backflow_Testing_Device.webp?tr=w-600,h-600";
 
 const BackflowTests = (props) => {
     return(

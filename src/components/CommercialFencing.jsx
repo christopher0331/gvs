@@ -4,7 +4,7 @@ import { React, lazy } from 'react';
 import './styles/FencingTypes.css';
 
 const ChainLinkFences = () => {
-    const CommercialFenceImage = "https://ik.imagekit.io/greenviewsolutions/HomePage/SmallSizedWEBP/Commercial_642.webp";
+    const CommercialFenceImage = "https://ik.imagekit.io/greenviewsolutions/HomePage/SmallSizedWEBP/Commercial_642.webp?tr=w-700,h-700";
 
 
     return(

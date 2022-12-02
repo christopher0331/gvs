@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
   
 const Footer = ()  => {
     
-    const Logo = "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/FullSizedWebp/clearGVSLogo_300.webp";
+    const Logo = "https://ik.imagekit.io/greenviewsolutions/HomePage/FullSizedWebp/clearGVSLogo_300.webp?tr=w-300,h-300";
 
         return(
             <div className="footerOutterDivs">

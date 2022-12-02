@@ -4,8 +4,8 @@ import './styles/Carousel.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Image = "https://ik.imagekit.io/greenviewsolutions/HomePage/CustomPicketCarousel.JPG";
-const Image2 = "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/HorizontalCedarStainedCarousel.JPG";
-const Image3 = "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/PicketWithDecorationCarousel.JPG";
+const Image2 = "https://ik.imagekit.io/greenviewsolutions/HomePage/HorizontalCedarStainedCarousel.JPG";
+const Image3 = "https://ik.imagekit.io/greenviewsolutions/HomePage/PicketWithDecorationCarousel.JPG";
 
 class CarouselComponent extends Component {
     constructor(props) {

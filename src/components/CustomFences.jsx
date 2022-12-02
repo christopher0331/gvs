@@ -4,7 +4,7 @@ import './styles/FencingTypes.css';
 const CustomFences = () => {
 
     const CompositeFence = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/4.26.21-CompositeFence/Mobile/4.26.21-CompositeFence7.webp";
-    const CustomFence = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/HomePage/FullSizedWebp/CustomPicketCarousel.webp";
+    const CustomFence = "https://ik.imagekit.io/greenviewsolutions/HomePage/FullSizedWebp/CustomPicketCarousel.webp?tr=w-700,h-700";
 
     return(
         <div>
