@@ -4,9 +4,9 @@ import './styles/FencingTypes.css';
 
 const Irrigation = (props) => {
     
-    const IrrigationImage = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/HomePage/SmallSizedWEBP/Irrigation_642.webp";
+    const IrrigationImage = "https://ik.imagekit.io/greenviewsolutions/HomePage/SmallSizedWEBP/Irrigation_642.webp";
     const SeasonalImages = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/Irrigation/pexels-anon-754276.jpg";
-    const BackFlowTests = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/HomePage/FullSizedWebp/Backflow_Testing_Device.webp";
+    const BackFlowTests = "https://ik.imagekit.io/greenviewsolutions/HomePage/FullSizedWebp/Backflow_Testing_Device.webp";
     const RainBirdWifiController = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/Irrigation/Rainbird+WiFi+Controller.jpeg";
     const IrrigationRepairs = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/Irrigation/IrrigationRepairs.jpeg";
 

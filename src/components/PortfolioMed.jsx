@@ -37,10 +37,10 @@ const PortfolioMed = () =>  {
     const handleClose6 = () => setShow6(false);
     const handleShow6 = () => setShow6(true);
 
-    const DecorativeIronFence = "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/SmallSizedWEBP/DecorativeIronFence_642_6.webp";
-    const RanchRail ="https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/SmallSizedWEBP/RanchRail.webp";
-    const CustomPickett ="https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/SmallSizedWEBP/CustomPickett_642.webp";
-    const Commercial ="https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/SmallSizedWEBP/Commercial_642.webp";
+    const DecorativeIronFence = "https://ik.imagekit.io/greenviewsolutions/HomePage/FullSizedWebp/Backflow_Testing_Device.webp/HomePage/SmallSizedWEBP/DecorativeIronFence_642_6.webp";
+    const RanchRail ="https://ik.imagekit.io/greenviewsolutions/HomePage/SmallSizedWEBP/RanchRail.webp";
+    const CustomPickett ="https://ik.imagekit.io/greenviewsolutions/HomePage/SmallSizedWEBP/CustomPickett_642.webp";
+    const Commercial ="https://ik.imagekit.io/greenviewsolutions/HomePage/SmallSizedWEBP/Commercial_642.webp";
     const HOA6FtPicket ="https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.23.21-HOA6FtPicket-Folder/Mobile/4.23.21-HOA6FtPicket_6.webp";
     const PicketFence ="https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/Mobile/4.14.21-6ftPickett_6.webp";
         
