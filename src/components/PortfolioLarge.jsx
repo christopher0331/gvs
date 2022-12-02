@@ -42,12 +42,12 @@ const PortfolioLarge = () =>  {
         const handleClose7 = () => setShow7(false);
         const handleShow7 = () => setShow7(true);
 
-        const horizontalPrivacyFence2 = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FeaturedProjects/Project2/picture1";
-        const CustomMultiFamilyHome = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FeaturedProjects/Project5/picture23";
-        const SplitRailFencing = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FeaturedProjects/Project6/picture1";
-        const horizontalPrivacyFence = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FeaturedProjects/Project1/picture13";
-        const EightftPremiumPrivacy = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FeaturedProjects/Project3/picture6";
-        const shortHorizontalDecorativeFence = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FeaturedProjects/Project4/picture7"; 
+        const horizontalPrivacyFence2 = "https://ik.imagekit.io/greenviewsolutions/featuredprojects/Project2/picture1";
+        const CustomMultiFamilyHome = "https://ik.imagekit.io/greenviewsolutions/featuredprojects/Project5/picture23";
+        const SplitRailFencing = "https://ik.imagekit.io/greenviewsolutions/featuredprojects/Project6/picture1";
+        const horizontalPrivacyFence = "https://ik.imagekit.io/greenviewsolutions/featuredprojects/Project1/picture13";
+        const EightftPremiumPrivacy = "https://ik.imagekit.io/greenviewsolutions/featuredprojects/Project3/picture6";
+        const shortHorizontalDecorativeFence = "https://ik.imagekit.io/greenviewsolutions/featuredprojects/Project4/picture7"; 
     
        
         return(

@@ -4,13 +4,13 @@ import { ReactTitle, MetaTags } from 'react-meta-tags';
 
 const FenceTypes = () => {
 
-    const HorizontalPrivacy = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FencesPages/CenteredHorizontalFence.jpeg"
-    const PremiumPicket = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FencesPages/8ftPremiumPrivacyWithSign.jpeg";
-    const PrivacyFence = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FencesPages/PrivacyFence.JPG";
-    const RanchRail = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FencesPages/RanchRail2.jpeg";
-    const SplitRail = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FencesPages/SplitRail.JPG";
-    const CustomFence = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FencesPages/CustomHorizontalBlack.jpeg";
-    const BoardOverBoard = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FencesPages/BoarOverBoardGate.jpeg";
+    const HorizontalPrivacy = "https://ik.imagekit.io/greenviewsolutions/FencesPages/CenteredHorizontalFence.jpeg"
+    const PremiumPicket = "https://ik.imagekit.io/greenviewsolutions/FencesPages/8ftPremiumPrivacyWithSign.jpeg";
+    const PrivacyFence = "https://ik.imagekit.io/greenviewsolutions/FencesPages/PrivacyFence.JPG";
+    const RanchRail = "https://ik.imagekit.io/greenviewsolutions/FencesPages/RanchRail2.jpeg";
+    const SplitRail = "https://ik.imagekit.io/greenviewsolutions/FencesPages/SplitRail.JPG";
+    const CustomFence = "https://ik.imagekit.io/greenviewsolutions/FencesPages/CustomHorizontalBlack.jpeg";
+    const BoardOverBoard = "https://ik.imagekit.io/greenviewsolutions/FencesPages/BoarOverBoardGate.jpeg";
 
 
     return(

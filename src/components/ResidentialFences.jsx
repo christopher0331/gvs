@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const ResidnetialFence_300 = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/Portfolio/Project4/FullSize/project4Picture1.webp"
 
 const ResidentialFences = (props) => {
-
+    
     return(
         <div className="divBox">  
             <Card.Img variant="custom" src={ResidnetialFence_300} className='cardImage' alt='' />
