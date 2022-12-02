@@ -23,11 +23,11 @@ class Feature4 extends Component {
         const projectOneImageArray = [];
 
         for(let i = 1; i < 19; i++){
-            projectOneImageArray.push([`https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FeaturedProjects/Project4/picture${i}`, "custom horizontal fence, 300 linear feet"]);
+            projectOneImageArray.push([`https://ik.imagekit.io/greenviewsolutions/featuredprojects/Project4/picture${i}`, "custom horizontal fence, 300 linear feet"]);
         }
 
         this.setState({
-            primaryImage: [`https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/FeaturedProjects/Project4/picture1`, "custom horizontal fence, 300 linear feet"],
+            primaryImage: [`https://ik.imagekit.io/greenviewsolutions/featuredprojects/Project4/picture1?tr=w-500,h-500`, "custom horizontal fence, 300 linear feet"],
             allImages: projectOneImageArray,
         })
     }

@@ -29,7 +29,7 @@ class Feature1 extends Component {
         }
 
         this.setState({
-            primaryImage: [`https://ik.imagekit.io/greenviewsolutions/featuredprojects/Project1/picture13`, "custom horizontal fence, 300 linear feet"],
+            primaryImage: [`https://ik.imagekit.io/greenviewsolutions/featuredprojects/Project1/picture13?tr=w-500,h-500`, "custom horizontal fence, 300 linear feet"],
             allImages: projectOneImageArray,
         })
     }
