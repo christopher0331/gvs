@@ -4,13 +4,13 @@ import { ReactTitle, MetaTags } from 'react-meta-tags';
 
 const FenceTypes = () => {
 
-    const HorizontalPrivacy = "https://ik.imagekit.io/greenviewsolutions/FencesPages/CenteredHorizontalFence.jpeg"
-    const PremiumPicket = "https://ik.imagekit.io/greenviewsolutions/FencesPages/8ftPremiumPrivacyWithSign.jpeg";
-    const PrivacyFence = "https://ik.imagekit.io/greenviewsolutions/FencesPages/PrivacyFence.JPG";
-    const RanchRail = "https://ik.imagekit.io/greenviewsolutions/FencesPages/RanchRail2.jpeg";
-    const SplitRail = "https://ik.imagekit.io/greenviewsolutions/FencesPages/SplitRail.JPG";
-    const CustomFence = "https://ik.imagekit.io/greenviewsolutions/FencesPages/CustomHorizontalBlack.jpeg";
-    const BoardOverBoard = "https://ik.imagekit.io/greenviewsolutions/FencesPages/BoarOverBoardGate.jpeg";
+    const HorizontalPrivacy = "https://ik.imagekit.io/greenviewsolutions/FencesPages/CenteredHorizontalFence.jpeg?tr=w-300,h-300"
+    const PremiumPicket = "https://ik.imagekit.io/greenviewsolutions/FencesPages/8ftPremiumPrivacyWithSign.jpeg?tr=w-300,h-300";
+    const PrivacyFence = "https://ik.imagekit.io/greenviewsolutions/FencesPages/PrivacyFence.JPG?tr=w-300,h-300";
+    const RanchRail = "https://ik.imagekit.io/greenviewsolutions/FencesPages/RanchRail2.jpeg?tr=w-300,h-300";
+    const SplitRail = "https://ik.imagekit.io/greenviewsolutions/FencesPages/SplitRail.JPG?tr=w-300,h-300";
+    const CustomFence = "https://ik.imagekit.io/greenviewsolutions/FencesPages/CustomHorizontalBlack.jpeg?tr=w-300,h-300";
+    const BoardOverBoard = "https://ik.imagekit.io/greenviewsolutions/FencesPages/BoarOverBoardGate.jpeg?tr=w-300,h-300";
 
 
     return(

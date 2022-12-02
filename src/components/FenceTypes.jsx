@@ -5,14 +5,14 @@ import './styles/FencingTypes.css';
 
 const FenceTypes = () => {
 
-    const HorizontalPrivacy = "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/SmallSizedWEBP/ResidentialHP.webp?tr=w-200,h-200"
-    const wireFence = "https://greenviewsolutionsimages.s3-us-west-1.amazonaws.com/HomePage/SmallSizedWEBP/Security_642.webp?tr=w-200,h-200";
+    const HorizontalPrivacy = "https://ik.imagekit.io/greenviewsolutions/HomePage/SmallSizedWEBP/ResidentialHP.webp?tr=w-200,h-200"
+    const wireFence = "https://ik.imagekit.io/greenviewsolutions/HomePage/SmallSizedWEBP/Security_642.webp?tr=w-200,h-200";
     const PremiumPicket = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/11.14.20-PremiumPicket/Mobile/PremiumPicket14.webp?tr=w-200,h-200";
     const PrivacyFence = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/4.14.21-6ftPickett-Folder/Mobile/4.14.21-6ftPickett_4.webp?tr=w-200,h-200";
     const RanchRail = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/10.30.20-RanchRail/Mobile/10.30.20-RanchRail21.webp?tr=w-200,h-200";
     const SplitRail = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/SplitRail/Mobile/SplitRailFence.webp?tr=w-200,h-200";
     const CompositeFence = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/4.26.21-CompositeFence/Mobile/4.26.21-CompositeFence7.webp?tr=w-200,h-200";
-    const CustomFence = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/HomePage/FullSizedWebp/CustomPicketCarousel.webp?tr=w-200,h-200";
+    const CustomFence = "https://ik.imagekit.io/greenviewsolutions/HomePage/FullSizedWebp/CustomPicketCarousel.webp?tr=w-200,h-200";
     const WroughtIron = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/4.13.21-IronFencing-Folder/FullSize/DecorativeIronFence_642_6+(1).webp?tr=w-200,h-200";
     const BoardOverBoard = "https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/5.27.21-BoardOverBoard/Mobile/5.27.21-BoardOverBoard13.webp?tr=w-200,h-200";
 
