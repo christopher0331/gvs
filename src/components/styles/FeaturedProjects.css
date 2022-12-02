@@ -11,19 +11,20 @@
     color: white;
 }
 
+.primaryImageBox {
+    display: flex;
+    width: 800px;
+    height: 600px;
+}
+
 .primaryImage {
     display: flex;
-    width: 700px;
+    width: 900px;
     height: 600px;
     border: 2px solid darkgreen;
 }
 
-.primaryImageBox {
-    display: flex;
-    width: 700px;
-    height: 600px;
-    border: 2px solid darkgreen;
-}
+
 
 .secondaryCarousel {
     display: flex; 

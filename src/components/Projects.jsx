@@ -34,12 +34,12 @@ const Projects = () => {
     const FeaturedProject5 = lazy(() => import('./FeaturedProject5.jsx'));
     const FeaturedProject6 = lazy(() => import('./FeaturedProject6.jsx'));
 
-    const CustomMultiFamilyHome = "https://ik.imagekit.io/greenviewsolutions/featuredprojects/Project5/picture23?tr=w-700,h-700";
-    const SplitRailFencing = "https://ik.imagekit.io/greenviewsolutions/featuredprojects/Project6/picture1?tr=w-700,h-700";
-    const horizontalPrivacyFence = "https://ik.imagekit.io/greenviewsolutions/featuredprojects/Project1/picture13?tr=w-700,h-700";
-    const EightftPremiumPrivacy = "https://ik.imagekit.io/greenviewsolutions/featuredprojects/Project3/picture6?tr=w-700,h-700";
-    const shortHorizontalDecorativeFence = "https://ik.imagekit.io/greenviewsolutions/featuredprojects/Project4/picture7?tr=w-700,h-700"; 
-    const horizontalPrivacyFence2 = "https://ik.imagekit.io/greenviewsolutions/featuredprojects/Project2/picture1?tr=w-700,h-700";
+    const CustomMultiFamilyHome = "https://ik.imagekit.io/greenviewsolutions/featuredprojects/Project5/picture23?tr=w-900,h-900";
+    const SplitRailFencing = "https://ik.imagekit.io/greenviewsolutions/featuredprojects/Project6/picture1?tr=w-900,h-900";
+    const horizontalPrivacyFence = "https://ik.imagekit.io/greenviewsolutions/featuredprojects/Project1/picture13?tr=w-900,h-900";
+    const EightftPremiumPrivacy = "https://ik.imagekit.io/greenviewsolutions/featuredprojects/Project3/picture6?tr=w-900,h-900";
+    const shortHorizontalDecorativeFence = "https://ik.imagekit.io/greenviewsolutions/featuredprojects/Project4/picture7?tr=w-900,h-900"; 
+    const horizontalPrivacyFence2 = "https://ik.imagekit.io/greenviewsolutions/featuredprojects/Project2/picture1?tr=w-900,h-900";
 
     return(
     <div>
