@@ -14,3 +14,15 @@
     padding: 20px 10%;
     background-color: whitesmoke;
 }
+
+.homeadvisorSeals {
+    display: flex;
+    justify-content: flex-start;
+    padding: 30px 0px;
+
+}
+
+.haAnchor1{
+    display: block; 
+    margin: 0 auto;
+}
