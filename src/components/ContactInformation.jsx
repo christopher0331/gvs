@@ -17,9 +17,7 @@ const ContactInformation = () => {
                     (Available from 8:00am to 8:00pm)
                 </div>
                 <div className="contactAddress">
-                    <div>5417 Fox Run Blvd.</div>
-                    <div>Frederick, CO</div>
-                    <div>9952 W 86th Ave</div>
+                    <div>12650 W 64th Ave Unit E, #149</div>
                     <div>Arvada, CO</div>
                 </div>
                 <a href="mailto:brandon@greenviewsolutions.net">

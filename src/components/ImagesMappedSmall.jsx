@@ -79,7 +79,7 @@ const ImageSliderSmall = () => {
                                         <p>{slide[2]}</p>
                                         <Button>
                                           <Link to='contact-us' style={{color: "white"}}>
-                                              Contact Us   
+                                              Free Estimate  
                                           </Link>
                                         </Button>
                                     </CallToAction>

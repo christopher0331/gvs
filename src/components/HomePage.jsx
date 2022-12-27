@@ -44,7 +44,7 @@ const HomePage = (props) => {
                 <div className="FirstHomepageBox">
                     <h5 id="BoxText">Quality, Communication and Commitment Every Fence</h5>
                     <Link to="contact-us">
-                        <button className="buttonDivSmall">Contact Us</button>
+                        <button className="buttonDivSmall">Free Estimate</button>
                     </Link>
                 </div>
                 <div className="outter">What We Do</div>
@@ -103,7 +103,7 @@ const HomePage = (props) => {
                 <div className="FirstHomepageBox">
                     <h5 id="BoxText">Quality, Communication and Commitment Every Fence</h5>
                     <Link to="contact-us">
-                        <button className="buttonDivLarge">Contact Us</button>
+                        <button className="buttonDivLarge">Free Estimate</button>
                     </Link>
                 </div>
                 <div className="outter">What We Do</div>
