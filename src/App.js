@@ -20,6 +20,7 @@ const WroughtIronFences = lazy(() => import('./components/WroughtIronFences.jsx'
 const CustomFences = lazy(() => import('./components/CustomFences.jsx'));
 const Backflow = lazy(() => import('./components/BackFlow.jsx'));
 const CommercialFencing = lazy(() => import('./components/CommercialFencing.jsx'));
+const PrivacyPolicy = lazy(() => import('./components/PrivacyPolicy.jsx'));
 const AdminUse = lazy(() => import('./components/AdminUse.js'));
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
                     <Route path="/commercial-fences" component={CommercialFencing} />
                     <Route path="/backflow" component={Backflow} />
                     <Route path="/adminuse" component={AdminUse} />
+                    <Route path="/privacy-policy" component={PrivacyPolicy} />
                     <Route path="*" component={HomePage} />
                 </Switch>
             <Footer />
