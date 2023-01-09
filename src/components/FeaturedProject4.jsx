@@ -22,7 +22,7 @@ class Feature4 extends Component {
     componentDidMount(){
         const projectOneImageArray = [];
 
-        for(let i = 1; i < 19; i++){
+        for(let i = 1; i < 13; i++){
             projectOneImageArray.push([`https://ik.imagekit.io/greenviewsolutions/featuredprojects/Project4/picture${i}?tr=w-700,h-700`, "custom horizontal fence, 300 linear feet"]);
         }
 
