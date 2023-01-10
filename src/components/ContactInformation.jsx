@@ -19,6 +19,9 @@ const ContactInformation = () => {
                 <div className="contactAddress">
                     <div>12650 W 64th Ave Unit E, #149</div>
                     <div>Arvada, CO</div>
+                    <div>&</div>
+                    <div>6526 Gunpark Dr Ste 370, #110</div>
+                    <div>Boulder, CO</div>
                 </div>
                 <a href="mailto:brandon@greenviewsolutions.net">
                     <div className="contactEmail" id="email">

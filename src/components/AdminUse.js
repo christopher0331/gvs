@@ -9,8 +9,9 @@ class AdminUse extends React.Component {
         super(props)
 
         this.state = {
-            fenceType: 'Select',
+            fenceType: "Select",
             gateType: "Select",
+            priceIncrease: "Select",
             fenceLength: 0,
             posts: 0,
             rails: 0,
@@ -18,7 +19,9 @@ class AdminUse extends React.Component {
             gates: 0,
             topCaps: 0,
             trim6ft: 0,
-            trim8ft: 0
+            trim8ft: 0,
+            postCost: 0,
+
         }
 
         this.handleFenceTypeChange = this.handleFenceTypeChange.bind(this);
