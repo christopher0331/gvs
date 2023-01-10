@@ -6,16 +6,10 @@ import PortfolioMed from './PortfolioMed.jsx';
 import PortfolioLarge from './PortfolioLarge.jsx';
 
 const Portfolio = () =>  {
+    return(
+        <PortfolioLarge />
+    )
 
-    if(window.innerWidth > 1106){
-        return (
-           <PortfolioLarge />
-        )
-    } if(window.innerWidth < 1106){
-        return (
-            <PortfolioMed />
-        )
-    }
 }
 
 export default Portfolio;
