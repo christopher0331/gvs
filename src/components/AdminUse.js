@@ -11,7 +11,7 @@ class AdminUse extends React.Component {
         this.state = {
             fenceType: "Select",
             gateType: "Select",
-            priceIncrease: "Select",
+            markUp: "Select",
             fenceLength: 0,
             posts: 0,
             rails: 0,
@@ -42,13 +42,12 @@ class AdminUse extends React.Component {
     }
 
     handleGates(event){  
-        console.log(event.target.value)  
-
         if(event.target.value === "No Gates"){
             this.setState({
                 gateType: event.target.value,
                 gates: 0
             }) 
+
         } else if(event.target.value === "One Gate"){
                 this.setState({
                     gateType: event.target.value,
@@ -60,6 +59,7 @@ class AdminUse extends React.Component {
                 gateType: event.target.value,
                 gates: 8
             })
+
         }
     }
 
@@ -78,6 +78,7 @@ class AdminUse extends React.Component {
                 topCaps: 0,
                 trim6ft: 0,
                 trim8ft: 0,
+                
 
             })
 
