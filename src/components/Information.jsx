@@ -12,6 +12,9 @@ const Information = () => {
                 From a white picket fence, to an automated gate, or an in-ground dog fence, whatever your fencing needs are, we offer a variety of products to satisfy every fencing or railing need.
             
                 <div className="homeadvisorSeals">
+                    <a href="https://www.homeadvisor.com/rated.GreenViewSolutions.72536239.html" className="haAnchor3"> 
+                        <img alt="See AFA at American Fence Association for GreenView Solutions" className="haAnchor3" src="https://ik.imagekit.io/greenviewsolutions/HomePage/FullSizedWebp/AFAMemberBadge2022.png?tr=w-200,h-300" />
+                    </a>
                     <a href="https://www.homeadvisor.com/rated.GreenViewSolutions.72536239.html" className="haAnchor1"> 
                         <img alt="Rated and Reviewed HomeAdvisor Pro" className="haAnchor1" src= "http://www.homeadvisor.com/images/sp-badges/soap-solid-border.png?sp=72536239&key=337759e38d741bd27c52f9fb13ad7b75" />
                     </a>
@@ -27,9 +30,7 @@ const Information = () => {
                     <a href="https://www.homeadvisor.com/rated.GreenViewSolutions.72536239.html" className="haAnchor1"> 
                         <img alt="See Reviews at HomeAdvisor for GreenView Solutions" className="haAnchor1" src="http://www.homeadvisor.com/images/sp-badges/20reviews-solid-border.png?sp=72536239&key=337759e38d741bd27c52f9fb13ad7b75" />
                     </a>
-                    <a href="https://www.homeadvisor.com/rated.GreenViewSolutions.72536239.html" className="haAnchor3"> 
-                        <img alt="See AFA at American Fence Association for GreenView Solutions" className="haAnchor3" src="https://ik.imagekit.io/greenviewsolutions/HomePage/FullSizedWebp/AFAMemberBadge2022.png?tr=w-200,h-300" />
-                    </a>
+                    
                 </div>
             </p>
         </div>
