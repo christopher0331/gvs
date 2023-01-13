@@ -1,3 +1,4 @@
+import './styles/Calculator.css';
 import React, { useState } from 'react';
 
 function TotalValueCalculator() {
@@ -20,9 +21,9 @@ function TotalValueCalculator() {
   }, 0);
 
   return (
-    <div>
+    <div className="total-value-calculator">
       {employeeData.map((employee, index) => (
-        <div key={index}>
+        <div key={index} className="employee-data">
           <label>
             Employee {index + 1} - Hours:
             <input
@@ -33,27 +34,29 @@ function TotalValueCalculator() {
             />
           </label>
           <label>
-            Employee {index + 1} - Wage:
-            <input
-              type="number"
-              name="wage"
-              value={employee.wage}
-              onChange={(e) => handleChange(e, index)}
-            />
-          </label>
-          <div>
-            Employee {index + 1} Total: {employee.hours * employee.wage}
-          </div>
+                Employee {index + 1} - Wage:
+                <input
+                    type="number"
+                    name="wage"
+                    value={employee.wage}
+                    onChange={(e) => handleChange(e, index)}
+                />
+            </label>
+                <div>
+                    Employee {index + 1} Total: {employee.hours * employee.wage}
+                </div>
+            </div>
+            ))}
+            <div></div>
+            <button type="button" onClick={handleAddEmployee} className="add-employee-button">
+                Add Employee
+            </button>
+            <div className="total-value">
+              Total Value: {totalValue}
+            </div>
         </div>
-      ))}
-      <button type="button" onClick={handleAddEmployee}>
-        Add Employee
-      </button>
-      <div>
-        Total Value: {totalValue}
-      </div>
-    </div>
-  );
-}
-
+        );
+    }
+              
 export default TotalValueCalculator;
+            
