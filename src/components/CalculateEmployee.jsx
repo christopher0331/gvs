@@ -41,6 +41,9 @@ function TotalValueCalculator() {
               onChange={(e) => handleChange(e, index)}
             />
           </label>
+          <div>
+            Employee {index + 1} Total: {employee.hours * employee.wage}
+          </div>
         </div>
       ))}
       <button type="button" onClick={handleAddEmployee}>
