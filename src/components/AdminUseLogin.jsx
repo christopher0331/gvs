@@ -1,6 +1,7 @@
 import React from 'react';
 import AdminUse from './AdminUse.js';
 import MaterialCostCalculator from './MaterialsCostCalculator.jsx';
+import CalculateEmployee from './CalculateEmployee.jsx';
 
 class AdminUseLogin extends React.Component {
     constructor(props){
@@ -63,6 +64,7 @@ class AdminUseLogin extends React.Component {
                 <div>
                     <AdminUse />
                     <MaterialCostCalculator />
+                    <CalculateEmployee />
                 </div>
             )
 
