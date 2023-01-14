@@ -77,7 +77,7 @@ const ImageSliderSmall = () => {
                                 <br />
                                 <CallToAction >
                                         <p>{slide[2]}</p>
-                                        <Button style={{margin: "3.5em .1em"}}>
+                                        <Button style={{margin: "3.5em .1em", padding: ".1em"}}>
                                           <Link to='contact-us' style={{color: "white", fontSize: ".7em"}}>
                                               Free Estimate  
                                           </Link>
