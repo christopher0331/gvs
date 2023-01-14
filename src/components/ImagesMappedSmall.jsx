@@ -74,10 +74,10 @@ const ImageSliderSmall = () => {
                                   key={slide} 
                                   >
                                 </LazyLoadImage>
-
-                                <CallToAction>
+                                <br />
+                                <CallToAction >
                                         <p>{slide[2]}</p>
-                                        <Button>
+                                        <Button style={{margin: "3.5em .1em"}}>
                                           <Link to='contact-us' style={{color: "white", fontSize: ".7em"}}>
                                               Free Estimate  
                                           </Link>
