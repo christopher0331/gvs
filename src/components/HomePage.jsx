@@ -101,7 +101,7 @@ const HomePage = (props) => {
                    <ImagesMapped />
                 </div>
                 <div className="FirstHomepageBox">
-                    <h5 id="BoxText">Quality, Communication and Commitment Every Fence</h5>
+                    <h5 id="BoxText">Quality, Communication and Commitment On Every Project</h5>
                     <Link to="contact-us">
                         <button className="buttonDivLarge">Free Estimate</button>
                     </Link>

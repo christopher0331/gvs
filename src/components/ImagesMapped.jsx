@@ -77,7 +77,7 @@ const ImageSlider = () => {
                           
                                   </LazyLoadImage>
                                   <CallToAction>
-                                        <p>{slide[2]}</p>
+                                        <p className="heroImageText">{slide[2]}</p>
                                         <Button>
                                           <Link to='contact-us' style={{color: "white"}}>
                                               Free Estimate   
