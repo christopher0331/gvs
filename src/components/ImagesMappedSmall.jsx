@@ -12,7 +12,7 @@ const ImageSliderSmall = () => {
     const innerWidth = window.innerWidth;
 
     const dataSmall = [
-      ["https://ik.imagekit.io/greenviewsolutions/featuredprojects/Project1/picture13?tr=w-600,h-400","Privacy fence, 6ft tall picket fence, decorative gates", ""], 
+      ["https://ik.imagekit.io/greenviewsolutions/featuredprojects/Project1/picture13?tr=w-600,h-400","Privacy fence, 6ft tall picket fence, decorative gates", "Our Fences are Built to the Highest Quality"], 
       ["https://ik.imagekit.io/greenviewsolutions/HomePage/FullSizedWebp/homepage1.webp?tr=w-600,h-400","Cedar Pickets, Horizontal fencing, 182 linear feet", "From Privacy Structures, to Quality Fences, We've Got You Covered"],
       ["https://ik.imagekit.io/greenviewsolutions/HomePage/FullSizedWebp/homepage2.webp?tr=w-600,h-400","Commercial Fencing, Chain Link Fence, 16ft tall, 500 linear feet", "Our Commercial Fences are Built to Last and Provide Security and Protection for Decades!"],
       ["https://ik.imagekit.io/greenviewsolutions/HomePage/FullSizedWebp/homepage3.webp?tr=w-600,h-400","Privacy fence, 6ft tall picket fence, decorative gates", "Our Fences are Built to the Highest Quality"],
