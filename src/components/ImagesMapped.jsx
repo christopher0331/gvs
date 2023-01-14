@@ -6,6 +6,8 @@ import ArrowRightStyle from './ArrowRightCSS';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Link } from 'react-router-dom';
+
+
 const ImageSlider = () => {
     
     const innerWidth = window.innerWidth;
@@ -72,8 +74,7 @@ const ImageSlider = () => {
                                       width={innerWidth}
                                       key={slide} 
                                     >
-
-                                    
+                          
                                   </LazyLoadImage>
                                   <CallToAction>
                                         <p>{slide[2]}</p>

@@ -38,9 +38,11 @@ const HomePage = (props) => {
                         />
                 </MetaTags>
                 <ReactTitle title="GreenView Solutions"/>
+
                 <div className="ImagesMappesBox">
                    <ImagesMappedSmall />
                 </div>
+                
                 <div className="FirstHomepageBox">
                     <h5 id="BoxText">Quality, Communication and Commitment Every Fence</h5>
                     <Link to="contact-us">
