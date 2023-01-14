@@ -13,12 +13,12 @@ const ImageSlider = () => {
     const innerWidth = window.innerWidth;
 
     const data = [
-      ["https://ik.imagekit.io/greenviewsolutions/featuredprojects/Project1/picture13?tr=w-1200,h-600","Privacy fence, 6ft tall picket fence, decorative gates", "Our Fences are Built to the Highest Quality"], 
-      ["https://ik.imagekit.io/greenviewsolutions/HomePage/FullSizedWebp/homepage1.webp?tr=w-600,h-400","Cedar Pickets, Horizontal fencing, 182 linear feet", "From Privacy Structures, to Quality Fences, We've Got You Covered"],
-      ["https://ik.imagekit.io/greenviewsolutions/HomePage/FullSizedWebp/homepage2.webp?tr=w-600,h-400","Commercial Fencing, Chain Link Fence, 16ft tall, 500 linear feet", "Our Commercial Fences are Built to Last and Provide Security and Protection for Decades!"],
-      ["https://ik.imagekit.io/greenviewsolutions/HomePage/FullSizedWebp/homepage3.webp?tr=w-600,h-400","Privacy fence, 6ft tall picket fence, decorative gates", "Our Fences are Built to the Highest Quality"],
-      ["https://ik.imagekit.io/greenviewsolutions/HomePage/FullSizedWebp/homepage4.webp?tr=w-600,h-400","Cedar Picket, picket fencing, 4ft tall custom picket fence", "The Amount of Customizations are Limitless!"],
-      ["https://ik.imagekit.io/greenviewsolutions/HomePage/FullSizedWebp/homepage6.webp?tr=w-600,h-400","Cedar Picket, picket fencing, 4ft tall custom picket fence", "A Growing Family Dedicated to Bringing Quality Service to Yours!"]
+      ["https://ik.imagekit.io/greenviewsolutions/featuredprojects/Project1/picture13?tr=w-1200,h-700","Privacy fence, 6ft tall picket fence, decorative gates", "Our Fences are Built to the Highest Quality"], 
+      ["https://ik.imagekit.io/greenviewsolutions/HomePage/FullSizedWebp/homepage1.webp?tr=w-1200,h-700","Cedar Pickets, Horizontal fencing, 182 linear feet", "From Privacy Structures, to Quality Fences, We've Got You Covered"],
+      ["https://ik.imagekit.io/greenviewsolutions/HomePage/FullSizedWebp/homepage2.webp?tr=w-1200,h-700","Commercial Fencing, Chain Link Fence, 16ft tall, 500 linear feet", "Our Commercial Fences are Built to Last and Provide Security and Protection for Decades!"],
+      ["https://ik.imagekit.io/greenviewsolutions/HomePage/FullSizedWebp/homepage3.webp?tr=w-1200,h-700","Privacy fence, 6ft tall picket fence, decorative gates", "Our Fences are Built to the Highest Quality"],
+      ["https://ik.imagekit.io/greenviewsolutions/HomePage/FullSizedWebp/homepage4.webp?tr=w-1200,h-700","Cedar Picket, picket fencing, 4ft tall custom picket fence", "The Amount of Customizations are Limitless!"],
+      ["https://ik.imagekit.io/greenviewsolutions/HomePage/FullSizedWebp/homepage6.webp?tr=w-1200,h-700","Cedar Picket, picket fencing, 4ft tall custom picket fence", "A Growing Family Dedicated to Bringing Quality Service to Yours!"]
 ];
 
     const [state, setState] = useState({

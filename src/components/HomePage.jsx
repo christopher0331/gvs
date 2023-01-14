@@ -42,7 +42,7 @@ const HomePage = (props) => {
                 <div className="ImagesMappesBox">
                    <ImagesMappedSmall />
                 </div>
-                
+
                 <div className="FirstHomepageBox">
                     <h5 id="BoxText">Quality, Communication and Commitment Every Fence</h5>
                     <Link to="contact-us">
@@ -53,7 +53,6 @@ const HomePage = (props) => {
                 <div className="inner">
                         <ResidentialFences changePage={props.changePage}/>
                         <CommercialFences changePage={props.changePage}/>
-                        <BackflowTests changePage={props.changePage}/>
                         <Irrigation changePage={props.changePage}/>
                 </div> 
                 <div className="mediaBreak900">
@@ -69,7 +68,6 @@ const HomePage = (props) => {
                 <div className="mediaBreak500">
                         <ResidentialFences changePage={props.changePage}/>
                         <CommercialFences changePage={props.changePage}/>
-                        <BackflowTests changePage={props.changePage}/>
                         <Irrigation changePage={props.changePage}/>
                 </div>       
                 <div>
@@ -112,7 +110,6 @@ const HomePage = (props) => {
                 <div className="inner">
                         <ResidentialFences changePage={props.changePage}/>
                         <CommercialFences changePage={props.changePage}/>
-                        <BackflowTests changePage={props.changePage}/>
                         <Irrigation changePage={props.changePage}/>
                 </div> 
                 <div className="mediaBreak900">
@@ -128,7 +125,6 @@ const HomePage = (props) => {
                 <div className="mediaBreak500">
                         <ResidentialFences changePage={props.changePage}/>
                         <CommercialFences changePage={props.changePage}/>
-                        <BackflowTests changePage={props.changePage}/>
                         <Irrigation changePage={props.changePage}/>
                 </div>       
                 <div>
