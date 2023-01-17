@@ -54,11 +54,13 @@ const Footer = ()  => {
                         </div>
                         <div className='Message'>
                             <p className="messageParagraph">
-                                GreenView Solutions has provided premium fences 
-                                for the Greater Denver Area with passion and pride!
-                                We service schools, government, residential and commercial
-                                clients every month. Give us a call and see why GVS has 5 star
-                                reviews anywhere you can find us. 
+                                GreenView Solutions is a leading provider of premium craftsmanship in the Greater Denver 
+                                Area. We take pride in delivering exceptional service to a diverse range of clients, 
+                                including schools, government agencies, residential and commercial properties. 
+                                Our dedication to quality and attention to detail has earned us a reputation for 
+                                excellence, as reflected in our numerous five-star reviews. Contact us to 
+                                experience the GreenView Solutions difference for yourself.
+
                             </p>
                         </div>
                     </div>
