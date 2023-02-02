@@ -1,31 +1,26 @@
 .portfolioTitle h1 {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     font-size: 80px;
     font-weight: 100;
     margin-top: 15px;
-    text-align: center;
-
 }
 
 .portfolioBlock {
     display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 50px;
+    justify-content: space-between;
 }
 
 .portfolioProjects {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 10px 10px;
+    width: 100%; /* adjust as necessary to fit 3 in a row */
+    margin-bottom: 20px; /* add some spacing between projects */
+    position: relative;
 }
 
 .portfolioImage {
-    display: flex;
-    justify-content: space-evenly; 
+    width: 350px; /* make image fill the entire width of the .portfolioProjects div */
     height: 350px;
-    width: 350px;
     border: solid black 2px;
     border-radius: 20px;
 }
@@ -33,6 +28,19 @@
 .portfolioBody {
     display: none;
 
+}
+
+.portfolioBody {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(58, 58, 58, 0.564);
+    color: white;
+    padding: 12px 10px;
+    text-align: center;
+    border-radius: 9px;
+    display: none;
 }
 
 .portfolioBody:hover {
@@ -68,8 +76,6 @@
     border-radius: 9px;
 
 }
-
-/* ~~~~~~~ INIT. BTN2 ~~~~~~~ */
 
 .btn2 {		
 	position: absolute;	
@@ -138,11 +144,24 @@
 	width: 100%;
 }
 
+/* Media Queries */
+
+@media (min-width: 600px) {
+    .portfolioProjects {
+        width: 30%;
+    }
+}
+
+@media (min-width: 800px) {
+    .portfolioProjects {
+        width: 23%;
+    }
+}
+
 @media screen and (max-width: 744px) {
     .portfolioBlock {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
         flex-direction: column;
+        align-items: center;
     }
+    /* Add additional styles for smaller screens as necessary */
 }

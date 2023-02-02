@@ -34,7 +34,7 @@ function TotalValueCalculatorLinearFt() {
             />
           </label>
           <label>
-                Employee {index + 1} - CostPerFt:
+                Employee {index + 1} - Wage:
                 <input
                     type="number"
                     name="CostPerFt"

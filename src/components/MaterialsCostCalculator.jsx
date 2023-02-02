@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const MaterialCostCalculator = () => {
-
+    
     const [itemList, setItemList] = useState([
           { name: 'Steel Post 8’', number: 0, cost: 0, percentIncrease: 0 },
           { name: '4x4x8', number: 0, cost: 0, percentIncrease: 0 },
@@ -47,7 +47,6 @@ const MaterialCostCalculator = () => {
             });
             setTotalCost(totalCost);
         }
-    
     
         return (
             <div>
