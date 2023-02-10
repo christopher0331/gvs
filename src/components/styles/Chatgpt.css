@@ -1,0 +1,31 @@
+.arrow-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+  }
+  
+  .segment {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .segment.active {
+    background-color: green;
+    color: white;
+  }
+  
+  .description-box {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  
