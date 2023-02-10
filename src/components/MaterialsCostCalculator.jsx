@@ -16,11 +16,19 @@ const MaterialCostCalculator = () => {
           { name: '1x4x8', number: 0, cost: 0, percentIncrease: 0 },
           { name: '1x6x8', number: 0, cost: 0, percentIncrease: 0 },
           { name: '4x6x6', number: 0, cost: 0, percentIncrease: 0 },
+          { name: 'Roofing Sealant ', number: 0, cost: 0, percentIncrease: 0 },
+          { name: 'Clear Coat', number: 0, cost: 0, percentIncrease: 0 },
+          { name: 'Concrete', number: 0, cost: 0, percentIncrease: 0 },
+          { name: 'Misc', number: 0, cost: 0, percentIncrease: 0 },
       ].map(item => {
-          const storedCost = localStorage.getItem(item.name);
-          return { ...item, cost: storedCost ? parseFloat
-            (storedCost) : 0 }
-        }));
+        const storedCost = localStorage.getItem(item.name + " cost");
+        const storedPercentIncrease = localStorage.getItem(item.name + " percentIncrease");
+        return { 
+          ...item, 
+          cost: storedCost ? parseFloat(storedCost) : 0,
+          percentIncrease: storedPercentIncrease ? parseFloat(storedPercentIncrease) : 0
+        }
+      }));
     
         const [totalCost, setTotalCost] = useState(0);
     
@@ -35,7 +43,8 @@ const MaterialCostCalculator = () => {
             if(field === 'cost' || field === 'percentIncrease') 
                 newItemList[index][field] = parseFloat(newItemList[index][field]);
             setItemList(newItemList);
-            localStorage.setItem(itemList[index].name, itemList[index].cost);
+            localStorage.setItem(itemList[index].name + " cost", newItemList[index].cost);
+            localStorage.setItem(itemList[index].name  + " percentIncrease", newItemList[index].percentIncrease)
         }
     
         const calculateTotalCost = () => {
