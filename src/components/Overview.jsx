@@ -65,7 +65,7 @@ const Overview = () => (
                         </div>
                         <div className="descText">
                             GreenView Solutions was started 10 years ago, and has employed experts with decades
-                            of experience. There is no fencing or irrigation project our experts have completed,
+                            of experience. There is no fencing or irrigation project our experts have not completed,
                             and our upper managment team ensures that all projects are done with the highest level
                             of quality in mind.  
                         </div>
