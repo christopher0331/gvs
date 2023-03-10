@@ -42,12 +42,16 @@ const HomePage = (props) => {
                 <div className="ImagesMappesBox">
                    <ImagesMappedSmall />
                 </div>
-
                 <div className="FirstHomepageBox">
-                    <h5 id="BoxText">Quality, Communication and Commitment Every Fence</h5>
-                    <Link to="contact-us">
-                        <button className="buttonDivSmall">Free Estimate</button>
-                    </Link>
+                    <div>
+                    <h5 id="BoxText">Quality, Communication and Commitment On Every Project</h5>
+
+                    <h5 id="BoxText2">We're Proud to Announce We Now Offer Financing Options!</h5>
+
+                        <a class="financeAnchor" href="https://www.ffcapplication.com/?i=XY5sWUYH644gfJ4gujgeBam42nEvNGIYEC5wDNmMe9o=" target='_blank'>
+                            <button class="buttonDivLargeFinance"> Finance Now </button>
+                        </a>
+                    </div>
                 </div>
                 <div className="outter">What We Do</div>
                 <div className="inner">
@@ -100,11 +104,17 @@ const HomePage = (props) => {
                 <div className="ImagesMappesBox">
                    <ImagesMapped />
                 </div>
+
                 <div className="FirstHomepageBox">
+                    <div>
                     <h5 id="BoxText">Quality, Communication and Commitment On Every Project</h5>
-                    <Link to="contact-us">
-                        <button className="buttonDivLarge">Free Estimate</button>
-                    </Link>
+
+                    <h5 id="BoxText2">We're Proud to Announce We Now Offer Financing Options!</h5>
+
+                        <a class="financeAnchor" href="https://www.ffcapplication.com/?i=XY5sWUYH644gfJ4gujgeBam42nEvNGIYEC5wDNmMe9o=" target='_blank'>
+                            <button class="buttonDivLargeFinance"> Finance Now </button>
+                        </a>
+                    </div>
                 </div>
                 <div className="outter">What We Do</div>
                 <div className="inner">

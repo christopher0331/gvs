@@ -71,31 +71,115 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
     width: 100%;
-    height: 5.2em;
+    height: 14vw;
     background-color: rgb(237, 236, 236);
 }
 
 #BoxText {
-    font-size: 2.7vw;
+    font-size: 3vw;
+    display: flex;
+    justify-content: center;
     color: darkgreen;
     margin-right: 2.3em;
     font-weight: 700;
     /* text-shadow: black 2px 2px 8px; */
-    padding: 5px 5px;
+    padding: 0px 2px;
+}
+#BoxText2 {
+    font-size: 2.9vw;
+    color: darkgreen;
+    margin-right: 2.3em;
+    font-weight: 700;
+    /* text-shadow: black 2px 2px 8px; */
+    padding: 2px 5px;
 }
 
 @media screen and (max-width: 700px) {
-    #BoxText {
-        font-size: 2.3vw;
-        font-weight: 600;
-        color: darkgreen;
-        /* text-shadow: black 2px 2px 8px; */
-        padding: 10px 10px;
+
+    .FirstHomepageBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        height: 18vw;
+        background-color: rgb(237, 236, 236);
     }
+
+    #BoxText {
+        display: flex;
+        justify-content: center;
+        font-size: 3.2vw;
+        color: darkgreen;
+        justify-content: center;
+        margin-right: 2.3em;
+        font-weight: 700;
+        /* text-shadow: black 2px 2px 8px; */
+        padding: 2px 2px;
+    }
+    #BoxText2 {
+        display: flex;
+        justify-content: center;
+
+        font-size: 2.9vw;
+        color: darkgreen;
+        margin-right: 2.3em;
+        font-weight: 700;
+        /* text-shadow: black 2px 2px 8px; */
+        padding: 2px 5px;
+    }
+    .buttonDivLarge {
+        font-size: 2.1vw;
+        margin-right: 20px;
+        border-radius: 5px;
+        border: 2px solid green;
+        color: green;
+     }
+    
+     .buttonDivLarge:hover {
+        font-size: 2.1vw;
+        margin-right: 20px;
+        border-radius: 5px;
+        border: 2px solid green;
+        color: white;
+        transform: scale(1.1);
+        transition: 1.1s;
+        background-color: darkgreen;
+    
+     }
+    .buttonDivLargeFinance{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 2.1vw;
+        margin-right: 20px;
+        border-radius: 5px;
+        border: 2px solid green;
+        color: green;
+     }
+    
+     .buttonDivLargeFinance:hover {
+        font-size: 2.1vw;
+        margin-right: 20px;
+        border-radius: 5px;
+        border: 2px solid green;
+        color: white;
+        transform: scale(1.1);
+        transition: 1.1s;
+        background-color: darkgreen;
+    
+     }
 }
 
 .buttonDivLarge {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
     font-size: 2.1vw;
     margin-right: 20px;
     border-radius: 5px;
@@ -104,6 +188,44 @@
  }
 
  .buttonDivLarge:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.1vw;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: 2px solid green;
+    color: white;
+    transform: scale(1.1);
+    transition: 1.1s;
+    background-color: darkgreen;
+
+ }
+
+ .financeAnchor{
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .buttonDivLargeFinance{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2.1vw;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: 2px solid green;
+    color: green;
+ }
+
+ .buttonDivLargeFinance:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 2.1vw;
     margin-right: 20px;
     border-radius: 5px;
