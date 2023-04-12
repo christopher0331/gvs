@@ -42,7 +42,7 @@ const S3Bucket = () => {
 
         const getImagesFromProject = async () => {
             const projects = [];
-            for (let i = 1; i <= 19; i++) {
+            for (let i = 1; i <= 17; i++) {
                 const projectFolder = `Portfolio/Project${i}/FullSize/`;
                 const params = {
                     Bucket: 'greenviewsolutionsimages',
