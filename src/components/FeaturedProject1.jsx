@@ -10,6 +10,7 @@ class Feature1 extends Component {
 
         this.state = {
             primaryImage: "",
+            allImages: [],
             imageIndex: 0
         }
 
@@ -19,10 +20,16 @@ class Feature1 extends Component {
     }
 
     componentDidMount(){
-        const { images } = this.props;
+
+        const projectOneImageArray = [];
+
+        for(let i = 1; i < 19; i++){
+            projectOneImageArray.push([`https://ik.imagekit.io/greenviewsolutions/featuredprojects/Project2/picture${i}?tr=w-700,h-700`, "custom horizontal fence, 300 linear feet"]);
+        }
 
         this.setState({
-            primaryImage: images[1],
+            primaryImage: [`https://ik.imagekit.io/greenviewsolutions/featuredprojects/Project2/picture1?tr=w-700,h-700`, "custom horizontal fence, 300 linear feet"],
+            allImages: projectOneImageArray,
         })
     }
 
@@ -80,7 +87,7 @@ class Feature1 extends Component {
                     </div>
                     <div>
                         <div className="secondaryCarousel">                            
-                            {images.map(image => (
+                            {this.state.allImages.map(image => (
                                 <img onClick={() => this.changePrimary(image)} className="secondaryImages" src={image} alt={image}/>
                             ))}
                         </div>
