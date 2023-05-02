@@ -6,9 +6,6 @@
     padding: 8px 8px;
 }
 
-.heroImageText{
-    color: white;
-}
 
 .inner {
     display: flex;
@@ -102,9 +99,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: row;
+        text-align: center;
+        flex-direction: row; 
         width: 100%;
-        height: 18vw;
+        height: 30vw;
         background-color: rgb(237, 236, 236);
     }
 
