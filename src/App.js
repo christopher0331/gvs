@@ -4,6 +4,8 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import AwesomeLoader from './AwesomeLoader.js';
+
 
 const HomePage = lazy(() => import('./components/HomePage.jsx'));
 const AboutUs = lazy(() => import('./components/AboutUs.jsx'));
@@ -28,7 +30,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<AwesomeLoader/> }>
             <Header />
               <Switch>
                     <Route path="/" exact component={HomePage} />
