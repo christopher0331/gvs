@@ -23,7 +23,6 @@
     "jquery": "^3.6.0",
     "morgan": "^1.10.0",
     "react": "^17.0.2",
-    "react-awesome-loaders": "^0.1.37",
     "react-bootstrap": "^1.6.0",
     "react-dom": "^17.0.2",
     "react-image-webp": "^0.7.0",
