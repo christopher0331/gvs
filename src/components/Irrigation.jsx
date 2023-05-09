@@ -116,31 +116,7 @@ const Irrigation = (props) => {
                                 </div>
                             </div>
                         </div>
-                        <div className="left"> 
-                            <div class="project1">
-                                <div className="image">
-                                <img src={IrrigationRepairs} alt=""/>
-                                </div>
-                                <div className="details">
-                                <div className="center">
-                                    <h1>Assessment and Repair<br /></h1>
-                                    <p>
-                                       
-                                    </p>
-                                </div>
-                                </div>
-                            </div>
-                            <div className='project1Text'>
-                                <h3>Assessment and Repair</h3>
-                                <p>
-                                    Our irrigation experts have decades of experience. Regarding irrigation, assessing the problem properly
-                                    can save you time and money. Like any problem, a proper diagnosis is the most important aspect of problem
-                                    solving, and usually done best by seasoned experts. If you've got a large puddle in the middle of your 
-                                    yard, it could be a grading issue, a busted irrigation pipe, or a misplaced sprinkler, whatever the case, 
-                                    call GreenView Solutions to get it resolved quick and affordably. 
-                                </p>
-                            </div> 
-                        </div>
+                        
                     </div>
             </div>
         )
