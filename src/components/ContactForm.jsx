@@ -82,11 +82,12 @@ class ContactForm extends React.Component {
     render() {
         return(
             <div className="formBackground">
+
                 <form onSubmit={this.sendMessage}>
                     <div className="formContactInfo">
                         <div className="row1">
                             <label className='inputBox'>
-                                <input className='inputField' placeholder="Name" type="text" value={this.state.value} onChange={this.handleNameChange} />
+                                <input className='inputField' placeholder="Name!!!" type="text" value={this.state.value} onChange={this.handleNameChange} />
                             </label>
                             <label className='inputBox'>
                                 <input className='inputField' placeholder="Phone" type="tel" value={this.state.value} onChange={this.handlePhoneChange} />
