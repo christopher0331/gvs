@@ -61,6 +61,8 @@ class Menu extends Component {
                             <Link id="nav-link" to="/contact-us">Contact Us</Link>
                             <Link id="nav-link" to="/tools">Tools</Link>
                             <Link id="nav-link" to="/portfolio"> Portfolio </Link>
+                            <Link id="nav-link" to="/faq"> FAQ </Link>
+
                         </Nav>
                     </Navbar.Collapse>
                     </Navbar>
