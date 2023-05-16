@@ -20,16 +20,11 @@ class Feature1 extends Component {
     }
 
     componentDidMount(){
-
-        const projectOneImageArray = [];
-
-        for(let i = 1; i < 19; i++){
-            projectOneImageArray.push([`https://ik.imagekit.io/greenviewsolutions/featuredprojects/Project2/picture${i}?tr=w-700,h-700`, "custom horizontal fence, 300 linear feet"]);
-        }
+        const { images } = this.props;
 
         this.setState({
-            primaryImage: [`https://ik.imagekit.io/greenviewsolutions/featuredprojects/Project2/picture1?tr=w-700,h-700`, "custom horizontal fence, 300 linear feet"],
-            allImages: projectOneImageArray,
+            primaryImage: images[0],
+            allImages: images,
         })
     }
 
@@ -40,37 +35,35 @@ class Feature1 extends Component {
     }
 
     changeImagesRightArrow(){
-        const { images } = this.props;
-        if(this.state.imageIndex === images.length - 1){
+        if(this.state.imageIndex === this.state.allImages.length - 1){
             this.setState({
                 imageIndex: 0,
-                primaryImage: images[this.state.imageIndex]
+                primaryImage: this.state.allImages[0]
             })
         } else {
-            this.setState({
-                imageIndex: this.state.imageIndex + 1,
-                primaryImage: images[this.state.imageIndex]
-            })
+            this.setState((prevState) => ({
+                imageIndex: prevState.imageIndex + 1,
+                primaryImage: this.state.allImages[prevState.imageIndex + 1]
+            }))
         }
     }
 
     changeImagesLeftArrow(){
-        const { images } = this.props;
         if(this.state.imageIndex === 0){
             this.setState({
-                imageIndex: 1,
-                primaryImage: images[this.state.imageIndex]
+                imageIndex: this.state.allImages.length - 1,
+                primaryImage: this.state.allImages[this.state.allImages.length - 1]
             })
         } else {
-            this.setState({
-                imageIndex: this.state.imageIndex - 1,
-                primaryImage: images[this.state.imageIndex]
-            })
+            this.setState((prevState) => ({
+                imageIndex: prevState.imageIndex - 1,
+                primaryImage: this.state.allImages[prevState.imageIndex - 1]
+            }))
         }
     }
 
     render(){
-        const { projectNumber, images } = this.props;
+        const { projectNumber } = this.props;
         
         return(
             <div>
@@ -82,8 +75,8 @@ class Feature1 extends Component {
                             
                         <div className="primaryImageBox">
                         <img className="primaryImage" src={this.state.primaryImage} alt={this.state.primaryImage} />
-                        <FontAwesomeIcon onClick={() => this.changeImagesLeftArrow()} id='projectLeftArrow' icon={faChevronCircleLeft} color='black'/>
-                        <FontAwesomeIcon onClick={() => this.changeImagesRightArrow()} id='projectRightArrow' icon={faChevronCircleRight} color='black'/>
+                        <FontAwesomeIcon onClick={this.changeImagesLeftArrow} id='projectLeftArrow' icon={faChevronCircleLeft} color='black'/>
+                        <FontAwesomeIcon onClick={this.changeImagesRightArrow} id='projectRightArrow' icon={faChevronCircleRight} color='black'/>
                     </div>
                     <div>
                         <div className="secondaryCarousel">                            
@@ -99,3 +92,4 @@ class Feature1 extends Component {
 }
 
 export default Feature1;
+
