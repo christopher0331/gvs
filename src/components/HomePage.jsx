@@ -45,7 +45,6 @@ const HomePage = (props) => {
                 <div className="FirstHomepageBox">
                     <div>
                     <h5 id="BoxText">Quality, Communication and Commitment On Every Project</h5>
-
                     <h5 id="BoxText2">We're Proud to Announce We Now Offer Financing Options!</h5>
 
                         <a class="financeAnchor" href="https://www.ffcapplication.com/?i=XY5sWUYH644gfJ4gujgeBam42nEvNGIYEC5wDNmMe9o=" target='_blank'>

@@ -24,7 +24,7 @@ const Backflow = lazy(() => import('./components/BackFlow.jsx'));
 const CommercialFencing = lazy(() => import('./components/CommercialFencing.jsx'));
 const PrivacyPolicy = lazy(() => import('./components/PrivacyPolicy.jsx'));
 const FAQ = lazy(() => import('./components/FAQ.jsx'));
-
+const ProjectOverviewForm = lazy(() => import('./components/ProjectOverviewForm.jsx'));
 const AdminUseLogin = lazy(() => import('./components/AdminUseLogin.jsx'));
 
 function App() {
@@ -52,6 +52,7 @@ function App() {
                     <Route path="/adminuse" component={AdminUseLogin} />
                     <Route path="/privacy-policy" component={PrivacyPolicy} />
                     <Route path="/faq" component={FAQ} />
+                    <Route path="/projectOverviewForm" component={ProjectOverviewForm} />
                     <Route path="*" component={HomePage} />
                 </Switch>
             <Footer />

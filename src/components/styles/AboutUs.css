@@ -12,7 +12,7 @@
 }
 
 .pageTitle {
-    font-size: 4.2vw ;
+    font-size: 4.2vw;
     padding-left: 15px;
 }
 
@@ -22,7 +22,7 @@
     width: 100%;
     height: 100px;
     align-items: center;
-    padding-left: 20px; 
+    padding-left: 20px;
     font-size: 4.2vw;
     background-color: rgba(169, 169, 169, 0.344);
 }
@@ -31,7 +31,7 @@
     margin: 40px 90px;
 }
 
-.description{
+.description {
     font-size: 1.2vw;
     display: flex;
     flex-direction: column;
@@ -64,7 +64,7 @@
 .descText {
     padding: 10px 10px;
 }
- 
+
 .tools {
     display: flex;
     flex-direction: column;
@@ -84,14 +84,14 @@
         flex-direction: column;
         padding: 50px 200px;
     }
-    
+
     .aboutUs {
         display: flex;
         flex-direction: row;
         font-size: 4.2vw;
     }
-    
-    .description{
+
+    .description {
         font-size: 2.2vw;
         padding: 0px 50px;
         display: flex;
@@ -100,36 +100,129 @@
         align-content: center;
         padding-left: 10px;
     }
-    
+
     .crewImage {
         width: 85vw;
         height: 75vw;
         margin-bottom: 50px;
     }
-    
+
     .imageAndDescription {
         display: flex;
         align-items: center;
         flex-direction: column;
     }
-    
+
     .descTitle {
         font-size: 18px;
         font-weight: 700;
     }
-    
+
     .descText {
         padding: 10px 10px;
     }
-     
+
     .tools {
         display: flex;
         flex-direction: column;
     }
-    
+
     #calculatorInTools {
         display: flex;
         justify-self: center;
         align-self: center;
     }
+}
+
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.projOverviewDiv {
+    margin: 1.5em;
+    background-color: #c8daca;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 3%;
+}
+
+p .pofLabel {
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+label {
+    font-weight: 500;
+    padding: .5em;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button .pofButton [type="submit"] {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Pop-up Styles */
+.popup {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background-color: rgba(25, 75, 30, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-content {
+    margin-top: .3em;
+    background-color: #194b1e;
+    padding: 20px;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.popup-content p {
+    margin-top: .3em;
+
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.popup-content .close {
+    position: absolute;
+    font-size: 20px;
+    top: 0px;
+    right: .5em;
+    color: white;
+    cursor: pointer;
+}
+
+.popup-content .close:hover {
+    font-size: 20px;
+    top: 0px;
+    right: .5em;
+    color: rgb(213, 243, 24);
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import Calculator from './Calculator.jsx';
 import OurProcess from './OurProcess.jsx';
 import './styles/AboutUs.css';
+import ProjectOverviewForm from './ProjectOverviewForm.jsx';
 
 const Tools = (props) => {
 
@@ -25,6 +26,11 @@ const Tools = (props) => {
                 </div>
                 <Calculator />
             </div>
+
+
+            <div>
+                    <ProjectOverviewForm />
+                </div>
         </div>
     )
 }
