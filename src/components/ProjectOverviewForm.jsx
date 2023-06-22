@@ -6,6 +6,7 @@ const ContactForm = () => {
   const [picketSize, setPicketSize] = useState('');
   const [picketOrientation, setPicketOrientation] = useState('');
   const [tempFence, setTempFence] = useState('');
+  const [address, setAddress] = useState('');
   const [comments, setComments] = useState('');
   const [showPopup, setShowPopup] = useState(false);
 
@@ -22,6 +23,7 @@ const ContactForm = () => {
       picketSize,
       picketOrientation,
       tempFence,
+      address,
       comments
     };
     
@@ -43,6 +45,7 @@ const ContactForm = () => {
     setPicketSize('');
     setPicketOrientation('');
     setTempFence('');
+    setAddress('');
     setComments('');
   };
 
@@ -149,6 +152,15 @@ const ContactForm = () => {
             </label>
         </div>
         <div>
+            <p className="pofLabel">Address:</p>
+            <input
+                type="text"
+                name="address"
+                value={address}
+                onChange={(e) => setAddress(e.target.value)}
+            />
+        </div>
+        <div>
             <p className="pofLabel">Other Comments:</p>
             <textarea
             name="comments"
@@ -168,6 +180,7 @@ const ContactForm = () => {
             </div>
             </div>
         )}
+        
       </div>
   );
 };
