@@ -5,7 +5,7 @@ import GateSelector from './GateSelector';
 import { isElementOfType } from 'react-dom/test-utils';
 import ProjectOverviewForm from './ProjectOverviewForm.jsx';
 import emailjs from 'emailjs-com';
-
+import MarketingForm from './MarketingForm.jsx';
 class AdminUse extends React.Component {
     constructor(props){
         super(props)
@@ -190,35 +190,40 @@ class AdminUse extends React.Component {
 
     render(){
         return(
-            <div className='calculator'>
-                <div className='calculatorTitle'>
-                    Supplies Calculator    
+            <div>
+                <div className='calculator'>
+                    <div className='calculatorTitle'>
+                        Supplies Calculator    
+                    </div>
+
+                    <label className="calculatorInputs">
+                        <div className="inputTitles">Fence Length(Ft)</div> 
+                        <input className='calculatorLengthField' placeholder="100" type="number" onChange={this.handleFenceLengthChange}></input>
+                    </label>
+
+                    <label className="calculatorInputs">
+                    <div className="inputTitles"> Fence Type </div>
+                        <AdminSelector fenceType={this.state.fenceType} handleFenceTypeChange={this.handleFenceTypeChange} />
+                    </label>
+                    <label className="calculatorInputs">
+                    <div className="inputTitles"> Gates </div>                    
+                        <GateSelector gateType={this.state.gateType} handleGates={this.handleGates} />
+                    </label>
+
+                    <div>Pickets: {this.state.pickets} </div>
+                    <div>Posts: {this.state.posts} </div>
+                    <div>Rails: {this.state.rails} </div>
+                    <div>Top Caps: {this.state.topCaps} </div>
+                    <div>Trim Piece (1x4x8 Flat): {this.state.trim8ft} </div>
+                    <div>Trim Piece (1x4x6 Flat): {this.state.trim6ft} </div>
+
+
+                    <button onClick={ ()=>{ this.calculateList() } }> Calculate List </button>
+
                 </div>
-
-                <label className="calculatorInputs">
-                    <div className="inputTitles">Fence Length(Ft)</div> 
-                    <input className='calculatorLengthField' placeholder="100" type="number" onChange={this.handleFenceLengthChange}></input>
-                </label>
-
-                <label className="calculatorInputs">
-                <div className="inputTitles"> Fence Type </div>
-                    <AdminSelector fenceType={this.state.fenceType} handleFenceTypeChange={this.handleFenceTypeChange} />
-                </label>
-                <label className="calculatorInputs">
-                <div className="inputTitles"> Gates </div>                    
-                    <GateSelector gateType={this.state.gateType} handleGates={this.handleGates} />
-                </label>
-
-                <div>Pickets: {this.state.pickets} </div>
-                <div>Posts: {this.state.posts} </div>
-                <div>Rails: {this.state.rails} </div>
-                <div>Top Caps: {this.state.topCaps} </div>
-                <div>Trim Piece (1x4x8 Flat): {this.state.trim8ft} </div>
-                <div>Trim Piece (1x4x6 Flat): {this.state.trim6ft} </div>
-
-
-                <button onClick={ ()=>{ this.calculateList() } }> Calculate List </button>
-
+                <div>
+                    <MarketingForm />    
+                </div>
             </div>
         )
     }
