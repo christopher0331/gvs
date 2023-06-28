@@ -1,8 +1,11 @@
 {
   "name": "gvs",
   "version": "0.1.0",
+  "proxy": "https://api.openai.com",
   "private": true,
   "dependencies": {
+    "@chatscope/chat-ui-kit-react": "^1.10.1",
+    "@chatscope/chat-ui-kit-styles": "^1.4.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
     "@fortawesome/free-regular-svg-icons": "^5.15.3",
@@ -13,6 +16,7 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "aws-sdk": "^2.1297.0",
+    "axios": "^1.4.0",
     "babel-loader": "^8.2.2",
     "bootstrap": "^5.0.1",
     "browser-image-compression": "^1.0.14",
@@ -22,6 +26,7 @@
     "express": "^4.18.2",
     "jquery": "^3.6.0",
     "morgan": "^1.10.0",
+    "openai": "^3.3.0",
     "react": "^17.0.2",
     "react-bootstrap": "^1.6.0",
     "react-dom": "^17.0.2",

@@ -75,10 +75,11 @@ const ContactForm = () => {
 
   return (
     <div className="projOverviewDiv">
-      <form onSubmit={handleSubmit}>
-        <h1>Marketing Form</h1>
+      <form className="formContainer" onSubmit={handleSubmit}>
+        <h1 className="formTitle">Marketing Form</h1>
+        <div className="formField">
         <div>
-          <label>
+          <label className="formLabel">
             Name:
             <input
               type="text"
@@ -89,7 +90,8 @@ const ContactForm = () => {
           </label>
         </div>
         <div>
-          <label>
+            
+          <label className="formLabel">
             Address:
             <input
               type="text"
@@ -100,7 +102,8 @@ const ContactForm = () => {
           </label>
         </div>
         <div>
-          <label>
+            
+          <label className="formLabel">
             Phone:
             <input
               type="text"
@@ -111,9 +114,11 @@ const ContactForm = () => {
           </label>
         </div>
         
-        <div>
+        <div className="marketingTypes">
+
           <p>Marketing Channel:</p>
-          <label>
+          <label className="formLabel">
+
             <input
               type="checkbox"
               name="marketingChannel"
@@ -123,7 +128,9 @@ const ContactForm = () => {
             />
             Quality Connections
           </label>
-          <label>
+          
+          <label className="formLabel">
+
             <input
               type="checkbox"
               name="marketingChannel"
@@ -133,7 +140,9 @@ const ContactForm = () => {
             />
             Google Search
           </label>
-          <label>
+          
+          <label className="formLabel">
+
             <input
               type="checkbox"
               name="marketingChannel"
@@ -143,7 +152,9 @@ const ContactForm = () => {
             />
             Neighborhood
           </label>
-          <label>
+          
+          <label className="formLabel">
+
             <input
               type="checkbox"
               name="marketingChannel"
@@ -153,7 +164,9 @@ const ContactForm = () => {
             />
             Door Hangar
           </label>
-          <label>
+          
+          <label className="formLabel">
+
             <input
               type="checkbox"
               name="marketingChannel"
@@ -163,7 +176,9 @@ const ContactForm = () => {
             />
             Google Maps
           </label>
-          <label>
+          
+          <label className="formLabel">
+
             <input
               type="checkbox"
               name="marketingChannel"
@@ -173,7 +188,9 @@ const ContactForm = () => {
             />
             Google Ads
           </label>
-          <label>
+          
+          <label className="formLabel">
+
             <input
               type="checkbox"
               name="marketingChannel"
@@ -183,10 +200,22 @@ const ContactForm = () => {
             />
             Facebook Ads
           </label>
-        </div>
+          
+          <label className="formLabel">
 
+            <input
+              type="checkbox"
+              name="marketingChannel"
+              value="Angies Leads Ads"
+              checked={marketingChannels.includes('Angies Leads')}
+              onChange={() => handleMarketingChannelChange('Angies Leads')}
+            />
+            Angies Leads
+          </label>
+        </div>
         <div>
-          <label>
+            
+          <label className="formLabel">
             Bid Total:
             <input
               type="text"
@@ -197,7 +226,8 @@ const ContactForm = () => {
           </label>
         </div>
         <div>
-          <label>
+            
+          <label className="formLabel">
             Completed Project Total:
             <input
               type="text"
@@ -209,7 +239,8 @@ const ContactForm = () => {
         </div>
         <div>
           <p>Type of Project:</p>
-          <label>
+          
+          <label className="formLabel">
             <input
               type="checkbox"
               name="projectType"
@@ -219,7 +250,8 @@ const ContactForm = () => {
             />
             Fencing
           </label>
-          <label>
+          
+          <label className="formLabel">
             <input
               type="checkbox"
               name="projectType"
@@ -229,7 +261,8 @@ const ContactForm = () => {
             />
             Irrigation
           </label>
-          <label>
+          
+          <label className="formLabel">
             <input
               type="checkbox"
               name="projectType"
@@ -239,7 +272,8 @@ const ContactForm = () => {
             />
             Concrete
           </label>
-          <label>
+          
+          <label className="formLabel">
             <input
               type="checkbox"
               name="projectType"
@@ -249,7 +283,8 @@ const ContactForm = () => {
             />
             Landscaping
           </label>
-          <label>
+          
+          <label className="formLabel">
             <input
               type="checkbox"
               name="projectType"
@@ -261,7 +296,8 @@ const ContactForm = () => {
           </label>
         </div>
         <button className="pofButton" type="submit">Submit</button>
-      </form>
+    </div>
+    </form>
     </div>
   );
 };

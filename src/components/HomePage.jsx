@@ -5,6 +5,7 @@ import './styles/HomePage.css';
 import ImagesMapped from './ImagesMapped.jsx';
 import ImagesMappedSmall from './ImagesMappedSmall.jsx';
 import { MetaTags, ReactTitle } from 'react-meta-tags';
+import ChatGPT from './ChatGPT.jsx';
 
 const Irrigation = lazy(() => import('./IrrigationProject.jsx'));
 const CommercialFences = lazy(() => import('./CommercialFences.jsx'));

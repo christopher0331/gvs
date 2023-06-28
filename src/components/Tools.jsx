@@ -4,6 +4,7 @@ import OurProcess from './OurProcess.jsx';
 import './styles/AboutUs.css';
 import ProjectOverviewForm from './ProjectOverviewForm.jsx';
 import MarketingForm from './MarketingForm.jsx';
+import ChatGPT from './ChatGPT.jsx';
 
 const Tools = (props) => {
 
@@ -32,8 +33,8 @@ const Tools = (props) => {
             <div>
                 <ProjectOverviewForm />
             </div>
-            <div>
-                <MarketingForm />    
+            <div> 
+                <ChatGPT />
             </div>
         </div>
     )
