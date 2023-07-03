@@ -5,7 +5,7 @@ import { MainContainer, ChatContainer, MessageList, Message, MessageInput, Typin
 
 // "Explain things like you would to a 10 year old learning how to code."
 const systemMessage = { //  Explain things like you're talking to a software professional with 5 years of experience.
-  "role": "system", "content": "Explain things like you're talking to a software professional with 2 years of experience."
+"role": "system", "content": "Explain things like you've been in fencing industry for 35 years"
 }
 
 function App() {
@@ -16,16 +16,14 @@ function App() {
         try {
           const response = await fetch('https://ql6y1722dc.execute-api.us-west-2.amazonaws.com/default/chatGPTGVSSecret');
           const data = await response.json();
-          console.log("1 ===> ", apiKey)
-          console.log("data body -====> ", data.apiKey)
           setApiKey(data.apiKey);
         } catch (error) {
           console.error('Error:', error);
         }
       };
-      console.log("2 ===> ", apiKey)
+
       useEffect(() => {
-        fetchApiKey();
+        fetchApiKey();  
       }, []);
     
   const [messages, setMessages] = useState([
@@ -36,7 +34,7 @@ function App() {
     }
   ]);
   const [isTyping, setIsTyping] = useState(false);
-  console.log("3 ===> ", apiKey)
+
   const handleSend = async (message) => {
     const newMessage = {
       message,
@@ -80,7 +78,6 @@ function App() {
         ...apiMessages // The messages from our chat with ChatGPT
       ]
     }
-    console.log("4 ===> ", apiKey)
     await fetch("https://api.openai.com/v1/chat/completions", 
     {
       method: "POST",
