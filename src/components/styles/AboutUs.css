@@ -138,6 +138,7 @@
 /* Form Styles */
 form {
     display: flex;
+    width: 50%;
     flex-direction: column;
     gap: 10px;
 }
@@ -147,6 +148,7 @@ form {
     background-color: #c8daca;
     border: 2px solid black;
     padding: 10px;
+    width: 50%;
     border-radius: 3%;
 }
 

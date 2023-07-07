@@ -59,10 +59,23 @@ class Menu extends Component {
                             </NavDropdown>
                             <Link id="nav-link" to="/about-us">About Us</Link>
                             <Link id="nav-link" to="/contact-us">Contact Us</Link>
-                            <Link id="nav-link" to="/tools">Tools</Link>
+                            
+                            
+                            {/* <Link id="nav-link" to="/tools">Tools</Link> */}
+                            <NavDropdown title="Tools" id="basic-nav-dropdown">
+                                <NavDropdown.Item className='ddItem' href="/fence-calculator">
+                                    Fence Calculator 
+                                </NavDropdown.Item>
+                                <NavDropdown.Item className='ddItem' href="/fencing-process">
+                                    Fencing Process
+                                </NavDropdown.Item>
+                                <NavDropdown.Item className='ddItem' href="/project-overview-form">
+                                    Project Overview Form
+                                </NavDropdown.Item>
+                            </NavDropdown>
+
                             <Link id="nav-link" to="/portfolio"> Portfolio </Link>
                             <Link id="nav-link" to="/faq"> FAQ </Link>
-
                         </Nav>
                     </Navbar.Collapse>
                     </Navbar>

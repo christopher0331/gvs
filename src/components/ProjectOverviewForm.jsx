@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
+import './styles/AboutUs.css';
 
 const ContactForm = () => {
   const [postType, setPostType] = useState('');

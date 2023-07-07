@@ -26,6 +26,8 @@ const PrivacyPolicy = lazy(() => import('./components/PrivacyPolicy.jsx'));
 const FAQ = lazy(() => import('./components/FAQ.jsx'));
 const ProjectOverviewForm = lazy(() => import('./components/ProjectOverviewForm.jsx'));
 const AdminUseLogin = lazy(() => import('./components/AdminUseLogin.jsx'));
+const FenceCalculator = lazy(() => import('./components/Calculator.jsx'));
+const FencingProcess = lazy(() => import('./components/OurProcess.jsx'));
 
 function App() {
 
@@ -49,10 +51,14 @@ function App() {
                     <Route path="/custom-fences" component={CustomFences} />
                     <Route path="/commercial-fences" component={CommercialFencing} />
                     <Route path="/backflow" component={Backflow} />
+
+                    <Route path="/fence-calculator" component={FenceCalculator} />
+                    <Route path="/fencing-process" component={FencingProcess} />
+                    <Route path="/project-overview-form" component={ProjectOverviewForm} />
+
                     <Route path="/adminuse" component={AdminUseLogin} />
                     <Route path="/privacy-policy" component={PrivacyPolicy} />
                     <Route path="/faq" component={FAQ} />
-                    <Route path="/projectOverviewForm" component={ProjectOverviewForm} />
                     <Route path="*" component={HomePage} />
                 </Switch>
             <Footer />
