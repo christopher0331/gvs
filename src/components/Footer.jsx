@@ -2,7 +2,8 @@ import { React } from 'react';
 import './styles/Footer.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from "react-router-dom";
-  
+import DataDisplay from './DataDisplay.jsx';
+
 const Footer = ()  => {
     
     const Logo = "https://ik.imagekit.io/greenviewsolutions/HomePage/FullSizedWebp/clearGVSLogo_300.webp?tr=w-300,h-300";

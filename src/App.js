@@ -28,6 +28,7 @@ const ProjectOverviewForm = lazy(() => import('./components/ProjectOverviewForm.
 const AdminUseLogin = lazy(() => import('./components/AdminUseLogin.jsx'));
 const FenceCalculator = lazy(() => import('./components/Calculator.jsx'));
 const FencingProcess = lazy(() => import('./components/OurProcess.jsx'));
+const DataDisplay = lazy(() => import('./components/DataDisplay.jsx'));
 
 function App() {
 
@@ -57,6 +58,8 @@ function App() {
                     <Route path="/project-overview-form" component={ProjectOverviewForm} />
 
                     <Route path="/adminuse" component={AdminUseLogin} />
+                    <Route path="/customers" component={DataDisplay} />
+
                     <Route path="/privacy-policy" component={PrivacyPolicy} />
                     <Route path="/faq" component={FAQ} />
                     <Route path="*" component={HomePage} />
