@@ -84,6 +84,7 @@ class ContactForm extends React.Component {
             <div className="formBackground">
 
                 <form onSubmit={this.sendMessage}>
+
                     <div className="formContactInfo">
                         <div className="row1">
                             <label className='inputBox'>
@@ -102,12 +103,15 @@ class ContactForm extends React.Component {
                             </label>
                         </div>
                     </div>
-                    <div className="messageBox">
-                        <textarea className="messageArea inputField" type="text" placeholder='Description of Project' value={this.state.value} onChange={this.handleMessageChange} >
-                        </textarea>
-                    </div>
-                    <div className="submitButtonBox">
-                        <input className="submitButton" type="submit" value="Submit"/>
+                    <div className="messageBoxAndSubmitButton">
+                        <div className="messageBox">
+                            <textarea className="messageArea inputField" type="text" placeholder='Description of Project' value={this.state.value} onChange={this.handleMessageChange} >
+                            </textarea>
+                        </div>
+
+                        <div className="submitButtonBox">
+                            <input className="submitButton" type="submit" value="Submit"/>
+                        </div>
                     </div>
                 </form>
             </div>

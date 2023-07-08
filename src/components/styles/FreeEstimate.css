@@ -2,17 +2,28 @@
     display: flex;
     align-items: center;
     padding-left: 15px;
-    
     height: 100px;
     font-size: 4.2vw;
     color: black;
     background-color: rgba(169, 169, 169, 0.31);
 }
 
+.row1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.row2 {
+    display: flex;
+    flex-direction: row;
+}
+
 .contactFormAndInfo {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding: 0px 0px;
+    margin: 0px 0px;
 }
 
 .formContactInfo {
@@ -22,13 +33,22 @@
 }
 
 .formBackground {
+    display: flex;
     height: 350px;
     background-color: rgba(227, 227, 227, 0.714);
     padding: 10px 10px;
 }
 
+.messageBoxAndSubmitButton{
+    display: flex;
+    flex-direction: column;
+    width: 43em;
+    justify-self: center;
+    justify-content: center;
+    }
+
 .inputBox {
-    margin: 15px 15px;
+    margin: 5px 15px;
 }
 
 .inputField {
@@ -163,15 +183,12 @@
 
     .formBackground{
         display: flex;
-        justify-content: center;
-        justify-self: center;
-        align-content: center;
-        align-self: center;
     }
 
     .contactFormAndInfoBreakpoint{
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
 
     .contactInfoBP {
@@ -188,6 +205,7 @@
     .contactFormBP {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-self: center;
         width: 98%;
         height: 65vh;
@@ -226,7 +244,7 @@
     }
     
     .inputField {
-        width: 95%;
+        width: 8em;
         padding: 10px 10px;
         border-bottom: 2px solid black;
         border-top: none;
@@ -238,6 +256,19 @@
 
     .contactUsParagraph {
         padding: 50px 50px;
+    }
+
+    .messageBoxAndSubmitButton{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 15em;
+    }
+    
+    .messageBox .messageArea {
+        display: flex;
+        width: 75%;
+
     }
 
 }
