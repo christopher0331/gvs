@@ -82,7 +82,7 @@ const WarrantyForm = () => {
           </table>
 
     <form onSubmit={handleSubmit}>
-      <h1>Setup & Warranty!</h1>
+      <h1>Setup & Warranty</h1>
       <label>
         First Name:
         <input
