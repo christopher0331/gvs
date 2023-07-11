@@ -31,8 +31,11 @@ const ContactForm = () => {
       projectTypes
     };
 
+    console.log("newCustomers ===> ", newCustomer);
+
+    
     // Send a POST request to the API endpoint
-    axios.post('https://14y5p40bnl.execute-api.us-west-2.amazonaws.com/postCustomerDataInfo/postCustomerData', newCustomer)
+    axios.post('https://14y5p40bnl.execute-api.us-west-2.amazonaws.com/putCustomerDataInfo/postCustomerData', newCustomer)
       .then((response) => {
         console.log(response.data);
         // Optionally, display a success message or perform additional actions
