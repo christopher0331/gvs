@@ -77,4 +77,4 @@ class DynamoDBService {
   // Add more methods here as needed (e.g., deleteRequest, updateRequest, etc.)
 }
 
-module.exports = DynamoDBService;
+export default DynamoDBService;

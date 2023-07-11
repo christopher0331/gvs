@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-const DynamoDBService = require('../dbhelpers/dynamoDBService.js');
+import DynamoDBService from '../dbhelpers/dynamoDBService.js';
 
 const dbService = new DynamoDBService();
 
