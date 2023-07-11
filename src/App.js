@@ -29,6 +29,7 @@ const AdminUseLogin = lazy(() => import('./components/AdminUseLogin.jsx'));
 const FenceCalculator = lazy(() => import('./components/Calculator.jsx'));
 const FencingProcess = lazy(() => import('./components/OurProcess.jsx'));
 const DataDisplay = lazy(() => import('./components/DataDisplay.jsx'));
+const WarrantyForm = lazy(() => import('./components/WarrantyForm.jsx'));
 
 function App() {
 
@@ -59,6 +60,7 @@ function App() {
 
                     <Route path="/adminuse" component={AdminUseLogin} />
                     <Route path="/customers" component={DataDisplay} />
+                    <Route path="/warranty-form" component={WarrantyForm} />
 
                     <Route path="/privacy-policy" component={PrivacyPolicy} />
                     <Route path="/faq" component={FAQ} />
