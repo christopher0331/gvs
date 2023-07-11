@@ -9,12 +9,17 @@ AWS.config.update({
   secretAccessKey: credentials.secretAccessKey,
 });
 
-class DynamoDBService {
+function generateRandomId() {
+    const maxId = 100000;
+    return Math.floor(Math.random() * maxId);
+  }
+
+class DynamoDBServiceMarketing {
     
   constructor() {
     this.docClient = new AWS.DynamoDB.DocumentClient();
     // Update the table name to match your use case
-    this.tableName = 'WarrantyForm';
+    this.tableName = 'MarketingForm';
   }
 
   getAllItems = () => {
@@ -54,10 +59,15 @@ class DynamoDBService {
   }
 
   
-  createItem(request) {
+  createItem(item) {
+    const newItem = {
+        ...item,
+        id: generateRandomId(),
+      };
+
     const params = {
       TableName: this.tableName,
-      Item: request,
+      Item: newItem,
     };
 
     return new Promise((resolve, reject) => {
@@ -94,4 +104,4 @@ class DynamoDBService {
   // Add more methods here as needed (e.g., deleteRequest, updateRequest, etc.)
 }
 
-export default DynamoDBService;
+export default DynamoDBServiceMarketing;

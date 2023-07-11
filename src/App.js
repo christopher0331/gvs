@@ -1,12 +1,15 @@
 import { Suspense, lazy, React }  from 'react';
+
 import {
   BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
+
+import Provider from './components/DataProvider.js';
+
+
 // import AwesomeLoader from './AwesomeLoader.js';
-
-
 const HomePage = lazy(() => import('./components/HomePage.jsx'));
 const AboutUs = lazy(() => import('./components/AboutUs.jsx'));
 const Header = lazy(() => import('./components/Header.jsx'));
@@ -35,41 +38,42 @@ function App() {
 
   return (
     <div className="App">
-      <Router>
-        <Suspense fallback={<div>Loading...</div> }>
-            <Header />
-              <Switch>
-                    <Route path="/" exact component={HomePage} />
-                    <Route path="/services" component={HomePage}/>
-                    <Route path="/about-us" component={AboutUs}/>
-                    <Route path="/fencing" component={Fencing} />
-                    <Route path="/irrigation" component={Irrigation} />
-                    <Route path="/contact-us" component={ContactUs} />
-                    <Route path="/portfolio" component={Portfolio} />
-                    <Route path="/tools" component={Tools} />
-                    <Route path="/wood-fences" component={WoodFences} />
-                    <Route path="/chainlink-fences" component={ChainLinkFences} />
-                    <Route path="/wrought-iron-fences" component={WroughtIronFences} />
-                    <Route path="/custom-fences" component={CustomFences} />
-                    <Route path="/commercial-fences" component={CommercialFencing} />
-                    <Route path="/backflow" component={Backflow} />
+      <Provider>
+        <Router>
+          <Suspense fallback={<div>Loading...</div> }>
+              <Header />
+                <Switch>
+                      <Route path="/" exact component={HomePage} />
+                      <Route path="/services" component={HomePage}/>
+                      <Route path="/about-us" component={AboutUs}/>
+                      <Route path="/fencing" component={Fencing} />
+                      <Route path="/irrigation" component={Irrigation} />
+                      <Route path="/contact-us" component={ContactUs} />
+                      <Route path="/portfolio" component={Portfolio} />
+                      <Route path="/tools" component={Tools} />
+                      <Route path="/wood-fences" component={WoodFences} />
+                      <Route path="/chainlink-fences" component={ChainLinkFences} />
+                      <Route path="/wrought-iron-fences" component={WroughtIronFences} />
+                      <Route path="/custom-fences" component={CustomFences} />
+                      <Route path="/commercial-fences" component={CommercialFencing} />
+                      <Route path="/backflow" component={Backflow} />
 
-                    <Route path="/fence-calculator" component={FenceCalculator} />
-                    <Route path="/fencing-process" component={FencingProcess} />
-                    <Route path="/project-overview-form" component={ProjectOverviewForm} />
+                      <Route path="/fence-calculator" component={FenceCalculator} />
+                      <Route path="/fencing-process" component={FencingProcess} />
+                      <Route path="/project-overview-form" component={ProjectOverviewForm} />
 
-                    <Route path="/adminuse" component={AdminUseLogin} />
-                    <Route path="/customers" component={DataDisplay} />
-                    <Route path="/warranty-form" component={WarrantyForm} />
+                      <Route path="/adminuse" component={AdminUseLogin} />
+                      <Route path="/customers" component={DataDisplay} />
+                      <Route path="/warranty-form" component={WarrantyForm} />
 
-                    <Route path="/privacy-policy" component={PrivacyPolicy} />
-                    <Route path="/faq" component={FAQ} />
-                    <Route path="*" component={HomePage} />
-                </Switch>
-            <Footer />
-        </Suspense>
-      </Router>
-        
+                      <Route path="/privacy-policy" component={PrivacyPolicy} />
+                      <Route path="/faq" component={FAQ} />
+                      <Route path="*" component={HomePage} />
+                  </Switch>
+              <Footer />
+          </Suspense>
+        </Router>
+      </Provider>
     </div>
   );
 }

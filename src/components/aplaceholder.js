@@ -1,57 +1,4 @@
-import React, { useContext, useState } from 'react';
-import axios from 'axios';
-import { DataContext } from './Context.js'; // adjust this path to your context.js file location
-import './styles/AboutUs.css';
-
-const MarketingForm = () => {
-  const { addItem } = useContext(DataContext); // Access the addItem function from the context
-
-  const [name, setName] = useState('');
-  const [streetNumber, setStreetNumber] = useState('');
-  const [city, setCity] = useState('');
-  const [state, setState] = useState('');
-  const [zipCode, setZipCode] = useState('');
-  const [phone, setPhone] = useState('');
-  const [marketingChannels, setMarketingChannels] = useState('');
-  const [bidTotal, setBidTotal] = useState('');
-  const [completedProjectTotal, setCompletedProjectTotal] = useState('');
-  const [projectTypes, setProjectTypes] = useState('');
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    // Create a new customer object
-    const newCustomer = {
-      name,
-      streetNumber,
-      city,
-      state,
-      zipCode,
-      phone,
-      marketingChannels,
-      bidTotal,
-      completedProjectTotal,
-      projectTypes
-    };
-
-    // Call the addItem function from the context to add the new customer
-    addItem(newCustomer);
-
-    // Reset the form fields
-    setName('');
-    setStreetNumber('');
-    setCity('');
-    setState('');
-    setZipCode('');
-    setPhone('');
-    setMarketingChannels('');
-    setBidTotal('');
-    setCompletedProjectTotal('');
-    setProjectTypes('');
-  };
-
-  return (
-    <div className="projOverviewDiv">
+{/* <div className="projOverviewDiv">
 <form className="formContainer" onSubmit={handleSubmit}>
   <h1 className="formTitle">Marketing Form</h1>
   <div className="formField">
@@ -168,8 +115,4 @@ const MarketingForm = () => {
     <button className="pofButton" type="submit">Submit</button>
   </div>
 </form>
-</div>
-  );
-};
-
-export default MarketingForm;
+</div> */}
