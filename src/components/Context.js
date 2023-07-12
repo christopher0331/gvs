@@ -20,8 +20,10 @@ const reducer = (state, action) => {
       return { ...state, marketingData: action.payload };
     case 'SET_WARRANTY_DATA':
       return { ...state, warrantyData: action.payload };
-    case 'DELETE_ITEM':
+    case 'DELETE_ITEM_WARRANTY':
       return { ...state, warrantyData: state.warrantyData.filter(item => item.email !== action.payload.email) };
+    case 'DELETE_ITEM_MARKETING':
+        return { ...state, marketingData: state.marketingData.filter(item => item.id !== action.payload.id) };
     case 'EDIT_ITEM':
       // This part needs to be implemented based on your requirement
       return state;
@@ -39,14 +41,15 @@ const DataProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
   const [loading, setLoading] = useState(true); // Add loading state
 
+  const setWarrantyData = (data) => {
+    dispatch({ type: 'SET_WARRANTY_DATA', payload: data });
+  };
+
   // Define actions
   const setMarketingData = (data) => {
     dispatch({ type: 'SET_MARKETING_DATA', payload: data });
   };
 
-  const setWarrantyData = (data) => {
-    dispatch({ type: 'SET_WARRANTY_DATA', payload: data });
-  };
 
   useEffect(() => {
     const fetchMarketingData = async () => {
@@ -73,11 +76,43 @@ const DataProvider = ({ children }) => {
     fetchWarrantyData();
   }, []);
 
+  const addItemWarranty = async (item) => {
+    try {
+      await dbService.createItem(item);
+      dispatch({ type: 'ADD_ITEM_WARRANTY', payload: item });
+    } catch (error) {
+      console.error('Error adding item:', error);
+    }
+  };
+
   const deleteItemFromContext = async (item) => {
     if (window.confirm('Are you sure you want to delete this record?')) {
       try {
         await dbService.deleteItem(item.email);
-        dispatch({ type: 'DELETE_ITEM', payload: item });
+        dispatch({ type: 'DELETE_ITEM_WARRANTY', payload: item });
+      } catch (error) {
+        console.error('Error deleting item:', error);
+      }
+    }
+  };
+
+
+
+
+  const addItem = async (item) => {
+    try {
+      await dbServiceMarketing.createItem(item);
+      dispatch({ type: 'ADD_ITEM_MARKETING', payload: item });
+    } catch (error) {
+      console.error('Error adding item:', error);
+    }
+  };
+
+  const deleteMarketingItemFromContext = async (item) => {
+    if (window.confirm('Are you sure you want to delete this record?')) {
+      try {
+        await dbServiceMarketing.deleteMarketingItem(item.id);
+        dispatch({ type: 'DELETE_ITEM_MARKETING', payload: item });
       } catch (error) {
         console.error('Error deleting item:', error);
       }
@@ -89,23 +124,6 @@ const DataProvider = ({ children }) => {
     // Call to DBService update method needs to be implemented
   };
 
-  const addItem = async (item) => {
-    try {
-      await dbServiceMarketing.createItem(item);
-      dispatch({ type: 'ADD_ITEM_MARKETING', payload: item });
-    } catch (error) {
-      console.error('Error adding item:', error);
-    }
-  };
-
-  const addItemWarranty = async (item) => {
-    try {
-      await dbService.createItem(item);
-      dispatch({ type: 'ADD_ITEM_WARRANTY', payload: item });
-    } catch (error) {
-      console.error('Error adding item:', error);
-    }
-  };
 
   if (loading) {
     return <div>Loading...</div>; // Show loading state while fetching data
@@ -113,7 +131,7 @@ const DataProvider = ({ children }) => {
 
   return (
     <DataContext.Provider
-      value={{
+    value={{
         state,
         setMarketingData,
         setWarrantyData,
@@ -121,8 +139,10 @@ const DataProvider = ({ children }) => {
         editItem,
         addItem,
         addItemWarranty,
-      }}
+        deleteMarketingItemFromContext
+    }}
     >
+    {console.log("========== from context" , deleteMarketingItemFromContext)}
       {children}
     </DataContext.Provider>
   );

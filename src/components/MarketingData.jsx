@@ -3,9 +3,11 @@ import { DataContext } from './Context.js';
 
 const MarketingData = () => {
 
-    const { state } = useContext(DataContext);
-    const { marketingData } = state;
-  
+  const { state, deleteMarketingItemFromContext, editItem } = useContext(DataContext);
+  const marketingData = state.marketingData;
+
+    console.log(" =========== from data ", deleteMarketingItemFromContext)
+
   if (!marketingData) {
     // Handle the case when marketingData is undefined or empty
     return (
@@ -15,6 +17,23 @@ const MarketingData = () => {
       </div>
     );
   }
+
+
+    // Function to handle delete
+    const handleDelete = async (item) => {
+      if (window.confirm("Are you sure you want to delete this record?")) {
+        try {
+          await deleteMarketingItemFromContext(item);
+        } catch (error) {
+          console.error('Error deleting item:', error);
+        }
+      }
+    };
+  
+    // Function to handle update
+    const handleUpdate = (item) => {
+      editItem(item);
+    };
 
   return (
     <div>
@@ -49,6 +68,10 @@ const MarketingData = () => {
               <td>{item.bidTotal}</td>
               <td>{item.completedProjectTotal}</td>
               <td>{item.projectTypes}</td>
+              <td>
+                <button onClick={() => handleUpdate(item)}>Update</button>
+                <button onClick={() => handleDelete(item)}>Delete</button>
+              </td>
             </tr>
           ))}
         </tbody>

@@ -9,7 +9,6 @@ const WarrantyForm = () => {
   const [email, setEmail] = useState('');
   const [productName, setProductName] = useState('');
   const [productSerialNumber, setProductSerialNumber] = useState('');
-
   const { addItemWarranty } = useContext(DataContext);
 
   const handleSubmit = async (e) => {

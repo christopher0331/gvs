@@ -82,11 +82,11 @@ class DynamoDBServiceMarketing {
   }
 
 
-  deleteItem(email) {
+  deleteMarketingItem(id) {
     const params = {
       TableName: this.tableName,
       Key: {
-        email: email,
+        id: id,
       },
     };
   
