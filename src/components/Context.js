@@ -51,6 +51,17 @@ const DataProvider = ({ children }) => {
   };
 
 
+  const triggerDataScrubbing = async () => {
+    try {
+      const response = await axios.post('/scrubAndUploadData');
+      console.log(response.data);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  triggerDataScrubbing();
+  
   useEffect(() => {
     const fetchMarketingData = async () => {
       try {
@@ -142,7 +153,6 @@ const DataProvider = ({ children }) => {
         deleteMarketingItemFromContext
     }}
     >
-    {console.log("========== from context" , deleteMarketingItemFromContext)}
       {children}
     </DataContext.Provider>
   );
