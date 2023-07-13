@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
+import React, { useContext, useState } from 'react';
+import { DataContext } from './Context.js'; // adjust this path to your context.js file location
 import './styles/AboutUs.css';
+
 
 const ContactForm = () => {
   const [name, setName] = useState('');
@@ -11,44 +12,42 @@ const ContactForm = () => {
   const [completedProjectTotal, setCompletedProjectTotal] = useState('');
   const [projectTypes, setProjectTypes] = useState([]);
 
+  const { addItem } = useContext(DataContext);
+
+  function generateRandomId() {
+    const maxId = 100000;
+    return Math.floor(Math.random() * maxId);
+  }
+  
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // Your EmailJS service ID, template ID, and user ID
-    const serviceId =  "service_p6clffh";
-    const templateId = "template_47r5iim";
-    const userId = "user_wPYeoaoebNsoGt3GhzLVu";
-
-    const templateParams = {
+  
+    // Create a new customer object
+    const newCustomer = {
+      id: generateRandomId(),
+      key: generateRandomId(),
       name,
       address,
       phone,
-      marketingChannels: marketingChannels.join(', '),
+      marketingChannels,
       bidTotal,
       completedProjectTotal,
-      projectTypes: projectTypes.join(', ')
+      projectTypes
     };
-
-    emailjs
-      .send(serviceId, templateId, templateParams, userId)
-      .then((result) => {
-        console.log(result.text);
-        // Optionally, display a success message or redirect to a success page
-      })
-      .catch((error) => {
-        console.log(error.text);
-        // Optionally, display an error message
-      });
-
+  
+    // Call the addItem function from the context to add the new customer
+    addItem(newCustomer);
+  
     // Reset the form fields
     setName('');
     setAddress('');
     setPhone('');
-    setMarketingChannels([]);
+    setMarketingChannels('');
     setBidTotal('');
     setCompletedProjectTotal('');
-    setProjectTypes([]);
+    setProjectTypes('');
   };
+  
 
   const handleMarketingChannelChange = (channel) => {
     const updatedChannels = [...marketingChannels];

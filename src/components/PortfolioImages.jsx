@@ -5,6 +5,18 @@ import { Card, Image } from 'semantic-ui-react';
 import FeaturedProject from './FeaturedProject.js';
 import './styles/Portfolio.css';
 
+const credentials = require('../aws-credentials.json');
+
+AWS.config.credentials = new AWS.Credentials();
+
+AWS.config.update({
+  region: 'us-west-2',
+  accessKeyId: credentials.accessKeyId,
+  secretAccessKey: credentials.secretAccessKey,
+
+});
+
+
 const S3Bucket = () => {
   const [projectImages, setProjectImages] = useState([]);
   const [show, setShow] = useState(false);
@@ -21,12 +33,10 @@ const S3Bucket = () => {
   };
 
   useEffect(() => {
-    const getImages = "AKIAZJ7XN6M6UNBRKVYV";
-    const getImagesMyst = "2v49fYw4jwYfMThMABqj0TCCfkX4XXOSGAp4fnVj";
   
     AWS.config.update({
-      accessKeyId: getImages,
-      secretAccessKey: getImagesMyst,
+      accessKeyId: credentials.accessKeyId,
+      secretAccessKey: credentials.secretAccessKey,
     });
   
     const s3 = new AWS.S3();

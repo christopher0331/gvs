@@ -64,6 +64,7 @@ const ContactUs = (props) => {
                         <ContactInformation />
                     </div>
                 </div>
+                
                 <div className="contactFormAndInfoBreakpoint"> 
                     <div className="contactInfoBP">
                         <ContactInformation />
