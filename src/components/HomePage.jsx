@@ -1,6 +1,4 @@
 import { useEffect, React, lazy } from 'react';
-import { Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import './styles/HomePage.css';
 import ImagesMapped from './ImagesMapped.jsx';
 import ImagesMappedSmall from './ImagesMappedSmall.jsx';

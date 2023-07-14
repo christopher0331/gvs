@@ -6,8 +6,6 @@ const MarketingData = () => {
   const { state, deleteMarketingItemFromContext, editItem } = useContext(DataContext);
   const marketingData = state.marketingData;
 
-    console.log(" =========== from data ", deleteMarketingItemFromContext)
-
   if (!marketingData) {
     // Handle the case when marketingData is undefined or empty
     return (

@@ -2,7 +2,6 @@ import { React } from 'react';
 import './styles/Footer.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from "react-router-dom";
-import DataDisplay from './DataDisplay.jsx';
 
 const Footer = ()  => {
     

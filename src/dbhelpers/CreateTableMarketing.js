@@ -1,6 +1,11 @@
 const AWS = require('aws-sdk');
-const config = require('../../awsConfig.js');
-AWS.config.update(config);
+require('dotenv').config();
+
+AWS.config.update({
+  region: 'us-west-2',
+  accessKeyId: process.env.PUBLIC_KEY,
+  secretAccessKey: process.env.SECRET_KEY,
+});
 
 const dynamoDB = new AWS.DynamoDB({
     region: 'us-west-2'

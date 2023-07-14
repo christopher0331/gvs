@@ -4,18 +4,15 @@ import { Button, Modal } from 'react-bootstrap';
 import { Card, Image } from 'semantic-ui-react';
 import FeaturedProject from './FeaturedProject.js';
 import './styles/Portfolio.css';
-
-const credentials = require('../aws-credentials.json');
+require('dotenv').config();
 
 AWS.config.credentials = new AWS.Credentials();
 
 AWS.config.update({
   region: 'us-west-2',
-  accessKeyId: credentials.accessKeyId,
-  secretAccessKey: credentials.secretAccessKey,
-
+  accessKeyId: process.env.PUBLIC_KEY,
+  secretAccessKey: process.env.SECRET_KEY,
 });
-
 
 const S3Bucket = () => {
   const [projectImages, setProjectImages] = useState([]);
@@ -35,8 +32,9 @@ const S3Bucket = () => {
   useEffect(() => {
   
     AWS.config.update({
-      accessKeyId: credentials.accessKeyId,
-      secretAccessKey: credentials.secretAccessKey,
+      region: 'us-west-2',
+      accessKeyId: process.env.PUBLIC_KEY,
+      secretAccessKey: process.env.SECRET_KEY,
     });
   
     const s3 = new AWS.S3();

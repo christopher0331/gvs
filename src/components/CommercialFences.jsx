@@ -1,8 +1,6 @@
 import { React } from 'react';
 import { Card } from 'react-bootstrap';
 import './styles/CardComponent.css';
-// import ResidentialFenceImage from './assets/ResidentialFence.jpeg';
-// import CommercialFenceImage from './assets/CommercialFence.jpeg';
 import { Link } from 'react-router-dom';
 
 const CommercialFenceImage = "https://ik.imagekit.io/greenviewsolutions/HomePage/FullSizedWebp/CommericalHomePageImage.jpeg?tr=w-700,h-700";

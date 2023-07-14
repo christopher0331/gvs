@@ -1,12 +1,12 @@
 const AWS = require('aws-sdk');
-const credentials = require('../aws-credentials.json');
+require('dotenv').config();
 
 AWS.config.credentials = new AWS.Credentials();
 
 AWS.config.update({
   region: 'us-west-2',
-  accessKeyId: credentials.accessKeyId,
-  secretAccessKey: credentials.secretAccessKey,
+  accessKeyId: process.env.PUBLIC_KEY,
+  secretAccessKey: process.env.SECRET_KEY,
 });
 
 class DynamoDBService {
