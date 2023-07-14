@@ -10,7 +10,7 @@ import Provider from './components/DataProvider.js';
 
 require('dotenv').config({ path: '../.env' })
 
-console.log('helllo ---------------------------------------')
+console.log('helllo ---------------------------------------!')
 
 console.log( 'PUBLIC +==========> ',  process.env.PUBLIC_KEY,
 'SECRET KEY =============+>' , process.env.SECRET_KEY)
