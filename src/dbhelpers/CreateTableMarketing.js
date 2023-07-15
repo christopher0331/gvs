@@ -1,11 +1,21 @@
+import axios from 'axios';
 const AWS = require('aws-sdk');
 require('dotenv').config();
+AWS.config.update({region: 'us-west-2'})
 
-AWS.config.update({
-  region: 'us-west-2',
-  accessKeyId: process.env.PUBLIC_KEY,
-  secretAccessKey: process.env.SECRET_KEY,
-});
+axios.get("https://379pj43m47.execute-api.us-west-2.amazonaws.com/default/gvsGetCreds")
+  .then((response) => {
+    console.log('============> ', response);
+    AWS.config.update({
+      region: 'us-west-2',
+      accessKeyId: response.data.accessKeyId,
+      secretAccessKey: response.data.secretAccessKey,
+    });
+  })
+  .catch((err) => {
+    console.log('error', err);
+  });
+
 
 const dynamoDB = new AWS.DynamoDB({
     region: 'us-west-2'
