@@ -1,6 +1,4 @@
 import { React, lazy } from 'react';
-// import Residential from './assets/residential.JPG';
-// import wireFence from './assets/wireFence.JPG'
 import './styles/FencingTypes.css';
 
 const FenceTypes = () => {

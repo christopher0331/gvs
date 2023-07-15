@@ -8,6 +8,14 @@ import {
 
 import Provider from './components/DataProvider.js';
 
+require('dotenv').config({ path: '../.env' })
+
+console.log('helllo ---------------------------------------!')
+
+console.log( 'PUBLIC +==========> ',  process.env.PUBLIC_KEY,
+'SECRET KEY =============+>' , process.env.SECRET_KEY)
+
+
 
 // import AwesomeLoader from './AwesomeLoader.js';
 const HomePage = lazy(() => import('./components/HomePage.jsx'));

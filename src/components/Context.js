@@ -1,7 +1,6 @@
 import React, { useEffect, createContext, useReducer, useState } from 'react';
 import DynamoDBService from '../dbhelpers/dynamoDBService'; // adjust this path to your dynamoDBService.js file location
 import DynamoDBServiceMarketing from '../dbhelpers/dynamoDBServiceMarketing'; // adjust this path to your dynamoDBService.js file location
-import axios from 'axios';
 
 const DataContext = createContext();
 
@@ -50,17 +49,6 @@ const DataProvider = ({ children }) => {
     dispatch({ type: 'SET_MARKETING_DATA', payload: data });
   };
 
-
-  const triggerDataScrubbing = async () => {
-    try {
-      const response = await axios.post('/scrubAndUploadData');
-      console.log(response.data);
-    } catch (error) {
-      console.error(error);
-    }
-  };
-
-  triggerDataScrubbing();
   
   useEffect(() => {
     const fetchMarketingData = async () => {
@@ -86,6 +74,8 @@ const DataProvider = ({ children }) => {
     fetchMarketingData();
     fetchWarrantyData();
   }, []);
+
+
 
   const addItemWarranty = async (item) => {
     try {
@@ -130,6 +120,7 @@ const DataProvider = ({ children }) => {
     }
   };
 
+  
   const editItem = (item) => {
     dispatch({ type: 'EDIT_ITEM', payload: item });
     // Call to DBService update method needs to be implemented

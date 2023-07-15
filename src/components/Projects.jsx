@@ -20,12 +20,11 @@ const Projects = () => {
   };
 
   useEffect(() => {
-    const getImages = "AKIAZJ7XN6M6UNBRKVYV";
-    const getImagesMyst = "2v49fYw4jwYfMThMABqj0TCCfkX4XXOSGAp4fnVj";
 
     AWS.config.update({
-      accessKeyId: getImages,
-      secretAccessKey: getImagesMyst,
+      region: 'us-west-2',
+      accessKeyId: process.env.PUBLIC_KEY,
+      secretAccessKey: process.env.SECRET_KEY,
     });
 
     const s3 = new AWS.S3();

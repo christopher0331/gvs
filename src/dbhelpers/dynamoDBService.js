@@ -1,13 +1,22 @@
+import axios from 'axios'; 
 const AWS = require('aws-sdk');
-const credentials = require('../aws-credentials.json');
+require('dotenv').config();
+AWS.config.update({region: 'us-west-2'})
 
 AWS.config.credentials = new AWS.Credentials();
 
-AWS.config.update({
-  region: 'us-west-2',
-  accessKeyId: credentials.accessKeyId,
-  secretAccessKey: credentials.secretAccessKey,
-});
+axios.get("https://379pj43m47.execute-api.us-west-2.amazonaws.com/default/gvsGetCreds")
+  .then((response) => {
+    console.log('============> ', response);
+    AWS.config.update({
+      region: 'us-west-2',
+      accessKeyId: response.data.accessKeyId,
+      secretAccessKey: response.data.secretAccessKey,
+    });
+  })
+  .catch((err) => {
+    console.log('error', err);
+  });
 
 class DynamoDBService {
     
