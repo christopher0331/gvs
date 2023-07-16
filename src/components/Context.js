@@ -1,6 +1,8 @@
 import React, { useEffect, createContext, useReducer, useState } from 'react';
 import DynamoDBService from '../dbhelpers/dynamoDBService'; // adjust this path to your dynamoDBService.js file location
 import DynamoDBServiceMarketing from '../dbhelpers/dynamoDBServiceMarketing'; // adjust this path to your dynamoDBService.js file location
+import ErrorBoundary from './ErrorBoundary.jsx';
+require('dotenv').config();
 
 const DataContext = createContext();
 
@@ -132,20 +134,22 @@ const DataProvider = ({ children }) => {
   }
 
   return (
-    <DataContext.Provider
-    value={{
-        state,
-        setMarketingData,
-        setWarrantyData,
-        deleteItemFromContext,
-        editItem,
-        addItem,
-        addItemWarranty,
-        deleteMarketingItemFromContext
-    }}
-    >
-      {children}
-    </DataContext.Provider>
+    <ErrorBoundary>
+        <DataContext.Provider
+        value={{
+            state,
+            setMarketingData,
+            setWarrantyData,
+            deleteItemFromContext,
+            editItem,
+            addItem,
+            addItemWarranty,
+            deleteMarketingItemFromContext
+        }}
+        >
+        {children}
+        </DataContext.Provider>
+    </ErrorBoundary>
   );
 };
 

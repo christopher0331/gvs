@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { DataContext } from './Context.js';
+import ErrorBoundary from './ErrorBoundary.jsx';
 
 const MarketingData = () => {
 
@@ -34,6 +35,7 @@ const MarketingData = () => {
     };
 
   return (
+    <ErrorBoundary>
     <div>
       <h1>Marketing Data</h1>
       <table>
@@ -75,6 +77,7 @@ const MarketingData = () => {
         </tbody>
       </table>
     </div>
+    </ErrorBoundary>
   );
 };
 

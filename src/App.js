@@ -7,13 +7,12 @@ import {
 } from "react-router-dom";
 
 import Provider from './components/DataProvider.js';
+import ErrorBoundary from './components/ErrorBoundary.jsx';
 
 require('dotenv').config({ path: '../.env' })
 
-console.log('helllo ---------------------------------------!')
-
-console.log( 'PUBLIC +==========> ',  process.env.PUBLIC_KEY,
-'SECRET KEY =============+>' , process.env.SECRET_KEY)
+console.log( 'PUBLIC +==========> ',  process.env,
+'SECRET KEY =============+>' , process.env)
 
 
 
@@ -46,6 +45,7 @@ function App() {
 
   return (
     <div className="App">
+      <ErrorBoundary>
       <Provider>
         <Router>
           <Suspense fallback={<div>Loading...</div> }>
@@ -82,6 +82,7 @@ function App() {
           </Suspense>
         </Router>
       </Provider>
+      </ErrorBoundary>
     </div>
   );
 }

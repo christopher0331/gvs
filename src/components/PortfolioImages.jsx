@@ -3,6 +3,8 @@ import AWS from 'aws-sdk';
 import { Button, Modal } from 'react-bootstrap';
 import { Card, Image } from 'semantic-ui-react';
 import FeaturedProject from './FeaturedProject.js';
+import ErrorBoundary from './ErrorBoundary.jsx';
+
 import './styles/Portfolio.css';
 import axios from 'axios';
 
@@ -10,6 +12,8 @@ require('dotenv').config();
 
 AWS.config.credentials = new AWS.Credentials();
 
+
+console.log('===================> ', process.env)
 const S3Bucket = () => {
   const [projectImages, setProjectImages] = useState([]);
   const [show, setShow] = useState(false);
@@ -26,14 +30,14 @@ const S3Bucket = () => {
   };
 
   useEffect(() => {
+
     const fetchData = async () => {
+
       try {
-        const response = await axios.get("https://379pj43m47.execute-api.us-west-2.amazonaws.com/default/gvsGetCreds")
-        console.log('============> ', response);
         AWS.config.update({
           region: 'us-west-2',
-          accessKeyId: response.data.accessKeyId,
-          secretAccessKey: response.data.secretAccessKey,
+          accessKeyId: process.env.REACT_APP_PublicAccess,
+          secretAccessKey: process.env.REACT_APP_PrivateKey,
         });
 
         const s3 = new AWS.S3();
@@ -71,7 +75,7 @@ const S3Bucket = () => {
   
 
   return (
-    <div>
+    <ErrorBoundary>
       <ul>
         <div id="primaryBox">
           <div className="portfolioTitle">
@@ -103,7 +107,7 @@ const S3Bucket = () => {
           </div>
         </div>
       </ul>
-    </div>
+    </ErrorBoundary>
   );
 };
 

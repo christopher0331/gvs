@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { DataProvider } from './Context.js';
 import DynamoDBService from '../dbhelpers/dynamoDBService.js'; // adjust this path to your DynamoDBService file location
+import ErrorBoundary from './ErrorBoundary.jsx';
 
 const dbService = new DynamoDBService();
 
@@ -14,9 +15,11 @@ const Provider = ({ children }) => {
   }, []);
 
   return (
-    <DataProvider value={{ data, setData }}>
-      {children}
-    </DataProvider>
+    <ErrorBoundary>
+      <DataProvider value={{ data, setData }}>
+        {children}
+      </DataProvider>
+    </ErrorBoundary>
   );
 };
 
