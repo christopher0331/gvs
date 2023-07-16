@@ -11,11 +11,6 @@ import ErrorBoundary from './components/ErrorBoundary.jsx';
 
 require('dotenv').config({ path: '../.env' })
 
-console.log( 'PUBLIC +==========> ',  process.env,
-'SECRET KEY =============+>' , process.env)
-
-
-
 // import AwesomeLoader from './AwesomeLoader.js';
 const HomePage = lazy(() => import('./components/HomePage.jsx'));
 const AboutUs = lazy(() => import('./components/AboutUs.jsx'));

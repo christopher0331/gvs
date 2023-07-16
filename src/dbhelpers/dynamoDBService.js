@@ -2,18 +2,13 @@ import axios from 'axios';
 const AWS = require('aws-sdk');
 require('dotenv').config();
 
-
-
-AWS.config.credentials = new AWS.Credentials();
-
+AWS.config.credentials = new AWS.Credentials()
 
 AWS.config.update({
   region: 'us-west-2',
-  accessKeyId: process.env.REACT_APP_PublicAccess,
-  secretAccessKey: process.env.REACT_APP_PrivateKey,
+  accessKeyId: process.env.REACT_APP_MY_PUBLIC_KEY,
+  secretAccessKey: process.env.REACT_APP_SECRET_KEY,
 });
-
-AWS.config.update({region: 'us-west-2'})
 
 class DynamoDBService {
     

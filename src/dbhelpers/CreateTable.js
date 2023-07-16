@@ -2,8 +2,8 @@ const AWS = require('aws-sdk');
 
 AWS.config.update({
   region: 'us-west-2',
-  accessKeyId: process.env.PUBLIC_KEY,
-  secretAccessKey: process.env.SECRET_KEY,
+  accessKeyId: process.env.REACT_APP_MY_PUBLIC_KEY,
+  secretAccessKey: process.env.REACT_APP_SECRET_KEY,
 });
 
 const dynamoDB = new AWS.DynamoDB({

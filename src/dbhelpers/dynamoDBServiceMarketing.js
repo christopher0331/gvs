@@ -1,23 +1,14 @@
 import axios from 'axios';
 const AWS = require('aws-sdk');
 require('dotenv').config();
-AWS.config.update({region: 'us-west-2'})
 
 AWS.config.credentials = new AWS.Credentials();
 
-axios.get("https://379pj43m47.execute-api.us-west-2.amazonaws.com/default/gvsGetCreds")
-  .then((response) => {
-    console.log('============> ', response);
-    AWS.config.update({
-      region: 'us-west-2',
-      accessKeyId: response.data.accessKeyId,
-      secretAccessKey: response.data.secretAccessKey,
-    });
-  })
-  .catch((err) => {
-    console.log('error', err);
-  });
-
+AWS.config.update({
+  region: 'us-west-2',
+  accessKeyId: process.env.REACT_APP_MY_PUBLIC_KEY,
+  secretAccessKey: process.env.REACT_APP_SECRET_KEY,
+});
 
 function generateRandomId() {
     const maxId = 100000;

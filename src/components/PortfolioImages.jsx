@@ -4,7 +4,6 @@ import { Button, Modal } from 'react-bootstrap';
 import { Card, Image } from 'semantic-ui-react';
 import FeaturedProject from './FeaturedProject.js';
 import ErrorBoundary from './ErrorBoundary.jsx';
-
 import './styles/Portfolio.css';
 import axios from 'axios';
 
@@ -12,8 +11,6 @@ require('dotenv').config();
 
 AWS.config.credentials = new AWS.Credentials();
 
-
-console.log('===================> ', process.env)
 const S3Bucket = () => {
   const [projectImages, setProjectImages] = useState([]);
   const [show, setShow] = useState(false);
@@ -36,8 +33,8 @@ const S3Bucket = () => {
       try {
         AWS.config.update({
           region: 'us-west-2',
-          accessKeyId: process.env.REACT_APP_PublicAccess,
-          secretAccessKey: process.env.REACT_APP_PrivateKey,
+          accessKeyId: process.env.REACT_APP_MY_PUBLIC_KEY,
+          secretAccessKey: process.env.REACT_APP_SECRET_KEY,
         });
 
         const s3 = new AWS.S3();
