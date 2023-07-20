@@ -5,8 +5,9 @@ import { Card, Image } from 'semantic-ui-react';
 import FeaturedProject from './FeaturedProject.js';
 import './styles/Portfolio.css';
 import axios from 'axios';
-
-require('dotenv').config();
+import './styles/Portfolio.css';
+import './styles/Project.css';
+// require('dotenv').config();
 
 AWS.config.credentials = new AWS.Credentials();
 
@@ -29,7 +30,6 @@ const S3Bucket = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get("https://379pj43m47.execute-api.us-west-2.amazonaws.com/default/gvsGetCreds")
-        console.log('============> ', response);
         AWS.config.update({
           region: 'us-west-2',
           accessKeyId: response.data.accessKeyId,
