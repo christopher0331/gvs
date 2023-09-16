@@ -72,6 +72,9 @@ class Menu extends Component {
                                 <NavDropdown.Item className='ddItem' href="/project-overview-form">
                                     Project Overview Form
                                 </NavDropdown.Item>
+                                <NavDropdown.Item className='ddItem' href="/warranty-form">
+                                    Warranty Form
+                                </NavDropdown.Item>
                             </NavDropdown>
 
                             <Link id="nav-link" to="/portfolio"> Portfolio </Link>
