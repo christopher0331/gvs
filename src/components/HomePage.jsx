@@ -47,7 +47,7 @@ const HomePage = (props) => {
                     <h5 id="BoxText2">We're Proud to Announce We Now Offer Financing Options!</h5>
 
                         <a class="financeAnchor" href="https://www.ffcapplication.com/?i=XY5sWUYH644gfJ4gujgeBam42nEvNGIYEC5wDNmMe9o=" target='_blank'>
-                            <button class="buttonDivLargeFinance"> Finance Now </button>
+                            <button class="buttonDivSmallFinance"> Finance Now </button>
                         </a>
                     </div>
                 </div>
@@ -107,7 +107,7 @@ const HomePage = (props) => {
                     <div>
                     <h5 id="BoxText">Quality, Communication and Commitment On Every Project</h5>
 
-                    <h5 id="BoxText2">We're Proud to Announce We Now Offer Financing Options!</h5>
+                    <h5 id="BoxText2">We're Proud to Announce We Now Offer Financing Options!!</h5>
 
                         <a class="financeAnchor" href="https://www.ffcapplication.com/?i=XY5sWUYH644gfJ4gujgeBam42nEvNGIYEC5wDNmMe9o=" target='_blank'>
                             <button class="buttonDivLargeFinance"> Finance Now </button>
