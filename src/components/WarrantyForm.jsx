@@ -7,6 +7,8 @@ const WarrantyForm = () => {
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
+  const [street, setStreet] = useState('');
+
   const [city, setCity] = useState('');
   const [zipCode, setZipCode] = useState('');
   const [state, setState] = useState('');
@@ -20,6 +22,7 @@ const WarrantyForm = () => {
       lastName,
       email,
       phone,
+      street,
       city,
       zipCode,
       state,
@@ -37,6 +40,7 @@ const WarrantyForm = () => {
     setLastName('');
     setEmail('');
     setPhone('');
+    setStreet('');
     setCity('');
     setZipCode('');
     setState('');
@@ -91,6 +95,18 @@ const WarrantyForm = () => {
                         type="tel"
                         value={phone}
                         onChange={(e) => setPhone(e.target.value)}
+                    />
+                </label>
+            </div>
+
+            <div className="formField">
+                <label className="formLabel">
+                    Street*:
+                    <input className="formInput"
+                        type="text"
+                        required
+                        value={street}
+                        onChange={(e) => setStreet(e.target.value)}
                     />
                 </label>
             </div>

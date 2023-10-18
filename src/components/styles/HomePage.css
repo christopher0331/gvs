@@ -21,44 +21,6 @@
     display: none;
 }
 
-@media screen and (max-width: 1200px) {
-    .inner {
-      display: none;
-      flex-direction: column;
-      justify-content: center;
-      align-content: center;
-    }
-    .mediaBreak900 {
-        display: flex;
-        justify-content: space-evenly;
-        align-content: center;
-    }
-
-  }
-
-  @media screen and (max-width: 684px) {
-    .inner {
-      display: none;
-      flex-direction: column;
-      justify-content: center;
-      align-content: center;
-    }
-
-    .mediaBreak900 {
-        display: none;
-        justify-content: space-evenly;
-        align-content: center;
-    }
-
-    .mediaBreak500 {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-content: center;
-    }
-
-  }
-
 .ImagesMappesBox {
     display: flex;
     width: 100%;
@@ -93,84 +55,6 @@
     padding: 2px 5px;
 }
 
-@media screen and (max-width: 700px) {
-
-    .FirstHomepageBox {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        flex-direction: row; 
-        width: 100%;
-        height: 30vw;
-        background-color: rgb(237, 236, 236);
-    }
-
-    #BoxText {
-        display: flex;
-        justify-content: center;
-        font-size: 3.2vw;
-        color: darkgreen;
-        justify-content: center;
-        margin-right: 2.3em;
-        font-weight: 700;
-        /* text-shadow: black 2px 2px 8px; */
-        padding: 2px 2px;
-    }
-    #BoxText2 {
-        display: flex;
-        justify-content: center;
-
-        font-size: 2.9vw;
-        color: darkgreen;
-        margin-right: 2.3em;
-        font-weight: 700;
-        /* text-shadow: black 2px 2px 8px; */
-        padding: 2px 5px;
-    }
-    .buttonDivLarge {
-        font-size: 2.1vw;
-        margin-right: 20px;
-        border-radius: 5px;
-        border: 2px solid green;
-        color: green;
-     }
-    
-     .buttonDivLarge:hover {
-        font-size: 2.1vw;
-        margin-right: 20px;
-        border-radius: 5px;
-        border: 2px solid green;
-        color: white;
-        transform: scale(1.1);
-        transition: 1.1s;
-        background-color: darkgreen;
-    
-     }
-    .buttonDivLargeFinance{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        font-size: 2.1vw;
-        margin-right: 20px;
-        border-radius: 5px;
-        border: 2px solid green;
-        color: green;
-     }
-    
-     .buttonDivLargeFinance:hover {
-        font-size: 2.1vw;
-        margin-right: 20px;
-        border-radius: 5px;
-        border: 2px solid green;
-        color: white;
-        transform: scale(1.1);
-        transition: 1.1s;
-        background-color: darkgreen;
-    
-     }
-}
 
 .buttonDivLarge {
     display: flex;
@@ -253,3 +137,148 @@
     transition: 1.1s;
     background-color: darkgreen;
  }
+
+@media screen and (max-width: 1200px) {
+    .inner {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+    }
+    .mediaBreak900 {
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+}
+
+
+
+@media screen and (max-width: 684px) {
+    .inner {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+    }
+
+    .mediaBreak900 {
+        display: none;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+
+    .mediaBreak500 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+
+}
+
+
+@media screen and (max-width: 750px) {
+
+    .FirstHomepageBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: row; 
+        width: 100%;
+        height: 30vw;
+        background-color: rgb(237, 236, 236);
+    }
+
+    #BoxText {
+        display: flex;
+        justify-content: center;
+        font-size: 3.2vw;
+        color: darkgreen;
+        justify-content: center;
+        margin-right: 2.3em;
+        font-weight: 700;
+        /* text-shadow: black 2px 2px 8px; */
+        padding: 2px 2px;
+    }
+    #BoxText2 {
+        display: flex;
+        justify-content: center;
+
+        font-size: 2.9vw;
+        color: darkgreen;
+        margin-right: 2.3em;
+        font-weight: 700;
+        /* text-shadow: black 2px 2px 8px; */
+        padding: 2px 5px;
+    }
+    .buttonDivLarge {
+        font-size: 2.1vw;
+        margin-right: 20px;
+        border-radius: 5px;
+        border: 2px solid green;
+        color: green;
+     }
+    
+     .buttonDivLarge:hover {
+        font-size: 2.1vw;
+        margin-right: 20px;
+        border-radius: 5px;
+        border: 2px solid green;
+        color: white;
+        transform: scale(1.1);
+        transition: 1.1s;
+        background-color: darkgreen;
+    
+     }
+    .buttonDivLargeFinance{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 2.1vw;
+        margin-right: 20px;
+        border-radius: 5px;
+        border: 2px solid green;
+        color: green;
+     }
+    
+     .buttonDivLargeFinance:hover {
+        font-size: 2.1vw;
+        margin-right: 20px;
+        border-radius: 5px;
+        border: 2px solid green;
+        color: white;
+        transform: scale(1.1);
+        transition: 1.1s;
+        background-color: darkgreen;
+    
+     }
+     .buttonDivSmallFinance{
+        display: flex;
+        width: 12em;
+        height: 3em;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 3.1vw;
+        margin-right: 20px;
+        border-radius: 5px;
+        border: 2px solid green;
+        color: green;
+     }
+    
+     .buttonDivSmallFinance:hover {
+        font-size: 2.1vw;
+        margin-right: 20px;
+        border-radius: 5px;
+        width: 3em;
+        border: 2px solid green;
+        color: white;
+        transform: scale(1.1);
+        transition: 1.1s;
+        background-color: darkgreen;
+    
+     }
+}
