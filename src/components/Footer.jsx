@@ -22,7 +22,7 @@ const Footer = ()  => {
                                 303.358.8168
                             </div>
                             <div>
-                                Brandon@greenviewsolutions.net
+                                admin@greenviewsolutions.net
                             </div>
                             <div>
                                 Serving Greater Denver Area!

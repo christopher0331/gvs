@@ -17,7 +17,7 @@ class Menu extends Component {
                         <h4 className="MenuItem" id="phone">303.358.8168  |</h4>
                     </a>
                     <a href="mailto:brandon@greenviewsolutions.net">
-                        <h4 className="MenuItem" id="email">brandon@greenviewsolutions.net</h4>
+                        <h4 className="MenuItem" id="email">admin@greenviewsolutions.net</h4>
                     </a>
                 </div>
                 <div className='socialIconBar'>
