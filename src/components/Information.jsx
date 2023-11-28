@@ -25,7 +25,7 @@ const Information = () => {
                     </a>
 
                     <a href="https://www.credly.com/badges/7f1dea3a-7e84-4a35-bd64-e2ffb1e1b436/public_url" className="haAnchor1"> 
-                        <img alt="AFA Gate Auto Certification" className="haAnchor1" src="https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/op/GateInstallBadge.png" style={{height: '12em', width: '13em'}}/>
+                        <img alt="AFA Gate Auto Certification" className="haAnchor1" src="https://greenviewsolutionsimages.s3.us-west-1.amazonaws.com/op/GateInstallBadge.png" style={{height: '14em', width: '15em'}}/>
                     </a>
 
                     <a href="https://www.homeadvisor.com/rated.GreenViewSolutions.72536239.html" className="haAnchor1"> 
