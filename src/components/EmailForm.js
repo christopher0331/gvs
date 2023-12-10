@@ -17,7 +17,7 @@ function EmailForm() {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        fetch('https://greenviewsolutions.net/send-email', { 
+        fetch('https://www.greenviewsolutions.net/send-email', { 
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
