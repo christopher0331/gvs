@@ -17,7 +17,7 @@ function EmailForm() {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        fetch('http://localhost:3000/send-email', { // Replace with your server URL if different
+        fetch('https://greenviewsolutions.net/send-email', { 
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
