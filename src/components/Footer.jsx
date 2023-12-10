@@ -22,10 +22,10 @@ const Footer = ()  => {
                                 303.358.8168
                             </div>
                             <div>
-                                admin@greenviewsolutions.net
+                                admin@greenviewsolutions.net!
                             </div>
                             <div>
-                                Serving Greater Denver Area!
+                                Serving Greater Denver Area
                             </div>
                         </div>
                 
