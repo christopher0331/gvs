@@ -7,13 +7,25 @@ require('dotenv').config();
 
 const app = express();
 
-// Enable CORS for requests from your React application domain
+// Allowed origins for CORS
+const allowedOrigins = [
+  'https://greenviewsolutions.net',
+  'https://www.greenviewsolutions.net'
+];
+
+// CORS configuration
 const corsOptions = {
-  origin: 'https://www.greenviewsolutions.net', // or '*' to allow all origins
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
   optionsSuccessStatus: 200
 };
 
-app.use(cors(corsOptions));  // This should be above other route handlers
+app.use(cors(corsOptions));  // Apply CORS before other routes
 
 // Middleware to parse JSON bodies
 app.use(bodyParser.json());
@@ -23,9 +35,9 @@ app.use(express.static(path.join(__dirname, 'build')));
 
 // Configure AWS
 AWS.config.update({
-  accessKeyId: process.env.AWS_ACCESS_KEY_ID,  // Use environment variables
-  secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
-  region: 'us-east-2' // Change to your AWS SES region
+    accessKeyId: "AKIAZJ7XN6M6Q63UINQY",
+    secretAccessKey: "bjLEPxvSIuBOuMax51TUtGQsI26E3L4f/zrdrpjX",
+    region: 'us-east-2' // Change to your AWS SES region
 });
 
 const ses = new AWS.SES({ apiVersion: '2010-12-01' });
@@ -70,3 +82,6 @@ const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });
+
+
+
