@@ -1,15 +1,11 @@
 import { Suspense, lazy, React }  from 'react';
 import Provider from './components/DataProvider.js';
-
 import {
   BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
-
 require('dotenv').config({ path: '../.env' })
-
-
 
 
 // import AwesomeLoader from './AwesomeLoader.js';
@@ -36,6 +32,7 @@ const FenceCalculator = lazy(() => import('./components/Calculator.jsx'));
 const FencingProcess = lazy(() => import('./components/OurProcess.jsx'));
 const DataDisplay = lazy(() => import('./components/DataDisplay.jsx'));
 const WarrantyForm = lazy(() => import('./components/WarrantyForm.jsx'));
+const EmailForm = lazy(() => import('./components/EmailForm.js'));
 
 function App() {
 
@@ -47,6 +44,7 @@ function App() {
               <Header />
                 <Switch>
                       <Route path="/" exact component={HomePage} />
+                      <Route path="/email-form" component={EmailForm} />
                       <Route path="/services" component={HomePage}/>
                       <Route path="/about-us" component={AboutUs}/>
                       <Route path="/fencing" component={Fencing} />
