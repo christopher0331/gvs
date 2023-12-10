@@ -24,7 +24,7 @@ class ContactForm extends React.Component {
         event.preventDefault();
         const { name, phone, email, address, message } = this.state;
 
-        fetch('https://greenviewsolutions.net/send-email', {
+        fetch('https://www.greenviewsolutions.net/send-email', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
