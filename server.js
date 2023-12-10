@@ -1,10 +1,19 @@
 const express = require('express');
 const path = require('path');
-const bodyParser = require('body-parser'); // Needed to parse request body
+const bodyParser = require('body-parser');
 const AWS = require('aws-sdk');
-require('dotenv').config(); // To load environment variables from a .env file
+const cors = require('cors');
+require('dotenv').config();
 
 const app = express();
+
+// Enable CORS for requests from your React application domain
+const corsOptions = {
+  origin: 'https://www.greenviewsolutions.net', // or '*' to allow all origins
+  optionsSuccessStatus: 200
+};
+
+app.use(cors(corsOptions));  // This should be above other route handlers
 
 // Middleware to parse JSON bodies
 app.use(bodyParser.json());
@@ -14,9 +23,9 @@ app.use(express.static(path.join(__dirname, 'build')));
 
 // Configure AWS
 AWS.config.update({
-  accessKeyId: "AKIAZJ7XN6M6Q63UINQY",
-  secretAccessKey: "bjLEPxvSIuBOuMax51TUtGQsI26E3L4f/zrdrpjX",
-  region: 'us-east-2' // Change to your AWS SES regio
+  accessKeyId: process.env.AWS_ACCESS_KEY_ID,  // Use environment variables
+  secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+  region: 'us-east-2' // Change to your AWS SES region
 });
 
 const ses = new AWS.SES({ apiVersion: '2010-12-01' });
