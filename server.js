@@ -35,8 +35,8 @@ app.use(express.static(path.join(__dirname, 'build')));
 
 // Configure AWS
 AWS.config.update({
-    accessKeyId: "AKIAZJ7XN6M6Q63UINQY",
-    secretAccessKey: "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",
+    accessKeyId: process.env.PUBLIC_KEY,
+    secretAccessKey: process.env.PRIVATE_KEY,
     region: 'us-east-2' // Change to your AWS SES region
 });
 
