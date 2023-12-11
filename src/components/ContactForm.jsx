@@ -1,4 +1,5 @@
 import React from 'react';
+import emailjs from 'emailjs-com';
 import './styles/FreeEstimate.css';
 
 class ContactForm extends React.Component {
@@ -13,47 +14,32 @@ class ContactForm extends React.Component {
         };
 
         this.handleChange = this.handleChange.bind(this);
-        this.sendMessage = this.sendMessage.bind(this);
+        this.sendEmail = this.sendEmail.bind(this);
     }
     
     handleChange(event) {
         this.setState({ [event.target.name]: event.target.value });
     }
 
-    sendMessage(event) {
+    sendEmail(event) {
         event.preventDefault();
-        const { name, phone, email, address, message } = this.state;
 
-        fetch('https://api.greenviewsolutions.net:3001/send-email', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                to: email,
-                subject: `Message from ${name}`,
-                body: `Name: ${name}<br>Email: ${email}<br>Phone: ${phone}<br>Address: ${address}<br>Message: ${message}`
-            })
-        })
-        .then(response => {
-            if (response.ok) {
-                alert('Thank you for your request, we\'ll be in touch soon!');
+        emailjs.sendForm('service_p6clffh', 'template_jidzwzw', event.target, 'user_wPYeoaoebNsoGt3GhzLVu')
+            .then((result) => {
+                console.log(result.text);
+                alert('Thank you for your message, we will be in touch soon!');
                 this.setState({ name: '', phone: '', email: '', address: '', message: '' }); // Reset form
-            } else {
-                alert('Failed to send email.');
-            }
-        })
-        .catch(error => {
-            console.error('Error sending email:', error);
-            alert('Failed to send email.');
-        });
+            }, (error) => {
+                console.log(error.text);
+                alert('Failed to send email, please try again.');
+            });
     }
 
     render() {
         const { name, phone, email, address, message } = this.state;
         return (
             <div className="formBackground">
-                <form onSubmit={this.sendMessage}>
+                <form onSubmit={this.sendEmail}>
                     <div className="formContactInfo">
                         <div className="row1">
                             <label className='inputBox'>
@@ -87,3 +73,4 @@ class ContactForm extends React.Component {
 }
 
 export default ContactForm;
+
