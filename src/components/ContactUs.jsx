@@ -42,6 +42,12 @@ const ContactUs = (props) => {
                 <div className="contactUsTitle">
                     Contact Us
                 </div>
+               
+                <div className="contactFormAndInfo">     
+                    <div className="contactForm">
+                        <ContactForm />
+                    </div>
+                </div>
                 <div>
                     <p className="contactUsParagraph">
                         When you’re in need of residential or commercial fencing in Denver, CO, 
@@ -82,11 +88,6 @@ const ContactUs = (props) => {
 
                         </ul>
                     </p>
-                </div>
-                <div className="contactFormAndInfo">     
-                    <div className="contactForm">
-                        <ContactForm />
-                    </div>
                 </div>
             </div>
         </div>
