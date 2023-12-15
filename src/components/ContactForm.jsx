@@ -93,7 +93,7 @@ class ContactForm extends React.Component {
                         </label>
                     </div>
                     <p className="smsConsent">
-                        By providing your phone number, you agree to receive text messages (SMS) from Boulder County Fencing LLC. You can unsubscribe at any time by replying STOP. Message and data rates may apply. Message frequency varies.
+                        By providing your phone number, you agree to receive text messages (SMS) from GreenView Solutions. You can unsubscribe at any time by replying STOP. Message and data rates may apply. Message frequency varies.
                     </p>
                     <div className="row">
                         <label className='inputBox'>
