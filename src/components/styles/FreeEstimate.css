@@ -79,6 +79,10 @@
     padding: 20px;
 }
 
+.footerLogo{
+    /* width: 90%; */
+}
+
 /* Mobile Friendly Version */
 @media (max-width: 768px) {
     .contactUsTitle {
