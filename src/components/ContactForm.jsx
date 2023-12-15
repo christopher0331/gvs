@@ -22,6 +22,7 @@ class ContactForm extends React.Component {
             projectDetails: '',
             completionTimeframe: '',
             referralSource: '',
+            otherProjectDescription: ''
         };
 
         this.handleChange = this.handleChange.bind(this);
@@ -68,6 +69,9 @@ class ContactForm extends React.Component {
 <div className="formBackground">
             <form onSubmit={this.sendEmail} className="contactForm">
                 {/* Contact Details */}
+                <div className="formParagraph">
+                Elevate your surroundings with our quality workmanship, creating a perfect blend of functionality and aesthetics. From sturdy fences that stand the test of time to breathtaking outdoor living spaces, we turn your vision into a reality!
+                </div>
                 <div className="contactDetails">
                     <div className="row">
                         <label className='inputBox'>
@@ -116,6 +120,7 @@ class ContactForm extends React.Component {
                             <input className='inputField' placeholder="ZIP Code" type="text" name="zipCode" value={this.state.zipCode} onChange={this.handleChange} />
                         </label>
                     </div>
+  
                 </div>
                     {/* Service Details */}
                     <div className="serviceDetails">
@@ -162,6 +167,11 @@ class ContactForm extends React.Component {
                                 </select>
                             </label>
                         </div>
+                        <div className="row">
+                        <label className='inputBox fullWidth'>
+                            <textarea className='inputField' placeholder="Other Project Description" name="otherProjectDescription" value={this.state.otherProjectDescription} onChange={this.handleChange} />
+                        </label>
+                    </div>
                     </div>
 
                     <div className="submitButtonBox">
