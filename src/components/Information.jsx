@@ -11,7 +11,7 @@ const Information = () => {
                 GreenView Solutions provides and installs every type of fence and maintenance free railing products. 
                 From a white picket fence, to an automated gate, or an in-ground dog fence, whatever your fencing needs are, we offer a variety of products to satisfy every fencing or railing need.
             </p>
-            <div className="homeadvisorSeals">
+            {/* <div className="homeadvisorSeals">
                 <a href="https://www.homeadvisor.com/rated.GreenViewSolutions.72536239.html" className="haAnchor tooltip"> 
                     <img alt="See AFA at American Fence Association for GreenView Solutions" src="https://ik.imagekit.io/greenviewsolutions/HomePage/FullSizedWebp/AFAMemberBadge2022.png?tr=w-200,h-300" />
                     <span className="tooltiptext haAnchor1">American Fence Association Member</span>
@@ -46,7 +46,7 @@ const Information = () => {
                     <img alt="See Reviews at HomeAdvisor for GreenView Solutions" src="http://www.homeadvisor.com/images/sp-badges/20reviews-solid-border.png?sp=72536239&key=337759e38d741bd27c52f9fb13ad7b75" />
                     <span className="tooltiptext haAnchor1">20+ Reviews on HomeAdvisor</span>
                 </a>
-            </div>
+            </div> */}
         </div>
     );
 }
