@@ -158,7 +158,7 @@ class ContactForm extends React.Component {
                         <div className="row">
                             <label className='inputBox fullWidth'>
                                 <select className='inputField' name="referralSource" value={this.state.referralSource} onChange={this.handleChange}>
-                                    <option value="">How did you hear about Boulder County Fencing LLC?</option>
+                                    <option value="">How did you hear about GreenView Solutions?</option>
                                     <option value="google">Google</option>
                                     <option value="socialMedia">Social Media</option>
                                     <option value="magazine">Magazine</option>
