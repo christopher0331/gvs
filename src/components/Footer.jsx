@@ -19,10 +19,10 @@ const Footer = ()  => {
                                 Brandon King
                             </div>
                             <div>
-                                303.358.8168
+                                <a href="tel:+13033588168">303.358.8168</a>
                             </div>
                             <div>
-                                admin@greenviewsolutions.net!
+                                <a href="mailto:admin@greenviewsolutions.net">admin@greenviewsolutions.net</a>
                             </div>
                             <div>
                                 Serving Greater Denver Area

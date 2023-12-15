@@ -7,6 +7,9 @@
     margin-top: 35px;
     margin-bottom: 0px;
 }
+a {
+    color: white;
+}
 
 .Info {
     display: flex;
@@ -59,19 +62,23 @@
     margin-top: 0px;
     margin-bottom: 0px;
     transition: .5s;
+    text-decoration: none;
 }
 
 .nav-link:hover {
-    color: green;
-    transform: scale(1.5)
+    color: #add8e6; /* Light blue color */
+    transform: scale(1.5);
 }
-
 
 .links {
     font-size: 1.9vw;
     color: white;
 }
 
+.nav-link:visited {
+    color: white;
+    font-size: 2.9vw;
+}
 
 .messageParagraph {
     font-size: 1.4vw;
@@ -151,8 +158,8 @@
     }
     
     .nav-link:hover {
-        color: green;
-        transform: scale(1.5)
+        color: #add8e6; /* Light blue color for mobile view */
+        transform: scale(1.5);
     }
     
     .nav-link:visited {
