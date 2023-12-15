@@ -1,277 +1,122 @@
-.contactUsTitle {
-    display: flex;
-    align-items: center;
-    padding-left: 15px;
-    height: 100px;
-    font-size: 4.2vw;
-    color: black;
-    background-color: rgba(169, 169, 169, 0.31);
-}
-
-.row1 {
-    display: flex;
-    flex-direction: row;
-}
-
-.row2 {
-    display: flex;
-    flex-direction: row;
-}
-
-.contactFormAndInfo {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 0px 0px;
-    margin: 0px 0px;
-}
-
-.formContactInfo {
-    display: flex;
-    flex-direction: column;
-    justify-content:  center;
-}
-
 .formBackground {
-    display: flex;
-    height: 350px;
-    background-color: rgba(227, 227, 227, 0.714);
-    padding: 10px 10px;
+    background-color: #f5f5f5; /* Example background color */
+    padding: 20px;
+    width: 40%;
+    margin: 0 auto; /* Center the form */
 }
 
-.messageBoxAndSubmitButton{
+.contactForm {
     display: flex;
     flex-direction: column;
-    width: 43em;
-    justify-self: center;
-    justify-content: center;
-    }
+}
+
+.contactDetails .row, .serviceDetails .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
 
 .inputBox {
-    margin: 5px 15px;
+    flex: 1;
+    margin: 5px;
 }
 
 .inputField {
-    width: 19vw;
-    padding: 10px 10px;
-    border-bottom: 2px solid black;
-    border-top: none;
-    border-left: none;
-    border-right: none;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
     border-radius: 4px;
 }
 
-.inputField:focus {
-    outline: none !important;
-    border-color: #67aa7a;
-    box-shadow: 0 0 10px #67aa7a;
-}
-
-.messageArea {
-    display: flex;
-    justify-self: center;
-    width: 95%;
-    border-bottom: 2px solid black;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-radius: 4px;
-}
-
-.messageArea:focus {
-    outline: none !important;
-    border-color: #67aa7a;
-    box-shadow: 0 0 10px #67aa7a;
-}
-
-.messageBox {
-    display: flex;
-    justify-content: center;
+.serviceDetails {
+    margin-top: 20px;
 }
 
 .submitButtonBox {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .submitButton {
-    margin-top: 10px;
-    font-size: 20px;
-    border-radius: 8px;
-    padding: 10px 15px;
-    font-weight: 600;
+    background-color: #4CAF50; /* Example button color */
     color: white;
-    background-color: black;
-    border: 2px solid white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .submitButton:hover {
-    font-weight: 600;
-    font-size: 20px;
-    padding: 10px 15px;
-    border-radius: 8px;
-    margin-top: 10px;
-    color: black;
-    background-color: white;
-    border: 2px solid darkgreen;
+    background-color: #45a049;
 }
 
-.contactInfoBox {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 105%;
-    height: 350px;
-    background-color: black;
-    padding: 10px 30px;
-}
 
-.itemsBox {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.contactUsTitle {
     text-align: center;
-}
-
-.contactInfoTitle {
-    font-size: 40px;
-    font-weight: 500;
-}
-
-.contactNumber {
-    font-size: 46px;
-    font-weight: 300;
-    color: white;
-}
-
-.availability {
-    font-size: 22px;
-    color: rgba(227, 227, 227, 0.714);
-    font-weight: 100;
-}
-
-.contactAddress {
-    font-size: 18px;
-    color: white;
-}
-
-.contactEmail {
-    font-size: 25px;
-    color: white;
-    font-weight: 300;
-}
-
-.leafIcon {
-    font-size: 60px;
-    color: green;
-}
-
-
-.contactFormAndInfoBreakpoint {
-    display: none;
+    font-size: 2rem;
+    color: #333;
+    margin-top: 20px;
 }
 
 .contactUsParagraph {
-    padding: 50px 150px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666;
+    margin: 20px auto;
+    width: 65%;
+    text-align: center;
 }
 
-@media screen and (max-width: 921px) {
-    
-    .contactFormAndInfo {
-        display: none; 
-    }
+.contactFormAndInfo {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
 
-    .formBackground{
-        display: flex;
-    }
+.contactForm {
+    width: 100%; /* Adjust as needed */
+    padding: 20px;
+}
 
-    .contactFormAndInfoBreakpoint{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+/* Mobile Friendly Version */
+@media (max-width: 768px) {
+    .contactUsTitle {
+        font-size: 1.5rem;
+        margin-top: 15px;
     }
-
-    .contactInfoBP {
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-        align-items: center;
-        width: 98%;
-        height: 350px;
-        background-color: black;
-        padding: 10px 30px;
-    }
-
-    .contactFormBP {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-self: center;
-        width: 98%;
-        height: 65vh;
-        background-color: black;
-        padding: 10px 30px;
-    }
-
-    .contactInfoTitle {
-        font-size: 30px;
-        font-weight: 500;
-    }
-    
-    .contactNumber {
-        font-size: 36px;
-        font-weight: 300;
-        color: white;
-    }
-    .availability {
-        font-size: 18px;
-        color: rgba(227, 227, 227, 0.714);
-        font-weight: 100;
-    }
-    
-    .contactAddress {
-        font-size: 14px;
-        color: white;
-    }
-    
-    .contactEmail {
-        font-size: 20px;
-        color: white;
-        font-weight: 300;
-    }
-    .inputBox {
-        margin: 5px 5px;
-    }
-    
-    .inputField {
-        width: 8em;
-        padding: 10px 10px;
-        border-bottom: 2px solid black;
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        border-radius: 4px;
-    }
- 
 
     .contactUsParagraph {
-        padding: 50px 50px;
+        font-size: 0.9rem;
+        padding: 0 10px;
+        width: 90%; /* Adjust for mobile */
     }
 
-    .messageBoxAndSubmitButton{
-        display: flex;
+    .contactFormAndInfo {
         flex-direction: column;
-        justify-content: center;
-        width: 15em;
-    }
-    
-    .messageBox .messageArea {
-        display: flex;
-        width: 75%;
-
+        align-items: center;
     }
 
+    .contactForm {
+        width: 100%;
+        padding: 10px;
+    }
 }
 
 
+/* Add this at the bottom of your existing CSS */
 
+@media (max-width: 768px) {
+    .formBackground {
+        width: 90%; /* Increase width for mobile */
+        padding: 10px;
+    }
+
+    .contactDetails .row, .serviceDetails .row {
+        flex-direction: column; /* Stack inputs vertically on small screens */
+    }
+
+    .inputBox {
+        width: 100%; /* Full width for each input box */
+    }
+}
