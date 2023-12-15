@@ -22,7 +22,7 @@ const Footer = ()  => {
                                 <a href="tel:+13033588168">303.358.8168</a>
                             </div>
                             <div>
-                                <a href="mailto:admin@greenviewsolutions.net">admin@greenviewsolutions.net</a>
+                                <a href="mailto:admin@gvsco.net">admin@gvsco.net</a>
                             </div>
                             <div>
                                 Serving Greater Denver Area
