@@ -9,6 +9,9 @@
     display: flex;
     flex-direction: column;
 }
+.contactDetails {
+    padding-top: 20px;
+}
 
 .contactDetails .row, .serviceDetails .row {
     display: flex;
@@ -67,11 +70,17 @@
     width: 65%;
     text-align: center;
 }
+.formParagraph {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+} 
 
 .contactFormAndInfo {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .contactForm {
